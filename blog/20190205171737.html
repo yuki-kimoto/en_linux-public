@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>プロセスの存在確認を行う方法 kill -0 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="プロセスの存在を確認するためにはkillコマンドを使ってオプションに0を指定します。killに0オプションを指定する場合はプロセスは終了したりはしませんので安心してください。">
+<title> How to check the existence of a process kill -0  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="To confirm the existence of the process, use the  kill  command and specify  0  as an option. Rest assured that if you specify the  0  option for kill, the process will not be terminated.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="プロセスの存在確認を行う方法 kill -0 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="プロセスの存在を確認するためにはkillコマンドを使ってオプションに0を指定します。killに0オプションを指定する場合はプロセスは終了したりはしませんので安心してください。" />
+<meta name="twitter:title" content=" How to check the existence of a process kill -0  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="To confirm the existence of the process, use the  kill  command and specify  0  as an option. Rest assured that if you specify the  0  option for kill, the process will not be terminated." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20190205171737.html">プロセスの存在確認を行う方法 kill -0</a></h2>
+    <h2><a href="/blog/20190205171737.html"> How to check the existence of a process kill -0 </a></ h2>
 <p>
-  　プロセスの存在を確認するためには<b>kill</b>コマンドを使ってオプションに<b>0</b>を指定します。killに<b>0</b>オプションを指定する場合はプロセスは終了したりはしませんので安心してください。
+  To confirm the existence of the process, use the <b> kill </ b> command and specify <b> 0 </ b> as an option. Rest assured that if you specify the <b> 0 </ b> option for kill, the process will not be terminated.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -85,30 +85,28 @@
 
 
 <pre>
-kill -0 プロセス番号
-</pre>
-<p>
-  　プロセスが存在するとコマンドが成功し何も出力しません。コマンドが失敗するとそのようなプロセスはないというメッセージがかえってきます。
-</p>
-<p>
-  　これは<b>$?</b>を調べることで確認できます。成功した場合は<b>0</b>で、失敗した場合は<b>1</b>になります。
-</p>
-<p>
-  　以下がサンプルのスクリプトです。
-</p>
-<pre>
-kill -0 16033 &gt; /dev/null 2&gt;&amp;1
+kill -0 process number
+&lt;/ pre&gt;
 
-if [ $? = 0 ]; then
-  echo "exists";
-else
-  echo "not exists"
+If the process exists, the command will succeed and nothing will be output. If the command fails, you will get a message that there is no such process.
+
+This can be confirmed by examining &lt;b&gt; $? &lt;/ B&gt;. If it succeeds, it will be &lt;b&gt; 0 &lt;/ b&gt;, and if it fails, it will be &lt;b&gt; 1 &lt;/ b&gt;.
+
+The following is a sample script.
+
+&lt;pre&gt;
+kill -0 16033&gt; / dev / null 2&gt; &amp; 1
+
+if [$? = 0]; then
+   echo "exists";
+else else
+   echo "not exists"
 fi
-</pre>
+&lt;/ pre&gt;
 
   </div>
   <div class="bottom">
-    <h3>関連情報</h3>
+    <h3>Associated Information</h3>
 
 <div style="margin:10px 0">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"

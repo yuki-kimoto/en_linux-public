@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>標準エラー出力をパイプに流し込む方法 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="標準エラー出力をパイプに流し込むには次のように記述します(sh, bashの場合)。">
+<title> How to pipe standard error output  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="To flow the standard error output to the pipe, write as follows (in the case of sh and bash).">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="標準エラー出力をパイプに流し込む方法 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="標準エラー出力をパイプに流し込むには次のように記述します(sh, bashの場合)。" />
+<meta name="twitter:title" content=" How to pipe standard error output  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="To flow the standard error output to the pipe, write as follows (in the case of sh and bash)." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20190203171737.html">標準エラー出力をパイプに流し込む方法</a></h2>
+    <h2><a href="/blog/20190203171737.html"> How to pipe standard error output </a></ h2>
 <p>
-  　標準エラー出力をパイプに流し込むには次のように記述します(sh, bashの場合)。
+  To flow the standard error output to the pipe, write as follows (in the case of sh and bash).
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -84,18 +84,20 @@
 </div>
 
 
-<h3>標準エラー出力をパイプに流し込む</h3>
+<h3> Pour standard error into a pipe </ h3>
 <pre>
-コマンドA 2&gt;&amp;1 1&gt;/dev/null | コマンドB
-</pre>
-<h3>標準出力と標準エラー出力の両方をパイプに流し込む</h3>
-<pre>
-コマンドA 2&gt;&amp;1 | コマンドB
-</pre>
+Command A 2&gt; &amp; 1 1&gt; / dev / null | Command B
+&lt;/ pre&gt;
+
+&lt;h3&gt; Pour both standard output and standard error into a pipe &lt;/ h3&gt;
+
+&lt;pre&gt;
+Command A 2&gt; &amp; 1 | Command B
+&lt;/ pre&gt;
 
   </div>
   <div class="bottom">
-    <h3>関連情報</h3>
+    <h3>Associated Information</h3>
 
 <div style="margin:10px 0">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"

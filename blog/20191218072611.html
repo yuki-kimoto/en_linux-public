@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>カレントディレクトリとは - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="カレントディレクトリとは、現在作業を行っているディレクトリのことです。カレントは英語で「current」で「現在の」という意味です。Linuxにおけるディレクトリは、Windowsにおけるフォルダに該当します。">
+<title> What is the current directory?  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="The current directory is the directory you are currently working on. Current means "current" in English. A directory in Linux corresponds to a folder in Windows.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="カレントディレクトリとは - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="カレントディレクトリとは、現在作業を行っているディレクトリのことです。カレントは英語で「current」で「現在の」という意味です。Linuxにおけるディレクトリは、Windowsにおけるフォルダに該当します。" />
+<meta name="twitter:title" content=" What is the current directory?  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="The current directory is the directory you are currently working on. Current means "current" in English. A directory in Linux corresponds to a folder in Windows." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20191218072611.html">カレントディレクトリとは</a></h2>
+    <h2><a href="/blog/20191218072611.html"> What is the current directory? </a></H2>
 <p>
-  カレントディレクトリとは、現在作業を行っているディレクトリのことです。カレントは英語で「current」で「現在の」という意味です。Linuxにおけるディレクトリは、Windowsにおけるフォルダに該当します。
+  The current directory is the directory you are currently working on. Current means "current" in English. A directory in Linux corresponds to a folder in Windows.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -84,68 +84,68 @@
 </div>
 
 
-<h3>カレントディレクトリの変更</h3>
+<h3> Change current directory </h3>
 <p>
-  カレントディレクトリを変更するには<a href="/blog/20191012191854.html">cdコマンド</a>を使用します。
+  Use the <a href="/blog/20191012191854.html"> cd command</a> to change the current directory.
 </p>
 <pre>
-cd /home/kimoto/labo
+cd / home / kimoto / labo
 </pre>
 <p>
-  「/home/kimoto/labo」というディレクトリが、カレントディレクトリになります。
+  The directory "/ home / kimoto / labo" will be the current directory.
 </p>
-<h3>カレントディレクトリからの相対パス指定</h3>
+<h3> Specify a relative path from the current directory </h3>
 <p>
-  カレントディレクトリが設定されている効果として、ファイル名が、カレントディレクトリから<a href="/blog/20191216082522.html">相対パス</a>で指定できます。
+  As an effect of setting the current directory, the file name can be specified from the current directory with <a href="/blog/20191216082522.html"> relative path</a>.
 </p>
 <p>
-  <a href="/blog/20191126082723.html">lsコマンド</a>で「foo」というファイルを相対パスで指定してみましょう。
+  Let's specify the file "foo" with a relative path with the <a href="/blog/20191126082723.html"> ls command</a>.
 </p>
 <pre>
 ls foo
 </pre>
 <p>
-  これは実際には以下のような<a href="/blog/20191217081903.html">絶対パス</a>で指定したのと同じ意味になります。
+  This actually has the same meaning as specified by <a href="/blog/20191217081903.html"> absolute path</a> as shown below.
 </p>
 <pre>
-ls /home/kimoto/labo/foo
+ls / home / kimoto / labo / foo
 </pre>
-<h3>カレントディレクトリのファイル名</h3>
+<h3> File name of the current directory </h3>
 <p>
-  カレントディレクトリ自体は「.」という特別なファイル名で表現されます。
+  The current directory itself is represented by a special file name ".".
 </p>
 <pre>
-# カレントディレクトリのファイル名
-.
+# File name of the current directory
+..
 </pre>
 <p>
-  以下のようにlsに「.」を与えて実行すると、カレントディレクトリのファイル一覧が表示されます。
+  If you give "." To ls and execute it as shown below, a list of files in the current directory will be displayed.
 </p>
 <pre>
-ls .
+ls.
 </pre>
-<h3>カレントディレクトリの存在を確認する</h3>
+<h3> Check the existence of the current directory </h3>
 <p>
-  カレントディレクトリは、実際に<a href="/blog/20191220091958.html">隠しファイル</a>として、カレントディレクトリの内容として存在しています。
+  The current directory actually exists as the contents of the current directory as <a href="/blog/20191220091958.html"> hidden files</a>.
 </p>
 <p>
-  <a href="/blog/20191126082723.html">lsコマンド</a>の「-a」オプションを使用して確認してみましょう。出力結果のサンプルです。
+  Let's check using the "-a" option of the <a href="/blog/20191126082723.html"> ls command</a>. This is a sample output result.
 </p>
 <pre>
-drwxrwxr-x  6 kimoto kimoto 4096 Aug 14 17:51 .
-drwxrwxr-x 40 kimoto kimoto 4096 Nov  9 10:08 ..
--rw-r--r--  1 kimoto kimoto 1116 Aug 15 08:28 convert_markdown.pl
--rw-r--r--  1 kimoto kimoto  162 Sep 11 08:42 giblog.conf
-drwxrwxr-x  8 kimoto kimoto 4096 Oct 12 19:52 .git
--rw-r--r--  1 kimoto kimoto    8 Aug 10 15:01 .gitignore
-drwxrwxr-x  3 kimoto kimoto 4096 Aug 10 15:01 lib
-drwxrwxr-x  7 kimoto kimoto 4096 Aug 10 15:04 public
--rw-r--r--  1 kimoto kimoto  227 Aug 10 15:01 README
--rw-r--r--  1 kimoto kimoto  219 Aug 10 15:01 serve.pl
-drwxrwxr-x  5 kimoto kimoto 4096 Aug 10 15:01 templates
+drwxrwxr-x 6 kimoto kimoto 4096 Aug 14 17:51.
+drwxrwxr-x 40 kimoto kimoto 4096 Nov 9 10:08 ..
+-rw-r--r-- 1 kimoto kimoto 1116 Aug 15 08:28 convert_markdown.pl
+-rw-r--r-- 1 kimoto kimoto 162 Sep 11 08:42 giblog.conf
+drwxrwxr-x 8 kimoto kimoto 4096 Oct 12 19:52 .git
+-rw-r--r-- 1 kimoto kimoto 8 Aug 10 15:01 .gitignore
+drwxrwxr-x 3 kimoto kimoto 4096 Aug 10 15:01 lib
+drwxrwxr-x 7 kimoto kimoto 4096 Aug 10 15:04 public
+-rw-r--r-- 1 kimoto kimoto 227 Aug 10 15:01 README
+-rw-r--r-- 1 kimoto kimoto 219 Aug 10 15:01 serve.pl
+drwxrwxr-x 5 kimoto kimoto 4096 Aug 10 15:01 templates
 </pre>
 <p>
-  「.」が表示されていますね。
+  "." Is displayed.
 </p>
 
   </div>

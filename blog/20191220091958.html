@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>隠しファイルとは - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="隠しファイルとは、Linuxにおいて「.」で始まるファイルのことです。通常は表示しておきたくないファイルやディレクトリに利用されます。">
+<title> What is a hidden file?  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="Hidden files are files that start with "." In Linux. It is usually used for files and directories that you do not want to display.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="隠しファイルとは - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="隠しファイルとは、Linuxにおいて「.」で始まるファイルのことです。通常は表示しておきたくないファイルやディレクトリに利用されます。" />
+<meta name="twitter:title" content=" What is a hidden file?  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="Hidden files are files that start with "." In Linux. It is usually used for files and directories that you do not want to display." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20191220091958.html">隠しファイルとは</a></h2>
+    <h2><a href="/blog/20191220091958.html"> What is a hidden file? </a></H2>
 <p>
-  隠しファイルとは、Linuxにおいて「.」で始まるファイルのことです。通常は表示しておきたくないファイルやディレクトリに利用されます。
+  Hidden files are files that start with "." In Linux. It is usually used for files and directories that you do not want to display.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -85,60 +85,60 @@
 
 
 <pre>
-# 隠しファイル
+#Hidden files
 .foo
 .foo.txt
 </pre>
-<h3>隠しファイルの表示方法</h3>
+<h3> How to display hidden files </h3>
 <p>
-  隠しファイルは<a href="/blog/20191126082723.html">lsコマンド</a>の「-a」オプションを使用すると表示することができます。「-a」は、allを意味しています。
+  Hidden files can be displayed using the "-a" option of the <a href="/blog/20191126082723.html"> ls command</a>. "-A" means all.
 </p>
 <pre>
 ls -a
 </pre>
 <p>
-  出力結果のサンプルです。
+  This is a sample output result.
 </p>
 <pre>
-[kimoto@www7402u ~]$ ls -a
-.              .cpan            kimopro.zip  .mysql_history  .sqlite_history
-..             .cpanm           labo         .netrc          .ssh
-.bash_history  .gconf           labo.tar.gz  oradiag_kimoto  test
-.bash_logout   .gconfd          .lesshst     perl5           tmp
-.bash_profile  .gitconfig       .lftp        .perlbrew       .vimrc
-.bashrc        .gnome2          lib          .perldl_hist    .w3m
-book           .gnome2_private  local        plan_delete     .xslate_cache
-.config        .gnupg           mbox         public_html
+[kimoto @ www7402u ~] $ ls -a
+..cpan kimopro.zip .mysql_history .sqlite_history
+.. .cpanm labo .netrc .ssh
+.bash_history .gconf labo.tar.gz oradiag_kimoto test
+.bash_logout .gconfd .lesshst perl5 tmp
+.bash_profile .gitconfig .lftp .perlbrew .vimrc
+.bashrc .gnome2 lib .perldl_hist .w3m
+book .gnome2_private local plan_delete .xslate_cache
+.config .gnupg mbox public_html
 </pre>
-<h3>隠しファイルの例</h3>
+<h3> Hidden file example </h3>
 <p>
-  Linuxでよく見かける隠しファイルの例です。
+  Here are some examples of hidden files that you often see on Linux.
 </p>
-<h4>bashの設定ファイル</h4>
+<h4> bash configuration file </h4>
 <p>
-  bashの設定ファイルは、隠しファイルです。
+  The bash configuration file is a hidden file.
 </p>
 <pre>
 .bash_profile
-.bashrc 
+.bashrc
 </pre>
-<h4>sshのディレクトリ</h4>
+<h4> ssh directory </h4>
 <p>
-  sshの設定ファイルなどが格納されているディレクトリは、隠しファイルです。
+  The directory where ssh configuration files etc. are stored is a hidden file.
 </p>
 <pre>
 .ssh
 </pre>
-<h4>vimの設定ファイル</h4>
+<h4> vim config file </h4>
 <p>
-  vimの設定ファイルは、隠しファイルです。
+  The vim configuration file is a hidden file.
 </p>
 <pre>
 .vimrc
 </pre>
-<h4>gitの情報ディレクトリ</h4>
+<h4> git information directory </h4>
 <p>
-  gitの情報が格納されているディレクトリは、隠しファイルです。
+  The directory where git information is stored is a hidden file.
 </p>
 <pre>
 .git

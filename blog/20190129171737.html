@@ -68,24 +68,24 @@
   <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
     <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop = "name"> Linux </ span>
-      </a>
+        <span itemprop = "name"> Linux </span>
+     </a>
       <meta itemprop = "position" content = "1" />
-    </ li>
+    </li>
     <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200211081227.html">
-        <span itemprop = "name"> Linux command </ span>
-      </a>
+        <span itemprop = "name"> Linux command </span>
+     </a>
       <meta itemprop = "position" content = "2" />
-    </ li>
+    </li>
     <li>
       here
-    </ li>
-  </ ul>
-</ div>
-<h2><a href="/blog/20190129171737.html"> tar command-file archiving and decompression </a></ h2>
+    </li>
+  </ul>
+</div>
+<h2><a href="/blog/20190129171737.html"> tar command-file archiving and decompression </a></h2>
 <p>
-  You can use the <strong> tar </ strong> command to combine a directory and the files below it into a single file. Even if you copy the combined files, the information such as the internal update date and time is maintained.
+  You can use the <strong> tar </strong> command to combine a directory and the files below it into a single file. Even if you copy the combined files, the information such as the internal update date and time is maintained.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -103,59 +103,59 @@
 </div>
 
 
-<h3> Archive to tar file </ h3>
+<h3> Archive to tar file </h3>
 <p>
   To archive the contents under the directory into a tar file, use the "cf" option of the tar command. (Suppose there is a directory called project in the current directory.)
 </p>
 <pre>
 tar cf project.tar project
-&lt;/ pre&gt;
-
-C means to create an archive. f means a file, and is specified when a file or directory is the target. The first argument is the file name after archiving. It should look like project.tar. The second argument is the target directory. Archives are sometimes called library stacks in Japanese.
-
-&lt;h3&gt; Extract the tar file &lt;/ h3&gt;
-
-Use the xf option to extract the archived one. x means extract, which means extract.
-
-&lt;pre&gt;
+</pre>
+<p>
+  C means to create an archive. f means a file, and is specified when a file or directory is the target. The first argument is the file name after archiving. It should look like project.tar. The second argument is the target directory. Archives are sometimes called library stacks in Japanese.
+</p>
+<h3> Extract the tar file </h3>
+<p>
+  Use the xf option to extract the archived one. x means extract, which means extract.
+</p>
+<pre>
 tar xf project.tar
-&lt;/ pre&gt;
-
-&lt;h3&gt; Difference between archiving and compression &lt;/ h3&gt;
-
-tar is a command for archiving, and compression / decompression commands (&lt;a href="/blog/20200608103245.html"&gt; gzip &lt;/a&gt;, &lt;a href="/blog/20200607103245.html"&gt; gunzip &lt; / a&gt; etc.) is different. Archiving is the combination of multiple files into a single file. Compression is the reduction of the number of bytes in a file using a compression algorithm.
-
-&lt;h3&gt; "z" option to compress / decompress gzip at the same time &lt;/ h3&gt;
-
-Generally, the file is "tar.gz" and is often hardened. This is a file that has been compressed using gzip after archiving the file with tar.
-
-&lt;pre&gt;
+</pre>
+<h3> Difference between archiving and compression </h3>
+<p>
+  tar is a command for archiving, and compression / decompression commands (<a href="/blog/20200608103245.html"> gzip</a>, <a href="/blog/20200607103245.html"> gunzip < / a> etc.) is different. Archiving is the combination of multiple files into a single file. Compression is the reduction of the number of bytes in a file using a compression algorithm.
+</p>
+<h3> "z" option to compress / decompress gzip at the same time </h3>
+<p>
+  Generally, the file is "tar.gz" and is often hardened. This is a file that has been compressed using gzip after archiving the file with tar.
+</p>
+<pre>
 foo.tar.gz
-&lt;/ pre&gt;
-
-You can unzip and unpack this all at once by adding the "z" option.
-
-&lt;pre&gt;
+</pre>
+<p>
+  You can unzip and unpack this all at once by adding the "z" option.
+</p>
+<pre>
 tar xfz project.tar.gz
-&lt;/ pre&gt;
-
-You can also archive and compress at the same time by adding the z option.
-
-&lt;pre&gt;
+</pre>
+<p>
+  You can also archive and compress at the same time by adding the z option.
+</p>
+<pre>
 tar cfz project.tar.gz project
-&lt;/ pre&gt;
-
-Keep in mind that the "xfz" and "cfz" options are very common.
-
-&lt;h3&gt; "v" option to display the processing contents of archiving and decompression &lt;/ h3&gt;
-
-When used together with the "v" option, the processing contents of archiving and decompression are output.
-
-&lt;pre&gt;
+</pre>
+<p>
+  Keep in mind that the "xfz" and "cfz" options are very common.
+</p>
+<h3> "v" option to display the processing contents of archiving and decompression </h3>
+<p>
+  When used together with the "v" option, the processing contents of archiving and decompression are output.
+</p>
+<pre>
 tar xfzv project.tar.gz
-&lt;/ pre&gt;
-
-It is easy to understand because you can see what kind of processing was done.
+</pre>
+<p>
+  It is easy to understand because you can see what kind of processing was done.
+</p>
 
   </div>
   <div class="bottom">

@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>sshコマンド - SSHサーバーへ接続する - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="sshコマンドを使うと、SSHプロトココルを使って、SSHサーバーに接続して、コマンドを実行することができます。">
+<title> ssh command --connect to SSH server  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="You can use the ssh command to connect to an SSH server and execute commands using the SSH protocol.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="sshコマンド - SSHサーバーへ接続する - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="sshコマンドを使うと、SSHプロトココルを使って、SSHサーバーに接続して、コマンドを実行することができます。" />
+<meta name="twitter:title" content=" ssh command --connect to SSH server  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="You can use the ssh command to connect to an SSH server and execute commands using the SSH protocol." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,28 +64,28 @@
 
   </div>
   <div class="middle">
-    <div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Linux</span>
-      </a>
-      <meta itemprop="position" content="1" />
+        <span itemprop = "name"> Linux </span>
+     </a>
+      <meta itemprop = "position" content = "1" />
     </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200211081227.html">
-        <span itemprop="name">Linuxコマンド</span>
-      </a>
-      <meta itemprop="position" content="2" />
+        <span itemprop = "name"> Linux command </span>
+     </a>
+      <meta itemprop = "position" content = "2" />
     </li>
     <li>
       here
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20200621103220.html">sshコマンド - SSHサーバーへ接続する</a></h2>
+<h2><a href="/blog/20200621103220.html"> ssh command --connect to SSH server </a></h2>
 <p>
-  sshコマンドを使うと、SSHプロトココルを使って、SSHサーバーに接続して、コマンドを実行することができます。
+  You can use the ssh command to connect to an SSH server and execute commands using the SSH protocol.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -104,60 +104,60 @@
 
 
 <pre>
-ssh 接続先
+ssh connection destination
 </pre>
 <p>
-  接続先は、以下のように記述します。ユーザー名を省略した場合は、ローカルユーザーと同じユーザー名になります。
+  Describe the connection destination as follows. If you omit the user name, it will be the same as the local user.
 </p>
 <pre>
-ユーザー名@ホスト名
+Username @hostname
 </pre>
 <p>
-  sshで接続するサンプルです。
+  This is a sample to connect with ssh.
 </p>
 <pre>
 ssh kimoto@59.105.185.193
 </pre>
-<h4>ポート番号を指定する</h4>
+<h4> Specify the port number </h4>
 <p>
-  sshコマンドで、接続先のポート番号を指定する場合は「-p」オプションを使用します。
+  Use the "-p" option to specify the port number to connect to with the ssh command.
 </p>
 <pre>
 ssh -p 55555 kimoto@59.105.185.193
 </pre>
-<h4>sshコマンドが使うデフォルトの秘密鍵</h4>
+<h4> Default private key used by ssh command </h4>
 <p>
-  sshコマンドが使うデフォルトの秘密鍵は以下です。
+  The default private key used by the ssh command is:
 </p>
 <pre>
-~/.ssh/id_rsa
+~ / .ssh / id_rsa
 </pre>
-<h4>秘密鍵ファイルを指定する</h4>
+<h4> Specify the private key file </h4>
 <p>
-  秘密鍵を「-i」オプションで秘密鍵ファイルを指定することができます。相対パスの場合は「~/.ssh」からのパスになります。
+  You can specify the private key file with the "-i" option for the private key. In the case of a relative path, it will be the path from "~ / .ssh".
 </p>
 <pre>
 ssh -i id_rsa_example kimoto@59.105.185.193
 ssh -i /path/id_rsa_example kimoto@59.105.185.193
 </pre>
-<h4>特定のドメインへのSSH接続する場合に秘密鍵ファイルを指定してを使う設定</h4>
+<h4> Setting to use by specifying the private key file when SSH connection to a specific domain </h4>
 <p>
-  特定のドメインへのSSH接続する場合に秘密鍵ファイルを指定してを使う設定を設定ファイル「~/.ssh/config」で行うことができます。
+  You can use the configuration file "~ / .ssh / config" to specify the private key file for SSH connection to a specific domain.
 </p>
 <p>
-  GithubにSSH接続する場合に作成した秘密鍵を使う設定のサンプルです。「~/.ssh/config」に追記します。
+  This is a sample setting to use the private key created when connecting to Github via SSH. Add to "~ / .ssh / config".
 </p>
 <pre>
 Host github github.com
   HostName github.com
-  IdentityFile ~/.ssh/id_rsa_github
+  IdentityFile ~ / .ssh / id_rsa_github
   User git
 </pre>
 <p>
-  パーミッションも600にしておきましょう。
+  Let's also set the permission to 600.
 </p>
 <pre>
-chmod 600 ~/.ssh/config
+chmod 600 ~ / .ssh / config
 </pre>
 
   </div>

@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>lsコマンド - ファイル一覧の表示 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="lsコマンドはファイル一覧を表示するためのLinuxコマンドです。">
+<title> ls command-display file list  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="The ls command is a Linux command for displaying a list of files.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="lsコマンド - ファイル一覧の表示 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="lsコマンドはファイル一覧を表示するためのLinuxコマンドです。" />
+<meta name="twitter:title" content=" ls command-display file list  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="The ls command is a Linux command for displaying a list of files." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,28 +64,28 @@
 
   </div>
   <div class="middle">
-    <div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Linux</span>
-      </a>
-      <meta itemprop="position" content="1" />
+        <span itemprop = "name"> Linux </span>
+     </a>
+      <meta itemprop = "position" content = "1" />
     </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200211081227.html">
-        <span itemprop="name">Linuxコマンド</span>
-      </a>
-      <meta itemprop="position" content="2" />
+        <span itemprop = "name"> Linux command </span>
+     </a>
+      <meta itemprop = "position" content = "2" />
     </li>
     <li>
       here
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20191126082723.html">lsコマンド - ファイル一覧の表示</a></h2>
+<h2><a href="/blog/20191126082723.html"> ls command-display file list </a></h2>
 <p>
-  lsコマンドはファイル一覧を表示するためのLinuxコマンドです。
+  The ls command is a Linux command for displaying a list of files.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -107,42 +107,42 @@
 ls
 </pre>
 <p>
-  lsを実行したときの出力のサンプルです。ファイルとディレクトリの一覧が表示されます。
+  This is a sample output when ls is executed. A list of files and directories is displayed.
 </p>
 <pre>
-convert_markdown.pl  giblog.conf  lib  public  README  serve.pl  templates
+convert_markdown.pl giblog.conf lib public README serve.pl templates
 </pre>
-<h3>ファイルの詳細を表示 「-l」オプション</h3>
+<h3> Show file details "-l" option </h3>
 <p>
-  「-l」オプションを使用すると、ファイル一覧を詳細表示できます。
+  You can use the "-l" option to view the file list in detail.
 </p>
 <pre>
 ls -l
 </pre>
 <p>
-  「ls -l」を実行したときのファイル一覧の詳細表示です。
+  It is a detailed display of the file list when "ls -l" is executed.
 </p>
 <pre>
 -rw-r--r-- 1 kimoto kimoto 1116 Aug 15 08:28 convert_markdown.pl
--rw-r--r-- 1 kimoto kimoto  162 Sep 11 08:42 giblog.conf
+-rw-r--r-- 1 kimoto kimoto 162 Sep 11 08:42 giblog.conf
 drwxrwxr-x 3 kimoto kimoto 4096 Aug 10 15:01 lib
 drwxrwxr-x 7 kimoto kimoto 4096 Aug 10 15:04 public
--rw-r--r-- 1 kimoto kimoto  227 Aug 10 15:01 README
--rw-r--r-- 1 kimoto kimoto  219 Aug 10 15:01 serve.pl
+-rw-r--r-- 1 kimoto kimoto 227 Aug 10 15:01 README
+-rw-r--r-- 1 kimoto kimoto 219 Aug 10 15:01 serve.pl
 drwxrwxr-x 5 kimoto kimoto 4096 Aug 10 15:01 templates
 </pre>
 <p>
-  左側には、ファイルのパーミッションが表示されます。次に、ユーザー名、グループ名、ファイルサイズ、更新日付、ファイル名と続きます。
+  On the left, you'll see the file permissions. Then the username, group name, file size, modification date, file name, and so on.
 </p>
-<h3>ファイルサイズを単位をつけて表示する 「-h」オプション</h3>
+<h3> "-h" option to display the file size in units </h3>
 <p>
-  「-l」オプションと同時に「-h」オプションを使用すると、ファイルサイズに単位をつけることができます。大きなファイルサイズのときに確認するのに便利です。
+  You can use the "-h" option at the same time as the "-l" option to add a unit to the file size. This is useful for checking when the file size is large.
 </p>
 <pre>
 ls -l -h
 </pre>
 <p>
-  または
+  or
 </p>
 </pre>
 <p>
@@ -150,165 +150,164 @@ ls -l -h
 </p>
 </pre>
 <p>
-  オプションは、複数一度に指定することもできます。
+  You can also specify multiple options at once.
 </p>
 <p>
-  ファイルサイズに単位をつけた場合の、出力結果です。
+  This is the output result when the unit is added to the file size.
 </p>
 <pre>
 -rw-r--r-- 1 kimoto kimoto 1.1K Aug 15 08:28 convert_markdown.pl
--rw-r--r-- 1 kimoto kimoto  162 Sep 11 08:42 giblog.conf
+-rw-r--r-- 1 kimoto kimoto 162 Sep 11 08:42 giblog.conf
 drwxrwxr-x 3 kimoto kimoto 4.0K Aug 10 15:01 lib
 drwxrwxr-x 7 kimoto kimoto 4.0K Aug 10 15:04 public
--rw-r--r-- 1 kimoto kimoto  227 Aug 10 15:01 README
--rw-r--r-- 1 kimoto kimoto  219 Aug 10 15:01 serve.pl
+-rw-r--r-- 1 kimoto kimoto 227 Aug 10 15:01 README
+-rw-r--r-- 1 kimoto kimoto 219 Aug 10 15:01 serve.pl
 drwxrwxr-x 5 kimoto kimoto 4.0K Aug 10 15:01 templates
 </pre>
-<h3>隠しファイルを表示 「-a」オプション</h3>
+<h3> Show hidden files "-a" option </h3>
 <p>
-  「-a」オプションを使用すると、「.」で始まる<a href="/blog/20191220091958.html">隠しファイル</a>を表示することができます。
+  You can use the "-a" option to display <a href="/blog/20191220091958.html"> hidden files</a> that start with ".".
 </p>
 <pre>
 ls -a
 </pre>
 <p>
-  出力結果のサンプルです。
+  This is a sample output result.
 </p>
 <pre>
-.  ..  convert_markdown.pl  giblog.conf  .git  .gitignore  lib  public  README  serve.pl  templates
+.. .convert_markdown.pl giblog.conf .git .gitignore lib public README serve.pl templates
 </pre>
 <p>
-  「-l」オプションと一緒に使うこともできます。
+  It can also be used with the "-l" option.
 </p>
 <pre>
 ls -la
 </pre>
 <p>
-  出力結果のサンプルです。
+  This is a sample output result.
 </p>
 <pre>
-drwxrwxr-x  6 kimoto kimoto 4096 Aug 14 17:51 .
-drwxrwxr-x 40 kimoto kimoto 4096 Nov  9 10:08 ..
--rw-r--r--  1 kimoto kimoto 1116 Aug 15 08:28 convert_markdown.pl
--rw-r--r--  1 kimoto kimoto  162 Sep 11 08:42 giblog.conf
-drwxrwxr-x  8 kimoto kimoto 4096 Oct 12 19:52 .git
--rw-r--r--  1 kimoto kimoto    8 Aug 10 15:01 .gitignore
-drwxrwxr-x  3 kimoto kimoto 4096 Aug 10 15:01 lib
-drwxrwxr-x  7 kimoto kimoto 4096 Aug 10 15:04 public
--rw-r--r--  1 kimoto kimoto  227 Aug 10 15:01 README
--rw-r--r--  1 kimoto kimoto  219 Aug 10 15:01 serve.pl
-drwxrwxr-x  5 kimoto kimoto 4096 Aug 10 15:01 templates
+drwxrwxr-x 6 kimoto kimoto 4096 Aug 14 17:51.
+drwxrwxr-x 40 kimoto kimoto 4096 Nov 9 10:08 ..
+-rw-r--r-- 1 kimoto kimoto 1116 Aug 15 08:28 convert_markdown.pl
+-rw-r--r-- 1 kimoto kimoto 162 Sep 11 08:42 giblog.conf
+drwxrwxr-x 8 kimoto kimoto 4096 Oct 12 19:52 .git
+-rw-r--r-- 1 kimoto kimoto 8 Aug 10 15:01 .gitignore
+drwxrwxr-x 3 kimoto kimoto 4096 Aug 10 15:01 lib
+drwxrwxr-x 7 kimoto kimoto 4096 Aug 10 15:04 public
+-rw-r--r-- 1 kimoto kimoto 227 Aug 10 15:01 README
+-rw-r--r-- 1 kimoto kimoto 219 Aug 10 15:01 serve.pl
+drwxrwxr-x 5 kimoto kimoto 4096 Aug 10 15:01 templates
 </pre>
 <p>
-  「.」は<a href="/blog/20191218072611.html">カレントディレクトリ</a>を表すファイル名です。
+  "." Is the file name that represents <a href="/blog/20191218072611.html"> current directory</a>.
 </p>
 <p>
-  「..」は、<a href="/blog/20191219082642.html">ペアレントディレクトリ</a>を表すファイル名です。
+  ".." is the file name that represents <a href="/blog/20191219082642.html"> parent directory</a>.
 </p>
-<h3>ヘルプを表示する --helpオプション</h3>
+<h3> Show help --help option </h3>
 <p>
-  ヘルプを表示するには「--help」オプションを使用します。
+  Use the "--help" option to get help.
 </p>
 <pre>
 ls --help
 </pre>
 <p>
-  ヘルプが表示されます。
+  Help is displayed.
 </p>
 <pre>
-Usage: ls [OPTION]... [FILE]...
+Usage: ls [OPTION] ... [FILE] ...
 List information about the FILEs (the current directory by default).
 Sort entries alphabetically if none of -cftuvSUX nor --sort.
 
 Mandatory arguments to long options are mandatory for short options too.
-  -a, --all                  do not ignore entries starting with .
-  -A, --almost-all           do not list implied . and ..
-      --author               with -l, print the author of each file
-  -b, --escape               print octal escapes for nongraphic characters
-      --block-size=SIZE      use SIZE-byte blocks
-  -B, --ignore-backups       do not list implied entries ending with ~
-  -c                         with -lt: sort by, and show, ctime (time of last
+  -a, --all do not ignore entries starting with.
+  -A, --almost-all do not list implied. and ..
+      --author with -l, print the author of each file
+  -b, --escape print octal escapes for nongraphic characters
+      --block-size = SIZE use SIZE-byte blocks
+  -B, --ignore-backups do not list implied entries ending with ~
+  -c with -lt: sort by, and show, ctime (time of last
                                modification of file status information)
                                with -l: show ctime and sort by name
                                otherwise: sort by ctime
-  -C                         list entries by columns
-      --color[=WHEN]         control whether color is used to distinguish file
-                               types.  WHEN may be `never', `always', or `auto'
-  -d, --directory            list directory entries instead of contents,
+  -C list entries by columns
+      --color [= WHEN] control whether color is used to distinguish file
+                               types. WHEN may be `never',` always', or `auto'
+  -d, --directory list directory entries instead of contents,
                                and do not dereference symbolic links
-  -D, --dired                generate output designed for Emacs' dired mode
-  -f                         do not sort, enable -aU, disable -lst
-  -F, --classify             append indicator (one of */=&gt;@|) to entries
-      --file-type            likewise, except do not append `*'
-      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+  -D, --dired generate output designed for Emacs' dired mode
+  -f do not sort, enable -aU, disable -lst
+  -F, --classify append indicator (one of * / =&gt; @ |) to entries
+      --file-type likewise, except do not append `*'
+      --format = WORD across -x, commas -m, horizontal -x, long -l,
                                single-column -1, verbose -l, vertical -C
-      --full-time            like -l --time-style=full-iso
-  -g                         like -l, but do not list owner
-  -G, --no-group             like -l, but do not list group
-  -h, --human-readable       with -l, print sizes in human readable format
+      --full-time like -l --time-style = full-iso
+  -g like -l, but do not list owner-G, --no-group like -l, but do not list group
+  -h, --human-readable with -l, print sizes in human readable format
                                (e.g., 1K 234M 2G)
-      --si                   likewise, but use powers of 1000 not 1024
+      --si likewise, but use powers of 1000 not 1024
   -H, --dereference-command-line
                              follow symbolic links listed on the command line
       --dereference-command-line-symlink-to-dir
                              follow each command line symbolic link
                              that points to a directory
-      --hide=PATTERN         do not list implied entries matching shell PATTERN
+      --hide = PATTERN do not list implied entries matching shell PATTERN
                                (overridden by -a or -A)
-      --indicator-style=WORD append indicator with style WORD to entry names:
+      --indicator-style = WORD append indicator with style WORD to entry names:
                                none (default), slash (-p),
                                file-type (--file-type), classify (-F)
-  -i, --inode                with -l, print the index number of each file
-  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
-  -k                         like --block-size=1K
-  -l                         use a long listing format
-  -L, --dereference          when showing file information for a symbolic
+  -i, --inode with -l, print the index number of each file
+  -I, --ignore = PATTERN do not list implied entries matching shell PATTERN
+  -k like --block-size = 1K
+  -l use a long listing format
+  -L, --dereference when showing file information for a symbolic
                                link, show information for the file the link
                                references rather than for the link itself
-  -m                         fill width with a comma separated list of entries
-  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
-  -N, --literal              print raw entry names (don't treat e.g. control
+  -m fill width with a comma separated list of entries
+  -n, --numeric-uid-gid like -l, but list numeric user and group IDs
+  -N, --literal print raw entry names (don't treat e.g. control
                                characters specially)
-  -o                         like -l, but do not list group information
-  -p, --indicator-style=slash
+  -o like -l, but do not list group information
+  -p, --indicator-style = slash
                              append / indicator to directories
-  -q, --hide-control-chars   print ? instead of non graphic characters
-      --show-control-chars   show non graphic characters as-is (default
-                             unless program is `ls' and output is a terminal)
-  -Q, --quote-name           enclose entry names in double quotes
-      --quoting-style=WORD   use quoting style WORD for entry names:
+  -q, --hide-control-chars print? instead of non graphic characters
+      --show-control-chars show non graphic characters as-is (default)
+                             unless program is `ls'and output is a terminal)
+  -Q, --quote-name enclose entry names in double quotes
+      --quoting-style = WORD use quoting style WORD for entry names:
                                literal, locale, shell, shell-always, c, escape
-  -r, --reverse              reverse order while sorting
-  -R, --recursive            list subdirectories recursively
-  -s, --size                 with -l, print size of each file, in blocks
-  -S                         sort by file size
-      --sort=WORD            extension -X, none -U, size -S, time -t,
+  -r, --reverse reverse order while sorting
+  -R, --recursive list subdirectories recursively
+  -s, --size with -l, print size of each file, in blocks
+  -S sort by file size
+      --sort = WORD extension -X, none -U, size -S, time -t,
                              version -v, status -c, time -t, atime -u,
                              access -u, use -u
-      --time=WORD            with -l, show time as WORD instead of modification
+      --time = WORD with -l, show time as WORD instead of modification
                              time: atime, access, use, ctime or status; use
-                             specified time as sort key if --sort=time
-      --time-style=STYLE     with -l, show times using style STYLE:
-                             full-iso, long-iso, iso, locale, +FORMAT.
+                             specified time as sort key if --sort = time
+      --time-style = STYLE with -l, show times using style STYLE:
+                             full-iso, long-iso, iso, locale, + FORMAT.
                              FORMAT is interpreted like `date'; if FORMAT is
-                             FORMAT1&lt;newline&gt;FORMAT2, FORMAT1 applies to
+                             FORMAT1 &lt;newline&gt; FORMAT2, FORMAT1 applies to
                              non-recent files and FORMAT2 to recent files;
                              if STYLE is prefixed with `posix-', STYLE
                              takes effect only outside the POSIX locale
-  -t                         sort by modification time
-  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
-  -u                         with -lt: sort by, and show, access time
+  -t sort by modification time
+  -T, --tabsize = COLS assume tab stops at each COLS instead of 8
+  -u with -lt: sort by, and show, access time
                                with -l: show access time and sort by name
                                otherwise: sort by access time
-  -U                         do not sort; list entries in directory order.
+  -U do not sort; list entries in directory order.
                              In combination with one_per_line format `-1',
                              it will show files immediately and it has no
                              memory limitations.
-  -v                         sort by version
-  -w, --width=COLS           assume screen width instead of current value
-  -x                         list entries by lines instead of by columns
-  -X                         sort alphabetically by entry extension
-  -1                         list one file per line
+  -v sort by version
+  -w, --width = COLS assume screen width instead of current value
+  -x list entries by lines instead of by columns
+  -X sort alphabetically by entry extension
+  -1 list one file per line
 </pre>
 
   </div>

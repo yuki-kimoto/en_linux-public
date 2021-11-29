@@ -64,7 +64,7 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20190213171737.html"> Introduction of SSH client TeraTerm </a></ h2>
+    <h2><a href="/blog/20190213171737.html"> Introduction of SSH client TeraTerm </a></h2>
 <p>
   To log in remotely using an SSH server, a client application that supports SSH is required. Client applications that support SSH include Putty, Pedorosa, and TeraTerm. Here, we will use TeraTerm.
 </p>
@@ -84,7 +84,7 @@
 </div>
 
 
-<h3> Download and install TeraTerm </ h3>
+<h3> Download and install TeraTerm </h3>
 <p>
   Download and install TeraTerm from the following site.
 </p>
@@ -95,7 +95,7 @@
   [http://www.forest.impress.co.jp/lib/inet/servernt/remote/utf8teraterm.html:title=Tera Term]
 </p>
 <<
-<h3> Creating a public / private key pair </ h3>
+<h3> Creating a public / private key pair </h3>
 <p>
   In order to log in remotely using SSH, it is necessary to create a public key / private key pair.
 </p>
@@ -106,30 +106,40 @@
 4. Click Generate to create your public and private keys
 5. Click Save puplic key to save the public key (id_dsa.pub)
 6. Click Save private key to save the private key (id_dsa)
-&lt;/ pre&gt;
-
-A passphrase is a password. To connect with SSH, create a public / private key pair. You will move the public key to the server later.
-
-&lt;h3&gt; Upload public key &lt;/ h3&gt;
-
-Upload the public key. Let's upload it to the home directory of the logged-in user once. The public key is
-&lt;pre&gt;
+</pre>
+<p>
+  A passphrase is a password. To connect with SSH, create a public / private key pair. You will move the public key to the server later.
+</p>
+<h3> Upload public key </h3>
+<p>
+  Upload the public key. Let's upload it to the home directory of the logged-in user once. The public key is
+</p>
+<pre>
 id_dsa.pub
-&lt;/ pre&gt;
-
-It is the one. Don't mistake it for your private key.
-
-&lt;h3&gt; Working on the server &lt;/ h3&gt;
-From here, return to the setting work on the server. See [/blog/20090104123071.html:title=Introducing OpenSSH] for working on the server.
-
-&lt;h3&gt; Connect with SSH from TeraTerm &lt;/ h3&gt;
-After completing the setting work on the server, SSH connection is made with TeraTerm. Start TeraTerm, enter the IP address of the server, check SSH and press OK. Also make sure that the SSH version is SSH2.
-
-A security warning may appear, but press OK.
-It was
-The SSH authentication screen will appear, so enter your user name and passphrase. Check RSA / DSA and select the private key file you saved earlier. Press OK. (If the screen freezes, restart TeraTerm.)
-
-If you cannot connect, you should see an error message in / var / log / secure.
+</pre>
+<p>
+  It is the one. Don't mistake it for your private key.
+</p>
+<h3> Working on the server </h3>
+<p>
+  From here, return to the setting work on the server. See [/blog/20090104123071.html:title=Introducing OpenSSH] for working on the server.
+</p>
+<h3> Connect with SSH from TeraTerm </h3>
+<p>
+  After completing the setting work on the server, SSH connection is made with TeraTerm. Start TeraTerm, enter the IP address of the server, check SSH and press OK. Also make sure that the SSH version is SSH2.
+</p>
+<p>
+  A security warning may appear, but press OK.
+</p>
+<p>
+  It was
+</p>
+<p>
+  The SSH authentication screen will appear, so enter your user name and passphrase. Check RSA / DSA and select the private key file you saved earlier. Press OK. (If the screen freezes, restart TeraTerm.)
+</p>
+<p>
+  If you cannot connect, you should see an error message in / var / log / secure.
+</p>
 
   </div>
   <div class="bottom">

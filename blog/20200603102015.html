@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>chownコマンド - 所有者ユーザーを変更する - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="chownコマンドを使うと、所有者ユーザーを変更することができます。">
+<title> chown command-change owner user  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="You can change the owner user using the chown command.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="chownコマンド - 所有者ユーザーを変更する - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="chownコマンドを使うと、所有者ユーザーを変更することができます。" />
+<meta name="twitter:title" content=" chown command-change owner user  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="You can change the owner user using the chown command." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,28 +64,28 @@
 
   </div>
   <div class="middle">
-    <div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Linux</span>
-      </a>
-      <meta itemprop="position" content="1" />
+        <span itemprop = "name"> Linux </span>
+     </a>
+      <meta itemprop = "position" content = "1" />
     </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200211081227.html">
-        <span itemprop="name">Linuxコマンド</span>
-      </a>
-      <meta itemprop="position" content="2" />
+        <span itemprop = "name"> Linux command </span>
+     </a>
+      <meta itemprop = "position" content = "2" />
     </li>
     <li>
       here
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20200603102015.html">chownコマンド - 所有者ユーザーを変更する</a></h2>
+<h2><a href="/blog/20200603102015.html"> chown command-change owner user </a></h2>
 <p>
-  chownコマンドを使うと、所有者ユーザーを変更することができます。
+  You can change the owner user using the chown command.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -104,36 +104,36 @@
 
 
 <pre>
-chown 所有者ユーザー ファイル名
+chown owner user file name
 </pre>
 <p>
-  chownコマンドで、所有者ユーザーを変更するサンプルです。
+  This is a sample to change the owner user with the chown command.
 </p>
 <pre>
 chown kimoto file
 </pre>
 <p>
-  所有者ユーザーについてはパーミッションの記事を参考にしてください。
+  See the permissions article for owner users.
 </p>
 <p>
-  <a href="/blog/20200526082545.html">パーミッションとは</a>
+  <a href="/blog/20200526082545.html"> What are permissions?</a>
 </p>
-<h3>所有者グループも変更する</h3>
+<h3> Change the owner group as well </h3>
 <p>
-  chownコマンドでは所有者ユーザーに加え所有者グループも変更することができます。
-</p>
-<pre>
-chown 所有者ユーザー:所有者グループ ファイル名
-</pre>
-<p>
-  所有者ユーザーに加え、所有者グループを変更するサンプルです。
+  You can change the owner group as well as the owner user with the chown command.
 </p>
 <pre>
-chown kimoto:myapp file
+chown owner user: owner group filename
 </pre>
-<h3>再帰的に所有者ユーザーを変更する</h3>
 <p>
-  再帰的に所有者ユーザーを変更するには「-R」オプションを使います。
+  This is a sample to change the owner group in addition to the owner user.
+</p>
+<pre>
+chown kimoto: myapp file
+</pre>
+<h3> Recursively change the owner user </h3>
+<p>
+  Use the "-R" option to recursively change the owner user.
 </p>
 <pre>
 chown -R kimoto dir

@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>grep - テキストの検索 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="grepコマンドを使うとテキストの検索ができます。">
+<title> grep --text search  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="You can search for text using the  grep command .">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="grep - テキストの検索 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="grepコマンドを使うとテキストの検索ができます。" />
+<meta name="twitter:title" content=" grep --text search  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="You can search for text using the  grep command ." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20200602093211.html">grep - テキストの検索</a></h2>
+    <h2><a href="/blog/20200602093211.html"> grep --text search </a></h2>
 <p>
-  <b>grepコマンド</b>を使うとテキストの検索ができます。
+  You can search for text using the <b> grep command </b>.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -85,41 +85,41 @@
 
 
 <pre>
-grep テキスト ファイル名
+grep text file name
 </pre>
 <p>
-  grepのサンプルです。
+  This is a sample of grep.
 </p>
 <pre>
 grep Foo foo.txt
 </pre>
 <p>
-  ファイル名は複数指定できます。
+  You can specify multiple file names.
 </p>
 <pre>
-grep テキスト ファイル名1 ファイル名2
+grep text file name 1 file name 2
 </pre>
-<h4>ディレクトリ再帰的に検索する</h4>
+<h4> Search directory recursively </h4>
 <p>
-  ディレクトリを再帰的に検索できる「-r」オプションがあります。サブディレクトリを含めて、全てのファイルが検索対象になります。
+  There is a "-r" option that allows you to search directories recursively. All files, including subdirectories, will be searched.
 </p>
 <pre>
-grep -r テキスト ディレクトリ名
+grep -r text directory name
 </pre>
-<h4>大文字小文字を区別しない</h4>
+<h4> Case insensitive </h4>
 <p>
-  大文字・小文字を区別しない「-i」オプションがあります。
+  There is a case-insensitive "-i" option.
 </p>
 <pre>
-# FOOもfooも引っ掛かる
-grep -i foo ファイル名
+# Both FOO and foo get caught
+grep -i foo filename
 </pre>
-<h4>Perlの正規表現を使う</h4>
+<h4> Use Perl regular expressions </h4>
 <p>
-  Linuxのgrepコマンドの実験的な機能ですが「-P」オプションで、<a href="https://perlzemi.com/blog/20100827127859.html">Perlの正規表現</a>をgrepで使えます。
+  This is an experimental feature of the Linux grep command, but with the "-P" option, you can use <a href="https://perlzemi.com/blog/20100827127859.html"> Perl regular expressions</a> with grep. increase.
 </p>
 <pre>
-grep -P '^(foo|bar)$' ファイル名
+grep -P'^ (foo | bar) $'filename
 </pre>
 
   </div>

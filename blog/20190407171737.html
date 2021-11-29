@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>SSHの概要 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="さて、Linuxの基本コマンドや基礎的な事柄を解説したので、次のステップはLinuxの上で動くアプリケーションをインストールして環境を構築する作業に移っていきます。">
+<title> SSH overview  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="Now that we have explained the basic commands and basic matters of Linux, the next step is to install the application that runs on Linux and build the environment.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="SSHの概要 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="さて、Linuxの基本コマンドや基礎的な事柄を解説したので、次のステップはLinuxの上で動くアプリケーションをインストールして環境を構築する作業に移っていきます。" />
+<meta name="twitter:title" content=" SSH overview  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="Now that we have explained the basic commands and basic matters of Linux, the next step is to install the application that runs on Linux and build the environment." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20190407171737.html">SSHの概要</a></h2>
+    <h2><a href="/blog/20190407171737.html"> SSH overview </a></h2>
 <p>
-  　さて、Linuxの基本コマンドや基礎的な事柄を解説したので、次のステップはLinuxの上で動くアプリケーションをインストールして環境を構築する作業に移っていきます。
+  Now that we have explained the basic commands and basic matters of Linux, the next step is to install the application that runs on Linux and build the environment.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -85,34 +85,34 @@
 
 
 <p>
-  　たとえば、WebサーバーであるApacheや、データベースサーバーであるMySQLなどをWeb上からインストールして、Webアプリケーションを実行できる環境を構築していくことになります。
+  For example, Apache, which is a web server, and MySQL, which is a database server, will be installed from the Web to build an environment in which Web applications can be executed.
 </p>
-<h3>SSHを使ってサーバーと通信する</h3>
+<h3> Use SSH to communicate with the server </h3>
 <p>
-  　まず最初に行うことは、SSHというプロトコルを使ってサーバーと通信することです。さくらVPSを使っているときに、今まではブラウザ上から実行できるリモートコンソールを使って作業していました。けれどもこれは、使いやすいといえるものではありません。これを使っていては作業効率がとても落ちます。
+  The first thing to do is to communicate with the server using a protocol called SSH. When using Sakura VPS, I used to work with a remote console that can be run from a browser. But this is not easy to use. If you use this, your work efficiency will be very low.
 </p>
 <p>
-  　ですので、Linux上でコマンドをもっと便利に、効率的に実行するために、SSHという通信プロトコルを使います。
+  Therefore, in order to execute commands more conveniently and efficiently on Linux, we use a communication protocol called SSH.
 </p>
 <pre>
-SSHサーバー
+SSH server
     |
-SSHクライアント
+SSH client
 </pre>
 <p>
-  　SSHによる通信では、通信経路上で、データが暗号化されます。データはインターネット上を通りますが、他の第三者に見られることなく、クライアントとサーバー間でデータをやり取りすることができます。また秘密鍵と公開鍵を使った通信を行うことで、通信ができるコンピュータを制限することができます。つまり、鍵を保有しているパソコンのみから作業を許可するということができるようになります。
+  In SSH communication, data is encrypted on the communication path. Data travels over the Internet, but data can be exchanged between the client and server without being seen by other third parties. You can also limit the computers that can communicate by communicating using the private key and public key. In other words, you will be able to allow work only from the computer that holds the key.
 </p>
 <p>
-  　今回の連載では、Windows上でSSHクライアントとして利用できるTeratermというアプリケーションを使ってみたいと思います。他のOSでも便利なSSHクライアントがあると思うので、探して使ってみてください。
+  In this series, I would like to use an application called Teraterm that can be used as an SSH client on Windows. I think there is an SSH client that is useful for other OSs, so please look for it and use it.
 </p>
 <p>
-  　SSHサーバーとしてはOpenSSHというLinux上で実行できるアプリケーションを利用します。
+  As an SSH server, we will use an application called OpenSSH that can be executed on Linux.
 </p>
 <p>
-  　今後は環境構築を行うために、コマンドを実行する場合は、SSHクライアントを起動して作業することになります。ブラウザを開いて、リモートコンソールを開く必要がないので、とても作業が楽になります。
+  In the future, when executing commands to build the environment, you will have to start the SSH client and work. It's a lot easier because you don't have to open a browser and open a remote console.
 </p>
 <p>
-  　実際のアプリケーションのインストールについては、次回にしたいと思います。
+  I would like to install the actual application next time.
 </p>
 
   </div>

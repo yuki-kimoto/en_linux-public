@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>rmコマンド - ファイルの削除 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="rmコマンドを使用するとファイルを削除することができます。rmはremoveに由来しています。">
+<title> rm command-delete file  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="You can delete the file using the rm command. rm comes from remove.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="rmコマンド - ファイルの削除 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="rmコマンドを使用するとファイルを削除することができます。rmはremoveに由来しています。" />
+<meta name="twitter:title" content=" rm command-delete file  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="You can delete the file using the rm command. rm comes from remove." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,28 +64,28 @@
 
   </div>
   <div class="middle">
-    <div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Linux</span>
-      </a>
-      <meta itemprop="position" content="1" />
+        <span itemprop = "name"> Linux </span>
+     </a>
+      <meta itemprop = "position" content = "1" />
     </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200211081227.html">
-        <span itemprop="name">Linuxコマンド</span>
-      </a>
-      <meta itemprop="position" content="2" />
+        <span itemprop = "name"> Linux command </span>
+     </a>
+      <meta itemprop = "position" content = "2" />
     </li>
     <li>
       here
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20191210081417.html">rmコマンド - ファイルの削除</a></h2>
+<h2><a href="/blog/20191210081417.html"> rm command-delete file </a></h2>
 <p>
-  rmコマンドを使用するとファイルを削除することができます。rmはremoveに由来しています。
+  You can delete the file using the rm command. rm comes from remove.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -104,59 +104,59 @@
 
 
 <pre>
-rm ファイル名
+rm file name
 </pre>
 <p>
-  rmコマンドを使ってfoo.txtというファイルを削除してみます。
+  Try deleting the file foo.txt using the rm command.
 </p>
 <pre>
 rm foo.txt
 </pre>
-<h3>ディレクトリとその中身をすべて削除する - rmコマンドの「-r」オプション</h3>
+<h3> Delete directory and all its contents --- "-r" option of rm command </h3>
 <p>
-  ディレクトリとその中身をすべて削除するには、rmコマンドの「-r」オプションを使用します。「-r」はrecursive(再帰的)に由来しています。
+  To remove the directory and all its contents, use the "-r" option of the rm command. "-R" comes from recursive.
 </p>
 <pre>
-rm -r ディレクトリ名
+rm -r directory name
 </pre>
 <p>
-  このコマンドは、ディレクトリとその中にあるファイルをすべて削除しますので気をつけて使いましょう。
+  This command will delete the directory and all the files in it, so be careful.
 </p>
-<h3>強制的にファイルを削除する - rmコマンドの「-f」オプション</h3>
+<h3> Forcibly delete files --- "-f" option of rm command </h3>
 <p>
-  rmコマンドでファイルを削除しようとした場合は、ファイルを削除するか確認を求められる場合があります。
+  If you try to delete a file with the rm command, you may be asked if you want to delete the file.
 </p>
 <p>
-  そのような場合でも、確認をしないで消したい場合は、rmコマンドの「-f」オプションを使用します。「-f」はforce(強制的)に由来しています。
+  Even in such a case, if you want to delete it without confirmation, use the "-f" option of the rm command. "-F" comes from force.
 </p>
 <pre>
-rm -rf ディレクトリ名
+rm -rf directory name
 </pre>
 <p>
-  このコマンドは、ディレクトリとその中にあるファイルをすべて確認なしに、削除しますので気をつけて使いましょう。
+  Be careful when using this command as it will delete the directory and all the files in it without confirmation.
 </p>
-<h3>ヘルプを表示する --helpオプション</h3>
+<h3> Show help --help option </h3>
 <p>
-  ヘルプを表示するには「--help」オプションを使用します。
+  Use the "--help" option to get help.
 </p>
 <pre>
 rm --help
 </pre>
 <p>
-  ヘルプが表示されます。
+  Help is displayed.
 </p>
 <pre>
-Usage: rm [OPTION]... FILE...
-Remove (unlink) the FILE(s).
+Usage: rm [OPTION] ... FILE ...
+Remove (unlink) the FILE (s).
 
-  -f, --force           ignore nonexistent files, never prompt
-  -i, --interactive     prompt before any removal
-      --no-preserve-root do not treat `/' specially (the default)
-      --preserve-root   fail to operate recursively on `/'
-  -r, -R, --recursive   remove directories and their contents recursively
-  -v, --verbose         explain what is being done
-      --help     display this help and exit
-      --version  output version information and exit
+  -f, --force ignore nonexistent files, never prompt
+  -i, --interactive prompt before any removal
+      --no-preserve-root do not treat `/'specially (the default)
+      --preserve-root fail to operate recursively on `/'
+  -r, -R, --recursive remove directories and their contents recursively
+  -v, --verbose explain what is being done
+      --help display this help and exit
+      --version output version information and exit
 </pre>
 
   </div>

@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>ファイルとは - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="Linuxにおけるファイルとは何でしょうか?">
+<title> What is a file?  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="What are files in Linux?">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="ファイルとは - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="Linuxにおけるファイルとは何でしょうか?" />
+<meta name="twitter:title" content=" What is a file?  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="What are files in Linux?" />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20191223081048.html">ファイルとは</a></h2>
+    <h2><a href="/blog/20191223081048.html"> What is a file? </a></H2>
 <p>
-  Linuxにおけるファイルとは何でしょうか?
+  What are files in Linux?
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -84,89 +84,89 @@
 </div>
 
 
-<h3>ファイルはデータを保存しておく場所</h3>
+<h3> File is the place to save data </​​h3>
 <p>
-  ファイルには、テキストデータやバイナリデータなどのデータを保存しておくことができます。
+  Data such as text data and binary data can be saved in the file.
 </p>
 <pre>
-# テキストデータ
+#Text data
 example.txt
 http.conf
 
-# 画像や音声や動画などのバイナリデータ
+#Binary data such as images, sounds and videos
 image.png
 image.jpg
 music.mp3
 movie.mpg
 </pre>
 <p>
-  ファイルは、ハードディスクと呼ばれる保存領域に、データを保存しておくための優れた仕組みです。
+  Files are a great way to store data in a storage area called your hard disk.
 </p>
 <p>
-  ユーザーは、ハードディスクのことを考えなくとも、ファイルを意識するだけで、データをハードディスクに保存することができます。
+  Users can save data to the hard disk simply by being aware of the file, without having to think about the hard disk.
 </p>
 <p>
-  これは、Linuxだけではなく、Windowsのファイルにおいても同じです。
+  This is true not only for Linux, but also for Windows files.
 </p>
-<h3>パスとは</h3>
+<h3> What is a path? </H3>
 <p>
-  Linuxにおけるファイル名は、パスを使って表現されます。パスは、ファイルがある場所を示します。パスには、絶対パスと相対パスがあります。
+  Filenames on Linux are represented using paths. The path indicates where the file is located. Paths include absolute paths and relative paths.
 </p>
-<h4>絶対パス</h4>
+<h4> Absolute path </h4>
 <p>
-  先頭が「/」で始まっているパスを<a href="/blog/20191216082522.html">絶対パス</a>と呼ます。絶対パスは、Linuxのルートディレクトリ「/」から見た、ファイルの場所を一意的に表現します。
+  Paths that start with "/" are called <a href="/blog/20191216082522.html"> absolute paths</a>. The absolute path uniquely represents the location of the file as seen from the Linux root directory "/".
 </p>
 <pre>
-# 絶対パス
+# Absolute path
 /home/kimoto/foo.txt
 /var/log/httpd.log
 /usr/local/myapp/myapp.conf
 </pre>
 <p>
-  Linuxにおけるパスの区切り文字は、スラッシュ「/」です。Windowsにおけては、バックスラッシュ(円マーク)「\」です。この点がWindowsとは異なるということに注意してください。
+  The path delimiter on Linux is the slash "/". In Windows, it is a backslash (yen mark) "\". Please note that this is different from Windows.
 </p>
-<h4>相対パス</h4>
+<h4> Relative path </h4>
 <p>
-  先頭が「/」で始まっていないパスを<a href="/blog/20191216082522.html">相対パス</a>と呼ます。相対パスは、<a href="/blog/20191218072611.html">カレントディレクトリ</a>から見た、相対的なファイルの場所を表現します。
+  Paths that do not start with "/" are called <a href="/blog/20191216082522.html"> relative paths</a>. Relative paths represent the relative file locations as seen from the <a href="/blog/20191218072611.html"> current directory</a>.
 </p>
 <pre>
-# 相対パス
+#Relative path
 foo.txt
-labo/bar.txt
+labo / bar.txt
 </pre>
 <p>
-  カレントディレクトリが
+  The current directory is
 </p>
 <pre>
-/home/kimoto
+/ home / kimoto
 </pre>
 <p>
-  の場合は
+  In the case of
 </p>
 <pre>
 foo.txt
 </pre>
 <p>
-  は
+  teeth
 </p>
 <pre>
 /home/kimoto/foo.txt
 </pre>
 <p>
-  を表現します。
+  Represents.
 </p>
-<h3>ディレクトリもファイルの一種</h3>
+<h3> Directories are also a type of file </h3>
 <p>
-  Linuxでは、ディレクトリも特別なファイルの一つとして扱われることに注意しましょう。ディレクトリとは、ファイルを階層的に表現する方法で、Windowsにおけるフォルダに該当します。
-</p>
-<p>
-  Linuxでファイルといった場合は、文脈によって、ディレクトリも含んだファイルか、テキストデータやバイナリデータを含んだ通常のファイルの両方を指すことがあるので注意しましょう。
+  Note that on Linux, directories are also treated as one of the special files. A directory is a hierarchical representation of files and corresponds to a folder in Windows.
 </p>
 <p>
-  たとえば「ファイル一覧」が見れますといった場合は、文脈によっては「ディレクトリなどの特別なファイルも含んだファイル一覧」という意味になります。
+  Note that when we say a file on Linux, we may refer to both a file that also contains a directory or a regular file that contains text or binary data, depending on the context.
 </p>
 <p>
-  ディレクトリの中には、その階層の一つ下に存在するファイル名が、記述されています。
+  For example, if you can see the "file list", it means "file list including special files such as directories" depending on the context.
+</p>
+<p>
+  In the directory, the file name that exists one level below that level is described.
 </p>
 <pre>
 foo.txt
@@ -174,10 +174,10 @@ test
 bar.png
 </pre>
 <p>
-  これは<a href="/blog/20191126082723.html">lsコマンド</a>を使って確認することができます。
+  This can be checked using the <a href="/blog/20191126082723.html"> ls command</a>.
 </p>
 <pre>
-ls /home/kimoto
+ls / home / kimoto
 </pre>
 
   </div>

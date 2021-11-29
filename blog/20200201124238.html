@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>diffコマンド - ファイルの差分を確認する - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="diffコマンドを使用すると、ファイルの差分を確認できます。">
+<title> diff command-check file diffs  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="You can use the diff command to see the differences in the files.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="diffコマンド - ファイルの差分を確認する - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="diffコマンドを使用すると、ファイルの差分を確認できます。" />
+<meta name="twitter:title" content=" diff command-check file diffs  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="You can use the diff command to see the differences in the files." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,28 +64,28 @@
 
   </div>
   <div class="middle">
-    <div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Linux</span>
-      </a>
-      <meta itemprop="position" content="1" />
+        <span itemprop = "name"> Linux </span>
+     </a>
+      <meta itemprop = "position" content = "1" />
     </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200211081227.html">
-        <span itemprop="name">Linuxコマンド</span>
-      </a>
-      <meta itemprop="position" content="2" />
+        <span itemprop = "name"> Linux command </span>
+     </a>
+      <meta itemprop = "position" content = "2" />
     </li>
     <li>
       here
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20200201124238.html">diffコマンド - ファイルの差分を確認する</a></h2>
+<h2><a href="/blog/20200201124238.html"> diff command-check file diffs </a></h2>
 <p>
-  diffコマンドを使用すると、ファイルの差分を確認できます。
+  You can use the diff command to see the differences in the files.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -104,21 +104,21 @@
 
 
 <pre>
-git diff ファイル1 ファイル2
+git diff file 1 file 2
 </pre>
 <p>
-  diffの出力結果のサンプルです。
+  This is a sample of the output result of diff.
 </p>
 <pre>
   ServerName system.online-fudousan.jp
 
--  &lt;Directory /var/www&gt;
--    Options +ExecCGI
--  &lt;/Directory&gt;
--
+-&lt;Directory / var / www&gt;
+--Options + ExecCGI
+--&lt;/Directory&gt;
+――――
    RewriteEngine On
-   RewriteCond %{HTTP_HOST} !^\Qsystem.online-fudousan.jp\E
-   RewriteRule (.+) https://system.online-fudousan.jp$1 [R=301,L]
+   RewriteCond% {HTTP_HOST}! ^ \ Qsystem.online-fudousan.jp \ E
+   RewriteRule (. +) Https://system.online-fudousan.jp $ 1 [R = 301, L]
 </pre>
 
   </div>

@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>digコマンド - ドメインd名からIPアドレスを調べる。DNSサーバー情報問合わせ。 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="digコマンドを使うと、DNSサーバー情報問合わせを行うことができます。最もよく使うのは、ドメイン名からIPアドレスの情報を取得したい場合です。">
+<title> dig command-find the IP address from the domain d name. DNS server information inquiry.  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="You can use the dig command to query DNS server information. Most often, you want to get IP address information from a domain name.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="digコマンド - ドメインd名からIPアドレスを調べる。DNSサーバー情報問合わせ。 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="digコマンドを使うと、DNSサーバー情報問合わせを行うことができます。最もよく使うのは、ドメイン名からIPアドレスの情報を取得したい場合です。" />
+<meta name="twitter:title" content=" dig command-find the IP address from the domain d name. DNS server information inquiry.  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="You can use the dig command to query DNS server information. Most often, you want to get IP address information from a domain name." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,28 +64,28 @@
 
   </div>
   <div class="middle">
-    <div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Linux</span>
-      </a>
-      <meta itemprop="position" content="1" />
+        <span itemprop = "name"> Linux </span>
+     </a>
+      <meta itemprop = "position" content = "1" />
     </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200211081227.html">
-        <span itemprop="name">Linuxコマンド</span>
-      </a>
-      <meta itemprop="position" content="2" />
+        <span itemprop = "name"> Linux command </span>
+     </a>
+      <meta itemprop = "position" content = "2" />
     </li>
     <li>
       here
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20200622141433.html">digコマンド - ドメインd名からIPアドレスを調べる。DNSサーバー情報問合わせ。</a></h2>
+<h2><a href="/blog/20200622141433.html"> dig command-find the IP address from the domain d name. DNS server information inquiry. </a></h2>
 <p>
-  digコマンドを使うと、DNSサーバー情報問合わせを行うことができます。最もよく使うのは、ドメイン名からIPアドレスの情報を取得したい場合です。
+  You can use the dig command to query DNS server information. Most often, you want to get IP address information from a domain name.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -104,35 +104,35 @@
 
 
 <pre>
-dig ドメイン名
+dig domain name
 </pre>
 <p>
-  digを使ってドメイン名を指定してIPアドレスの情報を取得するサンプルです。
+  This is a sample to get the IP address information by specifying the domain name using dig.
 </p>
 <pre>
 dig linux.perlclub.net
 </pre>
 <p>
-  digの出力結果です。IPアドレスがわかります。
+  This is the output result of dig. You can see the IP address.
 </p>
 <pre>
 ; &lt;&lt;&gt;&gt; DiG 9.3.6-P1-RedHat-9.3.6-25.P1.el5_11.12 &lt;&lt;&gt;&gt; linux.perlclub.net
-;; global options:  printcmd
+;; global options: printcmd
 ;; Got answer:
-;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 50874
+;;-&gt;&gt; HEADER &lt;&lt;- opcode: QUERY, status: NOERROR, id: 50874
 ;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
 
 ;; QUESTION SECTION:
-;linux.perlclub.net.            IN      A
+linux.perlclub.net. IN A
 
 ;; ANSWER SECTION:
-linux.perlclub.net.     3600    IN      CNAME   en.sakurastd.perlzemi.com.
-en.sakurastd.perlzemi.com. 3600    IN      A       210.224.185.82
+linux.perlclub.net. 3600 IN CNAME en.sakurastd.perlzemi.com.
+en.sakurastd.perlzemi.com. 3600 IN A 210.224.185.82
 
 ;; Query time: 5 msec
-;; SERVER: 210.188.224.10#53(210.188.224.10)
+;; SERVER: 210.188.224.10 # 53 (210.188.224.10)
 ;; WHEN: Mon Jun 22 14:17:22 2020
-;; MSG SIZE  rcvd: 76
+;; MSG SIZE rcvd: 76
 </pre>
 
   </div>

@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>ディレクトリとは - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="ディレクトリとは、ひとつ下の階層のファイル名の一覧が内容として書かれている特別なファイルのことです。">
+<title> What is a directory?  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="A directory is a special  file that contains a list of file names one level below.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="ディレクトリとは - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="ディレクトリとは、ひとつ下の階層のファイル名の一覧が内容として書かれている特別なファイルのことです。" />
+<meta name="twitter:title" content=" What is a directory?  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="A directory is a special  file that contains a list of file names one level below." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20191224085237.html">ディレクトリとは</a></h2>
+    <h2><a href="/blog/20191224085237.html"> What is a directory? </a></H2>
 <p>
-  ディレクトリとは、ひとつ下の階層のファイル名の一覧が内容として書かれている特別な<a href="/blog/20191223081048.html">ファイル</a>のことです。
+  A directory is a special <a href="/blog/20191223081048.html"> file</a> that contains a list of file names one level below.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -85,26 +85,26 @@
 
 
 <p>
-  特別な場合として、<a href="/blog/20191218072611.html">カレントディレクトリ</a>「.」と<a href="/blog/20191219082642.html">ペアレントディレクトリ</a>「..」も、ディレクトリにファイル名の一覧として書かれています。
+  As a special case, <a href="/blog/20191218072611.html"> current directory</a> "." And <a href="/blog/20191219082642.html"> parent directory</a> ".. "Is also written in the directory as a list of file names.
 </p>
 <p>
-  パーミッション、所有者ユーザー、所有者グループ、ファイルサイズ、更新日時などのファイルに関連する情報は、inodeと呼ばれる仕組みで管理されています。
+  File-related information such as permissions, owner users, owner groups, file size, modification date and time is managed by a mechanism called inode.
 </p>
 <p>
-  ディレクトリには、ファイル名に対応するinode番号が書き込まれているので、それらの情報を取得することもできます。
+  Since the inode number corresponding to the file name is written in the directory, you can also get the information.
 </p>
-<h3>ディレクトリに書かれているファイル名の一覧</h3>
+<h3> List of file names written in the directory </h3>
 <p>
-  <a href="/blog/20191126082723.html">lsコマンド</a>を使うと、ディレクトリに書かれているファイル一覧を取得できます。
+  You can use the <a href="/blog/20191126082723.html"> ls command</a> to get a list of the files in the directory.
 </p>
 <p>
-  ここでファイル一覧という言葉には、通常のファイルとディレクトリが含まれていることに注意してください。
+  Note that the term file list here includes regular files and directories.
 </p>
 <pre>
 ls
 </pre>
 <p>
-  lsコマンドの出力結果のサンプルです。foo.txtとbar.pngは、通常ファイルです。testはディレクトリです。
+  This is a sample output result of the ls command. foo.txt and bar.png are regular files. test is a directory.
 </p>
 <pre>
 foo.txt
@@ -112,33 +112,33 @@ test
 bar.png
 </pre>
 <p>
-  「-a」オプションを使うことで、<a href="/blog/20191220091958.html">隠しファイル</a>を含めたすべてのファイルを表示できます。
+  You can use the "-a" option to view all files, including <a href="/blog/20191220091958.html"> hidden files</a>.
 </p>
 <pre>
 ls -a
 </pre>
 <pre>
-.
+..
 ..
 .bashrc
 foo.txt
 test
 bar.png
 </pre>
-<h3>ファイル情報を含めた詳細な情報を表示する</h3>
+<h3> Display detailed information including file information </h3>
 <p>
-  lsコマンドの「-a」オプションを使うと、ファイル情報を含めた詳細な情報を表示することができます。
+  You can use the "-a" option of the ls command to display detailed information, including file information.
 </p>
 <pre>
 ls -a
 </pre>
 <p>
-  「ls -a」の出力結果のサンプルです。
+  This is a sample output of "ls -a".
 </p>
 <pre>
--rw-rw-r--  1 kimoto kimoto         0 Dec 25 08:41 test.pl
-drwxrwxr-x 41 kimoto kimoto      4096 Dec 20 16:53 labo
-drwxr-xr-x  2 kimoto kimoto      4096 Apr  5  2019 lib
+-rw-rw-r-- 1 kimoto kimoto 0 Dec 25 08:41 test.pl
+drwxrwxr-x 41 kimoto kimoto 4096 Dec 20 16:53 labo
+drwxr-xr-x 2 kimoto kimoto 4096 Apr 5 2019 lib
 </pre>
 
   </div>

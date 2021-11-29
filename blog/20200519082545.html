@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>chmodコマンド - パーミッションの変更 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="chmodコマンドを使うと、パーミッションを変更できます。">
+<title> chmod command-change permissions  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="You can change the  permissions using the  chmod command .">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="chmodコマンド - パーミッションの変更 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="chmodコマンドを使うと、パーミッションを変更できます。" />
+<meta name="twitter:title" content=" chmod command-change permissions  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="You can change the  permissions using the  chmod command ." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,28 +64,28 @@
 
   </div>
   <div class="middle">
-    <div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Linux</span>
-      </a>
-      <meta itemprop="position" content="1" />
+        <span itemprop = "name"> Linux </span>
+     </a>
+      <meta itemprop = "position" content = "1" />
     </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200211081227.html">
-        <span itemprop="name">Linuxコマンド</span>
-      </a>
-      <meta itemprop="position" content="2" />
+        <span itemprop = "name"> Linux command </span>
+     </a>
+      <meta itemprop = "position" content = "2" />
     </li>
     <li>
       here
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20200519082545.html">chmodコマンド - パーミッションの変更</a></h2>
+<h2><a href="/blog/20200519082545.html"> chmod command-change permissions </a></h2>
 <p>
-  <b>chmodコマンド</b>を使うと、<a href="/blog/20200526082545.html">パーミッション</a>を変更できます。
+  You can change the <a href="/blog/20200526082545.html"> permissions</a> using the <b> chmod command </b>.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -104,40 +104,40 @@
 
 
 <pre>
-chmod パーミッションの表現 ファイル名
+Representation of chmod permissions File name
 </pre>
 <p>
-  パーミッションの表現には8進数と「+x」のような差分でパーミッションを追加できるものがあります。
+  Some representations of permissions allow you to add permissions by delta, such as octal and "+ x".
 </p>
 <p>
-  パーミッションを変更するサンプルです。
+  This is a sample to change permissions.
 </p>
 <pre>
-# 8進数で指定
+# Specify in octal
 chmod 644 foo.txt
 chmod 755 dir1
 
-# 実行権限を追加
-chmod +x myapp
+# Add execute permission
+chmod + x myapp
 </pre>
-<h3>再帰的にパーミッションを変更する</h3>
+<h3> Recursively change permissions </h3>
 <p>
-  再帰的にパーミッションを変更するには「-R」オプションがあります。
+  There is a "-R" option to change permissions recursively.
 </p>
 <p>
-  「-R」がありますが、ディレクトリ・通常ファイル・実行ファイルに設定したいパーミッションは、異なるので一括で変更すると、大変なことになります。
+  There is "-R", but the permissions you want to set for directories, normal files, and executable files are different, so if you change them all at once, it will be difficult.
 </p>
 <p>
-  また、特定の拡張子に対してだけ、実行権限をつけたいという場合もあります。
+  You may also want to give execute permission only to a specific extension.
 </p>
 <p>
-  このような場合は、<a href="/blog/20200317121556.html">find</a>コマンド・<a href="/blog/20200602093211.html">grep</a>コマンド・xargsコマンドを組み合わせて、対象のファイルだけに絞り込んでパーミッションを変更しましょう。
+  In such a case, combine the <a href="/blog/20200317121556.html"> find</a> command, the <a href="/blog/20200602093211.html"> grep</a> command, and the xargs command. Let's narrow down to the target file and change the permissions.
 </p>
 <p>
-  たとえばカレントディレクトリ以下にある「.pl」ファイルだけに実行権限をつけるという場合は以下のようにします。
+  For example, if you want to give execute permission only to the ".pl" file under the current directory, do as follows.
 </p>
 <pre>
-find * | grep -P '\.pl$' | xargs chmod +x
+find * | grep -P'\ .pl $'| xargs chmod + x
 </pre>
 
   </div>

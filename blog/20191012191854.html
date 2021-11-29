@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>cdコマンド - カレントディレクトリの変更 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="cdコマンドを使うと、カレントディレクトリを変更することができます。">
+<title> cd command-change current directory  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="You can change the  current directory using the cd command.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="cdコマンド - カレントディレクトリの変更 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="cdコマンドを使うと、カレントディレクトリを変更することができます。" />
+<meta name="twitter:title" content=" cd command-change current directory  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="You can change the  current directory using the cd command." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,28 +64,28 @@
 
   </div>
   <div class="middle">
-    <div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Linux</span>
-      </a>
-      <meta itemprop="position" content="1" />
+        <span itemprop = "name"> Linux </span>
+     </a>
+      <meta itemprop = "position" content = "1" />
     </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200211081227.html">
-        <span itemprop="name">Linuxコマンド</span>
-      </a>
-      <meta itemprop="position" content="2" />
+        <span itemprop = "name"> Linux command </span>
+     </a>
+      <meta itemprop = "position" content = "2" />
     </li>
     <li>
       here
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20191012191854.html">cdコマンド - カレントディレクトリの変更</a></h2>
+<h2><a href="/blog/20191012191854.html"> cd command-change current directory </a></h2>
 <p>
-  cdコマンドを使うと、<a href="/blog/20191218072611.html">カレントディレクトリ</a>を変更することができます。
+  You can change the <a href="/blog/20191218072611.html"> current directory</a> using the cd command.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -104,118 +104,118 @@
 
 
 <pre>
-cd ディレクトリ名
+cd directory name
 </pre>
-<h4>ディレクトリ名を相対パスで指定</h4>
+<h4> Specify the directory name with a relative path </h4>
 <p>
-  cdコマンドで、「labo」というディレクトリにカレントディレクトリを変更するには次のコマンドを実行します。
+  To change the current directory to the directory "labo" with the cd command, execute the following command.
 </p>
 <pre>
 cd labo
 </pre>
 <p>
-  これは、現在のカレントディレクトリを起点として、カレントディレクトリの現在の階層にある「labo」ディレクトリを、カレントディレクトリとするという意味です。
+  This means that the "labo" directory in the current hierarchy of the current directory is the current directory, starting from the current current directory.
 </p>
 <p>
-  これを、ディレクトリ名を相対パスで指定するといいます。
+  This is called specifying the directory name with a relative path.
 </p>
-<h4>ディレクトリ名を絶対パスで指定</h4>
+<h4> Specify the directory name with an absolute path </h4>
 <p>
-  cdコマンドでディレクトリ名を絶対パスで指定することもできます。
-</p>
-<p>
-  「/usr/local/lib」というディレクトリに移動するには以下のコマンドを実行します。
-</p>
-<pre>
-cd /usr/local/lib
-</pre>
-<p>
-  絶対パスは先頭が「/」で始まることが特徴です。cdコマンドは、先頭の「/」を見て、相対パスか絶対パスかを識別します。
-</p>
-<h3>カレントディレクトとは?</h3>
-<p>
-  カレントディレクトリというのは、現在作業中のディレクトリのことです。Linuxでいうディレクトリというのは、Windowsのフォルダと同じ意味だと考えてください。
+  You can also specify the directory name with an absolute path with the cd command.
 </p>
 <p>
-  Linuxにログインしたときは、ホームディレクトリと呼ばれる場所が、カレントディレクトリとなります。
+  To change to the directory "/ usr / local / lib", execute the following command.
 </p>
 <pre>
-/home/kimoto
+cd / usr / local / lib
 </pre>
 <p>
-  カレントディレクトリを表示するにはpwdコマンドが使えます。
+  Absolute paths are characterized by starting with "/". The cd command looks at the leading "/" to identify whether it is a relative path or an absolute path.
+</p>
+<h3> What is the current directory? </H3>
+<p>
+  The current directory is the directory you are currently working on. Think of a directory in Linux as having the same meaning as a folder in Windows.
+</p>
+<p>
+  When you log in to Linux, the location called your home directory is your current directory.
+</p>
+<pre>
+/ home / kimoto
+</pre>
+<p>
+  You can use the pwd command to display the current directory.
 </p>
 <pre>
 pwd
 </pre>
 <p>
-  今いるディレクトリってどこだっけなとなったときは、pwdコマンドで確認できます。
+  If you find yourself in the wrong directory, you can check it with the pwd command.
 </p>
-<h3>特殊なディレクトリ名</h3>
+<h3> Special directory name </h3>
 <p>
-  特殊なディレクトリ名として、次のディレクトリ名を覚えておきましょう。
+  Remember the following directory names as special directory names.
 </p>
-<h4>現在のカレントディレクトリ - .</h4>
+<h4> Current current directory-. </h4>
 <p>
-  「.」は、現在のカレントディレクトリを指す特殊なディレクトリ名です。
+  "." Is a special directory name that points to the current current directory.
 </p>
 <pre>
-cd .
+cd.
 </pre>
 <p>
-  これは、カレントディレクトリを現在のカレントディレクトリに変更するだけなので、何も起こりません。
+  This just changes the current directory to the current current directory, so nothing happens.
 </p>
 <p>
-  でも、意味を覚えておいてください。cdコマンドでは特に意味がありませんが、意味を持つ場面があります。
+  But remember the meaning. The cd command has no particular meaning, but there are some situations where it makes sense.
 </p>
-<h4>親ディレクトリ - ..</h4>
+<h4> Parent directory --.. </h4>
 <p>
-  「..」は、親ディレクトリを指す特殊なディレクトリ名です。
+  ".." is a special directory name that points to the parent directory.
 </p>
 <p>
-  カレントディレクトリを変更して、一階層上の親ディレクトリに戻りたい場合に、頻繁に利用します。
+  It is frequently used when you want to change the current directory and return to the parent directory one level higher.
 </p>
 <pre>
 cd ..
 </pre>
-<h4>ホームディレクトリ - ~</h4>
+<h4> Home directory-~ </h4>
 <p>
-  「~」は、ホームディレクトリを指す特殊なディレクトリ名です。
+  "~" Is a special directory name that points to your home directory.
 </p>
 <pre>
 cd ~
 </pre>
 <p>
-  ユーザーが「kimoto」の場合は、ホームディレクトリは以下のように展開されます。
+  If the user is "kimoto", the home directory will be expanded as follows.
 </p>
 <pre>
-cd /home/kimoto
+cd / home / kimoto
 </pre>
 <p>
-  特殊なディレクトリ「.」「..」「~」については、実際は、cdコマンドが解釈しているわけではなく、シェルが解釈しているのですが、cdコマンドで使用する頻度が高いので、紹介しました。
+  The special directories ".", "..", and "~" are not actually interpreted by the cd command, but by the shell, but they are frequently used by the cd command, so I will introduce them. Did.
 </p>
-<h3>cdコマンドのサンプル</h3>
+<h3> cd command sample </h3>
 <p>
-  ホームディレクトリにカレントディレクトリを変更して、そこにlaboディレクトリを作成して、laboディレクトリにカレントディレクトリを変更するサンプルです。
+  This is a sample that changes the current directory to the home directory, creates a labo directory there, and changes the current directory to the labo directory.
 </p>
 <pre>
-# ホームディレクトリにカレントディレクトリを変更
+# Change the current directory to your home directory
 cd ~
 
-# laboディレクトリを作成
+Create #labo directory
 mkdir labo
 
-# laboにカレントディレクトリを変更
+Change current directory to #labo
 cd labo
 
-# pwdコマンドで現在のカレントディレクトリをチェック
+Check the current current directory with the #pwd command
 pwd
 </pre>
 <p>
-  Perlゼミの環境では、以下のように表示されました。
+  In the Perl seminar environment, it was displayed as follows.
 </p>
 <pre>
-/home/kimoto/labo
+/ home / kimoto / labo
 </pre>
 
   </div>

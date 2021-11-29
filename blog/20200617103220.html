@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>bashの環境変数の設定 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="bashの環境変数を設定するには以下の環境変数の設定構文を使用します。">
+<title> Setting environment variables for bash  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="To set environment variables in bash, use the following environment variable setting syntax.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="bashの環境変数の設定 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="bashの環境変数を設定するには以下の環境変数の設定構文を使用します。" />
+<meta name="twitter:title" content=" Setting environment variables for bash  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="To set environment variables in bash, use the following environment variable setting syntax." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20200617103220.html">bashの環境変数の設定</a></h2>
+    <h2><a href="/blog/20200617103220.html"> Setting environment variables for bash </a></h2>
 <p>
-  bashの環境変数を設定するには以下の環境変数の設定構文を使用します。
+  To set environment variables in bash, use the following environment variable setting syntax.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -85,23 +85,23 @@
 
 
 <pre>
-export 環境変数名=値
+export environment variable name = value
 </pre>
 <p>
-  環境変数を設定するサンプルです。Perlの<a href="https://perlzemi.com/blog/20200617111016.html">PERL5LIB環境変数</a>を設定してみました。
+  This is a sample to set environment variables. I set Perl's <a href="https://perlzemi.com/blog/20200617111016.html"> PERL5LIB environment variable</a>.
 </p>
 <pre>
-export PERL5LIB=/foo/lib
+export PERL5LIB = / foo / lib
 </pre>
-<h3>exportの意味はなんですか?</h3>
+<h3> What does export mean? </H3>
 <p>
-  exportを使うと、実行するプログラムに環境変数が引き継がれます。
+  If you use export, the environment variables will be inherited by the program to be executed.
 </p>
 <p>
-  使わない場合は、環境変数はそのシェルの中だけで有効です。
+  If not used, environment variables are valid only within that shell.
 </p>
 <p>
-  一般的には、環境変数は、実行するプログラムが参照するので、exportをつけることが一般的です。
+  Generally, environment variables are referenced by the program to be executed, so it is common to add export.
 </p>
 
   </div>

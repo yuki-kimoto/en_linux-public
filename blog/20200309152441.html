@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>bash入門 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="bashはLinux標準のシェルです。bashを使うと、Linuxコマンドを実行することができます。">
+<title> Introduction to bash  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="bash is a standard Linux shell. You can use bash to execute  Linux commands.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="bash入門 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="bashはLinux標準のシェルです。bashを使うと、Linuxコマンドを実行することができます。" />
+<meta name="twitter:title" content=" Introduction to bash  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="bash is a standard Linux shell. You can use bash to execute  Linux commands." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20200309152441.html">bash入門</a></h2>
+    <h2><a href="/blog/20200309152441.html"> Introduction to bash </a></h2>
 <p>
-  bashはLinux標準のシェルです。bashを使うと、<a href="/blog/20200211081227.html">Linuxコマンド</a>を実行することができます。
+  bash is a standard Linux shell. You can use bash to execute <a href="/blog/20200211081227.html"> Linux commands</a>.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -85,102 +85,102 @@
 
 
 <pre>
-# bashでLinuxコマンドを実行
+Execute Linux command with # bash
 ls
 </pre>
-<h3>環境変数を確認する</h3>
+<h3> Check environment variables </h3>
 <p>
-  環境変数を確認してみましょう。envコマンドで確認できます。
+  Let's check the environment variables. You can check it with the env command.
 </p>
 <pre>
 env
 </pre>
 <p>
-  grepと組み合わせると、必要な環境変数だけを取り出せます。
+  When combined with grep, you can retrieve only the environment variables you need.
 </p>
 <pre>
-# MOJOを含んでいるものだけ取得
+Get only those that contain #MOJO
 env | grep MOJO
 </pre>
-<h3>環境変数を設定する</h3>
+<h3> Set environment variables </h3>
 <p>
-  環境変数を設定するにはexportコマンドを使用します。
+  Use the export command to set environment variables.
 </p>
 <pre>
-export 環境変数名=環境変数の値
+export environment variable name = value of environment variable
 </pre>
 <p>
-  以下は、<a href="https://en.webapp.perlzemi.com/">Mojolicious</a>の開発サーバー<a href="https://perlzemi.com/blog/20120406133367.html">morbo</a>で、ポート番号を変更するサンプルです。
+  Below is the <a href="https://en.webapp.perlzemi.com/"> Mojolicious</a> development server <a href="https://perlzemi.com/blog/20120406133367.html"> This is a sample to change the port number with morbo</a>.
 </p>
 <pre>
-export MOJO_LISTEN=http://*:3050
+export MOJO_LISTEN = http: // *: 3050
 </pre>
-<h3>bashの設定ファイル</h3>
+<h3> bash configuration file </h3>
 <p>
-  bashの設定ファイルは、ホームディレクトリにある「.bashrc」です。
+  The bash configuration file is ".bashrc" in your home directory.
 </p>
 <pre>
-~/.bashrc
+~ / .bashrc
 </pre>
 <p>
-  「.bash_profile」という特別な設定ファイルもありますが、普通に設定を行うときは「.bashrc」を使いましょう。
+  There is also a special config file called ".bash_profile", but use ".bashrc" for normal configs.
 </p>
 <p>
-  上記の環境変数の設定を「.bashrc」に書いておくと、シェルの読み込み時に自動的に設定できます。
+  If you write the above environment variable settings in ".bashrc", they can be set automatically when the shell is loaded.
 </p>
-<h3>bashのシェルスクリプト</h3>
+<h3> bash shell script </h3>
 <p>
-  bashのシェルスクリプトを作成してみましょう。よく使うLinuxコマンドを実行するときに便利です。
+  Let's create a bash shell script. This is useful when executing frequently used Linux commands.
 </p>
 <p>
-  以下のスクリプトを「setup.sh」という名前で保存したとします。これは、<a href="https://perlzemi.com/blog/20101027127859.html">cpanmとcpanfile</a>で依存モジュールをすべてインストールするサンプルともなっています。
+  Suppose you save the following script as "setup.sh". This is also a sample to install all dependent modules with <a href="https://perlzemi.com/blog/20101027127859.html"> cpanm and cpanfile</a>.
 </p>
 <pre>
-#!/bin/sh
+#! / bin / sh
 
-cpanm --installdeps .
+cpanm --installdeps.
 </pre>
 <p>
-  実行できるように、このスクリプトを保存してchmodコマンドで、パーミッションを755に変えます
+  Save this script and change the permissions to 755 with the chmod command so you can run it
 </p>
 <pre>
 chmod 755 setup.sh
 </pre>
 <p>
-  実行
+  execution
 </p>
 <pre>
 ./setup.sh
 </pre>
-<h4>シェバン</h4>
+<h4> Shebang </h4>
 <p>
-  シェバンは「#!/bin/sh」となっています。Linuxではshはbashにエイリアスされています。
+  Shebang is "#! / Bin / sh". On Linux sh is aliased to bash.
 </p>
-<h3>シェルスクリプトにはどんな種類がありますか</h3>
+<h3> What kind of shell scripts are there? </H3>
 <p>
-  シェルスクリプトは、Linuxではbashが標準ですが、他にも、csh, ksh, zshなどがあります。
-</p>
-<p>
-  シェルスクリプトには方言のようなものがあり、各Linux OSで、標準のシェルが異なっています。
-</p>
-<h3>シェルスクリプトとPerlはどのように使い分けるべきですか?</h3>
-<p>
-  シェルスクリプトは、シェルを自動化する仕組みで、Linuxコマンドをそのまま使えます。
+  Bash is the standard shell script on Linux, but there are other shell scripts such as csh, ksh, and zsh.
 </p>
 <p>
-  覚え慣れた、Linuxコマンドを、そのまま記述できるので簡単です。
+  Shell scripts are like dialects, and each Linux OS has a different standard shell.
+</p>
+<h3> How should I use shell scripts and Perl properly? </H3>
+<p>
+  A shell script is a mechanism that automates the shell, and Linux commands can be used as they are.
 </p>
 <p>
-  その反面、汎用的なプログラミング言語として利用する場合には、プログラムが大きくなってくると、辛さが増してきます。
+  It's easy because you can write the familiar Linux commands as they are.
 </p>
 <p>
-  このプログラムって、Perlで書いた方が、保守性も実行速度もよいんじゃないの!?
+  On the other hand, when using it as a general-purpose programming language, the larger the program, the more difficult it becomes.
 </p>
 <p>
-  そう感じたときは、Perlを試してみる機会です。
+  Isn't this program better maintainable and faster to write in Perl !?
 </p>
 <p>
-  後で保守する人のために、以下の記述を忘れずに。
+  If you feel that way, it's time to give Perl a try.
+</p>
+<p>
+  For those who maintain it later, don't forget the following description.
 </p>
 <pre>
 use strict;

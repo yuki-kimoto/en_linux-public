@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>cpコマンド - ファイルをコピーする - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="cpコマンドを使用すると、ファイルをコピーすることができます。元のファイル名のファイル内容が、新しいファイル名でコピーされます。cpの名前はcopyに由来しています。">
+<title> cp command-copy files  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="You can copy the file using the cp command. The file contents of the original file name are copied with the new file name. The name of cp comes from copy.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="cpコマンド - ファイルをコピーする - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="cpコマンドを使用すると、ファイルをコピーすることができます。元のファイル名のファイル内容が、新しいファイル名でコピーされます。cpの名前はcopyに由来しています。" />
+<meta name="twitter:title" content=" cp command-copy files  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="You can copy the file using the cp command. The file contents of the original file name are copied with the new file name. The name of cp comes from copy." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,28 +64,28 @@
 
   </div>
   <div class="middle">
-    <div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Linux</span>
-      </a>
-      <meta itemprop="position" content="1" />
+        <span itemprop = "name"> Linux </span>
+     </a>
+      <meta itemprop = "position" content = "1" />
     </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200211081227.html">
-        <span itemprop="name">Linuxコマンド</span>
-      </a>
-      <meta itemprop="position" content="2" />
+        <span itemprop = "name"> Linux command </span>
+     </a>
+      <meta itemprop = "position" content = "2" />
     </li>
     <li>
       here
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20191203081250.html">cpコマンド - ファイルをコピーする</a></h2>
+<h2><a href="/blog/20191203081250.html"> cp command-copy files </a></h2>
 <p>
-  cpコマンドを使用すると、ファイルをコピーすることができます。元のファイル名のファイル内容が、新しいファイル名でコピーされます。cpの名前はcopyに由来しています。
+  You can copy the file using the cp command. The file contents of the original file name are copied with the new file name. The name of cp comes from copy.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -104,98 +104,98 @@
 
 
 <pre>
-cp 元のファイル名 新しいファイル名
+cp original file name new file name
 </pre>
 <p>
-  cpコマンドでファイルのコピーを行うサンプルです。foo.txtの内容が、bar.txtにコピーされます。
+  This is a sample to copy a file with the cp command. The contents of foo.txt will be copied to bar.txt.
 </p>
 <pre>
 cp foo.txt bar.txt
 </pre>
-<h3>ディレクトリをコピーする - cpコマンドの「-r」オプション</h3>
+<h3> Copy directory --- "-r" option of cp command </h3>
 <p>
-  ディレクトリをコピーするには「-r」オプションを使用します。rは、recursive(再帰的)に由来しています。
+  Use the "-r" option to copy the directory. r comes from recursive.
 </p>
 <pre>
-cp -r 元のディレクトリ名 新しいディレクトリ名
+cp -r original directory name new directory name
 </pre>
 <p>
-  ディレクトリのコピーという処理は、実際には、ファイルを再帰的にコピーするという処理なんです。
+  The process of copying a directory is actually the process of recursively copying files.
 </p>
 <p>
-  「cp -r」で、ディレクトリのコピーを行うサンプルです。dir1に含まれるすべてのファイルが、dir2にコピーされます。
+  This is a sample to copy a directory with "cp -r". All files contained in dir1 will be copied to dir2.
 </p>
 <pre>
 cp -r dir1 dir2
 </pre>
-<h3>ディレクトリの中のすべてのファイルをすべてコピーする</h3>
+<h3> Copy all files in the directory </h3>
 <p>
-  ディレクトリの中に含まれるファイルをすべてコピーするには、<a href="/blog/20200609092705.html">ワイルドカード</a>を利用します。
+  Use <a href="/blog/20200609092705.html"> wildcards</a> to copy all the files contained in the directory.
 </p>
 <p>
-  以下の例は、fooディレクトリの中のすべてのファイルを、barの中に移動するという意味です。「bar/」となっている部分に注意してください。
+  The following example means move all the files in the foo directory into the bar. Notice the "bar /" part.
 </p>
 <p>
-  隠しファイルは含まれないということも注意してください。
+  Also note that hidden files are not included.
 </p>
 <pre>
-cp foo/* bar/
+cp foo / * bar /
 </pre>
-<h3>ヘルプを表示する --helpオプション</h3>
+<h3> Show help --help option </h3>
 <p>
-  ヘルプを表示するには「--help」オプションを使用します。
+  Use the "--help" option to get help.
 </p>
 <pre>
 cp --help
 </pre>
 <p>
-  ヘルプが表示されます。
+  Help is displayed.
 </p>
 <pre>
-Usage: cp [OPTION]... [-T] SOURCE DEST
-  or:  cp [OPTION]... SOURCE... DIRECTORY
-  or:  cp [OPTION]... -t DIRECTORY SOURCE...
-Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.
+Usage: cp [OPTION] ... [-T] SOURCE DEST
+  or: cp [OPTION] ... SOURCE ... DIRECTORY
+  or: cp [OPTION] ... -t DIRECTORY SOURCE ...
+Copy SOURCE to DEST, or multiple SOURCE (s) to DIRECTORY.
 
 Mandatory arguments to long options are mandatory for short options too.
-  -a, --archive                same as -dR --preserve=all
-      --backup[=CONTROL]       make a backup of each existing destination file
-  -b                           like --backup but does not accept an argument
-      --copy-contents          copy contents of special files when recursive
-  -d                           same as --no-dereference --preserve=link
-  -f, --force                  if an existing destination file cannot be
+  -a, --archive same as -dR --preserve = all
+      --backup [= CONTROL] make a backup of each existing destination file
+  -b like --backup but does not accept an argument
+      --copy-contents copy contents of special files when recursive
+  -d same as --no-dereference --preserve = link
+  -f, --force if an existing destination file cannot be
                                  opened, remove it and try again
-  -i, --interactive            prompt before overwrite
-  -H                           follow command-line symbolic links
-  -l, --link                   link files instead of copying
-  -L, --dereference            always follow symbolic links
-  -P, --no-dereference         never follow symbolic links
-  -p                           same as --preserve=mode,ownership,timestamps
-      --preserve[=ATTR_LIST]   preserve the specified attributes (default:
-                                 mode,ownership,timestamps), if possible
+  -i, --interactive prompt before overwrite
+  -H follow command-line symbolic links
+  -l, --link link files instead of copying
+  -L, --dereference always follow symbolic links
+  -P, --no-dereference never follow symbolic links
+  -p same as --preserve = mode, ownership, timestamps
+      --preserve [= ATTR_LIST] preserve the specified attributes (default:
+                                 mode, ownership, timestamps), if possible
                                  additional attributes: context, links,
                                  xattr, all
-  -c                           same as --preserve=context
-      --no-preserve=ATTR_LIST  don't preserve the specified attributes
-      --parents                use full source file name under DIRECTORY
-  -R, -r, --recursive          copy directories recursively
-      --remove-destination     remove each existing destination file before
+  -c same as --preserve = context
+      --no-preserve = ATTR_LIST don't preserve the specified attributes
+      --parents use full source file name under DIRECTORY
+  -R, -r, --recursive copy directories recursively
+      --remove-destination remove each existing destination file before
                                  attempting to open it (contrast with --force)
-      --sparse=WHEN            control creation of sparse files
+      --sparse = WHEN control creation of sparse files
       --strip-trailing-slashes remove any trailing slashes from each SOURCE
-                                 argument
-  -s, --symbolic-link          make symbolic links instead of copying
-  -S, --suffix=SUFFIX          override the usual backup suffix
-  -t, --target-directory=DIRECTORY  copy all SOURCE arguments into DIRECTORY
-  -T, --no-target-directory    treat DEST as a normal file
-  -u, --update                 copy only when the SOURCE file is newer
+                                 argument argument
+  -s, --symbolic-link make symbolic links instead of copying
+  -S, --suffix = SUFFIX override the usual backup suffix
+  -t, --target-directory = DIRECTORY copy all SOURCE arguments into DIRECTORY
+  -T, --no-target-directory treat DEST as a normal file
+  -u, --update copy only when the SOURCE file is newer
                                  than the destination file or when the
                                  destination file is missing
-  -v, --verbose                explain what is being done
-  -x, --one-file-system        stay on this file system
-  -Z, --context=CONTEXT        set security context of copy to CONTEXT
-      --help     display this help and exit
-      --version  output version information and exit
+  -v, --verbose explain what is being done
+  -x, --one-file-system stay on this file system
+  -Z, --context = CONTEXT set security context of copy to CONTEXT
+      --help display this help and exit
+      --version output version information and exit
 </pre>
 
   </div>

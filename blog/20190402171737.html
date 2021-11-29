@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>Linuxの基本的なコマンドを覚えよう その1 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="Linuxで作業をするとなると、便利なコマンドを覚えておくと作業が効率的にはかどります。そんな便利なコマンドをいくつか紹介します。">
+<title> Let's learn the basic commands of Linux Part 1  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="When working on Linux, remembering useful commands will make the work more efficient. Here are some useful commands.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="Linuxの基本的なコマンドを覚えよう その1 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="Linuxで作業をするとなると、便利なコマンドを覚えておくと作業が効率的にはかどります。そんな便利なコマンドをいくつか紹介します。" />
+<meta name="twitter:title" content=" Let's learn the basic commands of Linux Part 1  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="When working on Linux, remembering useful commands will make the work more efficient. Here are some useful commands." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20190402171737.html">Linuxの基本的なコマンドを覚えよう その1</a></h2>
+    <h2><a href="/blog/20190402171737.html"> Let's learn the basic commands of Linux Part 1 </a></h2>
 <p>
-  　Linuxで作業をするとなると、便利なコマンドを覚えておくと作業が効率的にはかどります。そんな便利なコマンドをいくつか紹介します。
+  When working on Linux, remembering useful commands will make the work more efficient. Here are some useful commands.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -84,120 +84,120 @@
 </div>
 
 
-<h3>カレントディレクトリのパスを表示</h3>
+<h3> Show the path of the current directory </h3>
 <p>
-  　カレントディレクトリというのは、現在作業しているディレクトリのことです。<b>pwd</b>コマンドを使うとカレントディレクトリのパスを表示できます。
+  The current directory is the directory you are currently working on. You can use the <b> pwd </b> command to display the path of the current directory.
 </p>
 <pre>
 pwd
 </pre>
 <p>
-  　次のようにカレントディレクトリのパスが表示されます。
+  The path of the current directory is displayed as shown below.
 </p>
 <pre>
-/home/kimoto
+/ home / kimoto
 </pre>
-<h3>カレントディレクトリの変更</h3>
+<h3> Change current directory </h3>
 <p>
-  　カレントディレクトリを移動するには<b>cd</b>コマンドを使います。
+  Use the <b> cd </b> command to move the current directory.
 </p>
 <pre>
-cd ディレクトリ名
+cd directory name
 </pre>
 <p>
-  　ディレクトリ名は、カレントディレクトリを基準にした相対パスあるいは、完全なパスを記述する絶対パスの両方でしてすることができます。
+  The directory name can be either a relative path relative to the current directory or an absolute path that describes the complete path.
 </p>
 <p>
-  　たとえば「/home/kimoto」というカレントディレクトリで作業している場合に、この直下にある「labo」というディレクトリに移動したい場合は次のようにします。
+  For example, if you are working in the current directory "/ home / kimoto" and want to move to the directory "labo" directly under this, do as follows.
 </p>
 <pre>
 cd labo
 </pre>
 <p>
-  　また絶対パスを指定して移動することもできます。
+  You can also move by specifying the absolute path.
 </p>
 <pre>
-cd /home/kimoto/labo
+cd / home / kimoto / labo
 </pre>
-<h4>ホームディレクトリの簡略表記</h4>
+<h4> Abbreviated notation of home directory </h4>
 <p>
-  　cdコマンドのテクニックをいくつか紹介します。「~」というディレクトリ名を利用するとユーザーのホームディレクトリに移動することができます。
+  Here are some techniques for the cd command. You can use the directory name "~" to move to the user's home directory.
 </p>
 <pre>
 cd ~
 </pre>
 <p>
-  　もしユーザーがkimotoである場合は次の指定と同じ意味になります。
+  If the user is kimoto, it has the same meaning as the following specification.
 </p>
 <pre>
-cd /home/kimoto
+cd / home / kimoto
 </pre>
-<h4>ワイルドカードを使って楽に指定する</h4>
+<h4> Specify easily using wildcards </h4>
 <p>
-  　実はcdで移動するときは、ワイルドカードを利用すれば、ディレクトリ名のすべての名前を指定する必要はありません。
+  Actually, when moving with cd, if you use wildcards, you do not need to specify all the names of the directory name.
 </p>
 <pre>
-cd la*
+cd la *
 </pre>
 <p>
-  　<b>*</b>というのがワイルドカードで、「la*」という指定を行うと、もし「labo」というディレクトリがあればそこに移動できます。すべての名前をタイピングしたり、コピーアンドペーストしたりするのが、めんどうなときは便利に使えるテクニックです。
+  <B> * </b> is a wildcard, and if you specify "la *", you can move to the directory "labo" if it exists. Typing or copying and pasting all names is a useful technique when you're having trouble.
 </p>
-<h3>ディレクトリに含まれるファイル一覧を表示する</h3>
+<h3> Display the list of files contained in the directory </h3>
 <p>
-  　ディレクトリに含まれるファイル一覧(ディレクトリも含む)を表示するには<b>ls</b>コマンドを使用します。
+  Use the <b> ls </b> command to display the list of files contained in the directory (including the directory).
 </p>
 <pre>
 ls
 </pre>
 <p>
-  　次のようにファイルの一覧が表示されます。
+  A list of files will be displayed as shown below.
 </p>
 <pre>
-README  lib script
+README lib script
 </pre>
-<h4>詳細を見る</h4>
+<h4> See details </h4>
 <p>
-  　ファイルのパーミッションやファイルのサイズなどの情報を含めるには<b>l</b>オプションを使用します。
+  Use the <b> l </b> option to include information such as file permissions and file size.
 </p>
 <pre>
 ls -l
 </pre>
 <p>
-  　次のようにファイルの詳細情報をみることができます。
+  You can see the detailed information of the file as follows.
 </p>
 <pre>
--rw-rw-r-- 1 kimoto kimoto    588  6月 16 13:19 README
-drwxrwxr-x 3 kimoto kimoto   4096  6月 16 16:39 lib
-drwxrwxr-x 2 kimoto kimoto   4096  6月 25 19:21 script
+-rw-rw-r-- 1 kimoto kimoto 588 June 16 13:19 README
+drwxrwxr-x 3 kimoto kimoto 4096 June 16 16:39 lib
+drwxrwxr-x 2 kimoto kimoto 4096 June 25 19:21 script
 </pre>
 <p>
-  　一番左側にあるのがパーミッションの設定です。パーミッションというのは、ファイルに対するアクセス権限のことです。この連載で後ほど考え方を紹介したいと思います。
+  The permission setting is on the far left. Permissions are the permissions on a file. I would like to introduce the idea later in this series.
 </p>
-<h4>隠しファイルも見る</h4>
+<h4> See hidden files </h4>
 <p>
-  　lsコマンドは、.(ドット)で始まる隠しファイルをデフォルトでは表示しません。隠しファイルを含めて表示するには、<b>a</b>オプションを使用します。
+  The ls command does not display hidden files starting with. (Dot) by default. Use the <b> a </b> option to display hidden files.
 </p>
 <pre>
 ls -a
 </pre>
 <p>
-  　このようにすると隠しファイルも表示することができます。
+  By doing this, hidden files can also be displayed.
 </p>
 <p>
-  　Linuxではオプションは複数を指定することもできます。たとえば、詳細表示と隠しファイルの表示のオプションを両方指定することができます。
+  In Linux, you can specify multiple options. For example, you can specify both advanced and hidden file display options.
 </p>
 <pre>
 ls -al
 </pre>
-<h4>ワイルドカードで表示するファイルを絞り込む</h4>
+<h4> Narrow down the files to be displayed with wildcards </h4>
 <p>
-  　ワイルドカードを利用すると表示するファイルを絞り込むことができます。
+  You can narrow down the files to be displayed by using wildcards.
 </p>
 <pre>
-ls 2012*
+ls 2012 *
 </pre>
 <p>
-  　上記のように指定すると、2012で始まるファイルだけを表示させることができます。
+  If you specify as above, you can display only the files starting with 2012.
 </p>
 
   </div>

@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>Linuxの基本的なコマンドを覚えよう その2 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="さてそれでは作業をするにあたって便利になるコマンドをどんどん覚えていきましょう。">
+<title> Learn basic Linux commands Part 2  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="Now, let's learn more and more commands that will be useful when working.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="Linuxの基本的なコマンドを覚えよう その2 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="さてそれでは作業をするにあたって便利になるコマンドをどんどん覚えていきましょう。" />
+<meta name="twitter:title" content=" Learn basic Linux commands Part 2  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="Now, let's learn more and more commands that will be useful when working." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20190403171737.html">Linuxの基本的なコマンドを覚えよう その2</a></h2>
+    <h2><a href="/blog/20190403171737.html"> Learn basic Linux commands Part 2 </a></h2>
 <p>
-  　さてそれでは作業をするにあたって便利になるコマンドをどんどん覚えていきましょう。
+  Now, let's learn more and more commands that will be useful when working.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -84,160 +84,160 @@
 </div>
 
 
-<h3>文字列の検索 grep</h3>
+<h3> String search grep </h3>
 <p>
-  　grepコマンドは、コマンドの中でも頻繁に使うコマンドです。grepはテキストファイルの中に、指定した文字列が含まれている場合に、その行を表示してくれます。
+  The grep command is one of the most frequently used commands. grep will display the line if the text file contains the specified string.
 </p>
 <pre>
-grep 文字列 テキストファイル
+grep string text file
 </pre>
 <p>
-  　たとえばテキストファイル(foo.txt)が次のようなものだったとしましょう。
+  For example, let's say the text file (foo.txt) looks like the following.
 </p>
 <pre>
 cat is animal
 dog is animal
 mouse is animal
-cat だ。
+It's cat.
 </pre>
 <p>
-  　このテキストファイルからcatを含む行を取り出したいとするなら、次のように書きます。
+  If you want to extract the line containing cat from this text file, write as follows.
 </p>
 <pre>
 grep cat foo.txt
 </pre>
 <p>
-  　出力結果は次のようになります。
+  The output result is as follows.
 </p>
 <pre>
 cat is animal
-cat だ。
+It's cat.
 </pre>
-<h4>他のコマンドと組み合わせる</h4>
+<h4> Combine with other commands </h4>
 <p>
-  　grepは他のコマンドと組み合わせるととても便利です。たとえばlsコマンドと組み合わせてみましょう。
+  Grep is very convenient when combined with other commands. For example, let's combine it with the ls command.
 </p>
 <pre>
 ls | grep log
 </pre>
 <p>
-  　lsはファイルの一覧を表示するコマンドです。そして後ろに続くの<b>|</b>はパイプと呼ばれるもので、lsの出力を次のコマンドの入力に渡すことができます。
+  Ls is a command to display a list of files. And the following <b> | </b> is called a pipe, which allows you to pass the output of ls to the input of the next command.
 </p>
 <p>
-  　上記のコマンドを実行すると、ファイル一覧の中からlogというファイル名を含むものだけを抽出することができます。
+  By executing the above command, only the files containing the file name log can be extracted from the file list.
 </p>
 <p>
-  　lsだけではなくて、他のコマンドとも組み合わせることができます。
+  It can be combined with other commands as well as ls.
 </p>
 <p>
-  　もしスペースを含む文字列を指定した場合はダブルクォートで文字列を囲みます。
+  If you specify a character string that includes spaces, enclose the character string in double quotes.
 </p>
 <pre>
 grep "cat is" foo.txt
 </pre>
-<h4>正規表現を使う</h4>
+<h4> Use regular expressions </h4>
 <p>
-  　grepでは、抽出条件として正規表現を指定することができます。
+  In grep, you can specify a regular expression as an extraction condition.
 </p>
 <pre>
-grep "^cat" foo.txt
+grep "^ cat" foo.txt
 </pre>
 <p>
-  　反対に、文字列で検索する場合は「-F」オプションが利用できます。
+  On the contrary, when searching by character string, the "-F" option can be used.
 </p>
 <pre>
 grep "cat" foo.txt
 </pre>
-<h4>サブディレクトリすべてから検索</h4>
+<h4> Search from all subdirectories </h4>
 <p>
-  　grepには大変便利な機能があります。それはサブディレクトリを含めて再帰的に、検索してくれる機能です。<b>r</b>オプションを使用します。
+  Grep has a very useful function. It is a function that searches recursively including subdirectories. Use the <b> r </b> option.
 </p>
 <pre>
 grep -r cat dir1
 </pre>
 <p>
-  　dir1というディレクトリ以下に含まれているテキストファイルの中からcatを含む行を表示してくれます。
+  The line containing cat is displayed from the text files contained under the directory dir1.
 </p>
 <p>
-  　以下のように複数のディレクトリを指定することも可能です。
+  It is also possible to specify multiple directories as shown below.
 </p>
 <pre>
 grep -r cat dir1 dir2
 </pre>
-<h3>環境変数を見る</h3>
+<h3> View environment variables </h3>
 <p>
-  　環境変数を見るには、<b>env</b>を使用します。
+  Use <b> env </b> to see the environment variables.
 </p>
 <pre>
 env
 </pre>
 <p>
-  　環境変数は、アプリケーションなどで利用される設定が格納するための変数です。
+  Environment variables are variables for storing settings used in applications.
 </p>
 <pre>
-HOSTNAME=www345u.sakura.ne.jp
-SHELL=/bin/bash
-OLDPWD=/home/kimoto/labo
-USER=kimoto
+HOSTNAME = www345u.sakura.ne.jp
+SHELL = / bin / bash
+OLDPWD = / home / kimoto / labo
+USER = kimoto
 </pre>
-<h4>環境変数の設定 env</h4>
+<h4> Environment variable settings env </h4>
 <p>
-  　環境変数を設定するには次のようにします。
+  To set environment variables, do the following.
 </p>
 <pre>
-export APP_NAME=myapp
+export APP_NAME = myapp
 </pre>
 <p>
-  　環境変数は一般的には大文字です。自分で好きな名前をつけることができます。設定した環境変数は、現在のシェルの中でだけ有効です。つまり、一度ログアウトしたり、端末を終了したりすれば、設定はなくなります。
+  Environment variables are generally uppercase. You can give it any name you like. The environment variables you set are valid only in the current shell. In other words, once you log out or quit the terminal, the settings will disappear.
 </p>
 <p>
-  　デフォルトの設定として、環境変数を設定したい場合は、シェルの設定ファイルで定義する必要があります。シェルの設定ファイルは、ホームディレクトリにある<b>.bashrc</b>です。
+  If you want to set environment variables as the default settings, you need to define them in the shell configuration file. The shell config file is <b> .bashrc </b> in your home directory.
 </p>
 <pre>
-vi ~/.bashrc
+vi ~ / .bashrc
 </pre>
 <p>
-  　この設定ファイルの中には、環境変数の設定や、コマンドを記述することができます。
+  Environment variable settings and commands can be described in this configuration file.
 </p>
-<h3>コマンドのパスを調べる which</h3>
+<h3> Check the command path which </h3>
 <p>
-  　コマンドのパスを調べるには、<b>which</b>を使用します。たとえばperlというコマンドは実際何を実行しているのかを知ることができます。
+  Use <b> which </b> to find out the command path. For example, the command perl can tell you what you're actually doing.
 </p>
 <pre>
 which perl
 </pre>
 <p>
-  　すると以下のように実際に実行しているアプリケーションのパスが表示されます。
+  Then, the path of the application that is actually running will be displayed as shown below.
 </p>
 <pre>
-~/perl5/perlbrew/perls/perl-5.14.2/bin/perl
+~ / perl5 / perlbrew / perls / perl-5.14.2 / bin / perl
 </pre>
-<h3>ファイルの内容を出力</h3>
+<h3> Output the contents of the file </h3>
 <p>
-  　ファイルの内容を出力するには<b>cat</b>を使います。
+  Use <b> cat </b> to output the contents of the file.
 </p>
 <pre>
-cat ファイル
+cat file
 </pre>
-<h3>テキストファイルを先頭から見る more</h3>
+<h3> View text file from the beginning more </h3>
 <p>
-  　テキストファイルの先頭の部分だけ見たい場合は<b>more</b>を使います。
+  Use <b> more </b> if you want to see only the beginning of the text file.
 </p>
 <pre>
-more テキストファイル
+more text file
 </pre>
 <p>
-  　Enterを押していくと、ページが進んでいきます。終わりたいときは<b>q</b>を押します。
+  Press Enter to advance the page. Press <b> q </b> when you want to finish.
 </p>
-<h3>テキストファイルの末尾を見る tail</h3>
+<h3> See the end of the text file tail </h3>
 <p>
-  　テキストファイルの末尾を見るには<b>tail</b>を使用します。
+  Use <b> tail </b> to see the end of the text file.
 </p>
 <pre>
-tail テキストファイル
+tail text file
 </pre>
 <p>
-  　tailには便利なオプションがあって、ファイルを監視して、ファイルの末尾に文字列が追加された場合に、表示し続けてくれる<b>f</b>オプションがあります。ログを監視するのに便利です。
+  There is a convenient option in tail, which has a <b> f </b> option that monitors the file and keeps displaying it if a string is added to the end of the file. Useful for monitoring logs.
 </p>
 <pre>
 tail -f developmen.log

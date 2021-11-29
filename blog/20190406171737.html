@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>Linux基礎知識2 パーミッション - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="今日はパーミッションについて解説しますね。Windowsを使っている人にとってはパーミッションという概念はなじみのないものだと思います。それって何って感じですね。">
+<title> Linux Basic Knowledge 2 Permission  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="Today I will explain about permissions. I think the concept of permissions is unfamiliar to anyone using Windows. What is it like?">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="Linux基礎知識2 パーミッション - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="今日はパーミッションについて解説しますね。Windowsを使っている人にとってはパーミッションという概念はなじみのないものだと思います。それって何って感じですね。" />
+<meta name="twitter:title" content=" Linux Basic Knowledge 2 Permission  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="Today I will explain about permissions. I think the concept of permissions is unfamiliar to anyone using Windows. What is it like?" />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20190406171737.html">Linux基礎知識2 パーミッション</a></h2>
+    <h2><a href="/blog/20190406171737.html"> Linux Basic Knowledge 2 Permission </a></h2>
 <p>
-  　今日はパーミッションについて解説しますね。Windowsを使っている人にとってはパーミッションという概念はなじみのないものだと思います。それって何って感じですね。
+  Today I will explain about permissions. I think the concept of permissions is unfamiliar to anyone using Windows. What is it like?
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -84,142 +84,142 @@
 </div>
 
 
-<h3>パーミッション</h3>
+<h3> Permissions </h3>
 <p>
-  　Linuxにおいてファイルはパーミッションを持ちます。パーミッションというのはファイルに対するアクセス権限のことです。だれがどのような操作ができるのかをパーミッションによって指定することができます。
+  Files have permissions on Linux. Permissions are the permissions on a file. You can specify who can do what with permissions.
 </p>
 <p>
-  　たとえば、このファイルに対して所有者は読み書きができて、グループも読み書きができて、それ以外のユーザーは読み込みだけができるという感じです。
+  For example, the owner can read and write to this file, the group can also read and write, and other users can only read.
 </p>
 <p>
-  　パーミッションを確認するのはlsコマンドでファイルの詳細を表示するのが簡単です。
+  It is easy to check the permissions by using the ls command to display the file details.
 </p>
 <pre>
 ls -l
 </pre>
 <pre>
--rw-rw-r-- 1 kimoto kimoto    588  6月 16 13:19 README
-drwxrwxr-x 3 kimoto kimoto   4096  6月 16 16:39 lib
+-rw-rw-r-- 1 kimoto kimoto 588 June 16 13:19 README
+drwxrwxr-x 3 kimoto kimoto 4096 June 16 16:39 lib
 </pre>
 <p>
-  　一番左端の1文字を除いた「rw-rw-r--」や「rwxrwxr-x」という部分がパーミッションです。ちなみに一番左端の一文字はファイルの種類を表すものになっています。dとあればそのファイルがディレクトリであることがわかります。(Linuxにおいてはディレクトリのひとつのファイルの種類と考えます。)
+  The permissions are "rw-rw-r--" and "rwxrwxr-x" excluding the leftmost character. By the way, the one character on the far left indicates the type of file. If you say d, you know that the file is a directory. (In Linux, it is considered as one file type in the directory.)
 </p>
-<h3>所有者ユーザー、所有者グループ、所有者でないユーザー</h3>
+<h3> Owner user, owner group, non-owner user </h3>
 <p>
-  　パーミッションは三つの部分で構成されます。3文字づつが一つのセットになっています。
+  Permission consists of three parts. Each set of 3 characters is one set.
 </p>
 <p>
-  　以下のようなパーミッションはまず3つの部分に分かれます。
+  The following permissions are first divided into three parts.
 </p>
 <pre>
 rw-rw-r--
 </pre>
 <pre>
-所有者ユーザー
+Owner user
 rw-
 
 
-所有者グループ
+Owner group
 rw-
 
 
-所有者でないユーザー
+Non-owner user
 r--
 </pre>
 <p>
-  　最初の3文字は所有者ユーザーに関するもの、次の3文字は所有者グループに関するもの、最後の三つは所有者でないユーザーに関するものになります。
+  The first 3 letters are for the owner user, the next 3 letters are for the owner group, and the last 3 letters are for the non-owner user.
 </p>
-<h3>rは読み込み権限、wは書き込み権限、xは実行権限</h3>
+<h3> r is read permission, w is write permission, x is execute permission </h3>
 <p>
-  　では次に<b>rwx</b>という文字の意味について解説します。読み込み権限がある場合は最初の文字がrに、書き込み権限がある場合は二番目の文字がwに、実行権限がある場合は三つ目の文字がxになります。
-</p>
-<p>
-  　たとえば以下のようになります。
-</p>
-<pre>
-rwx 読み込み権限、書き込み権限、実行権限
-rw- 読み込み権限、書き込み権限
-r-- 読み込み権限
-r-x 読み込み権限、              実行権限
-</pre>
-<p>
-  　実行権限というのは、そのファイルをアプリケーションとして実行することができるかを示すフラグです。たとえばプログラムを作成した場合などは、実行権限をつけることになります。また、ディレクトリの場合は実行権限がなければ、ディレクトリに含まれるファイルを読み込むことができないということも覚えておきましょう。
+  Next, I will explain the meaning of the characters <b> rwx </b>. If you have read permission, the first character is r, if you have write permission, the second character is w, and if you have execute permission, the third character is x.
 </p>
 <p>
-  　一般的にいえば、ディレクトリには必ず実行権限xがつくことになります。
-</p>
-<h3>所有者の変更 chown</h3>
-<p>
-  　ファイルの所有者を変更する方法を覚えておきましょう。<b>chown</b>を使います。
+  For example, it will be as follows.
 </p>
 <pre>
-chwon ユーザー名 ファイル名
+rwx read, write, execute permissions
+rw- read and write permissions
+r-- read permission
+r-x read permission, execute permission
 </pre>
 <p>
-  　以下のサンプルはfoo.txtというファイルの所有者ユーザーをkimotoに変更する例です。
+  Execution permission is a flag that indicates whether the file can be executed as an application. For example, if you create a program, you will have execute permission. Also, keep in mind that in the case of a directory, you cannot read the files contained in the directory without execute permission.
+</p>
+<p>
+  Generally speaking, a directory always has execute permission x.
+</p>
+<h3> Change of owner chown </h3>
+<p>
+  Remember how to change the owner of a file. Use <b> chown </b>.
+</p>
+<pre>
+chwon username file name
+</pre>
+<p>
+  The following sample is an example of changing the owner user of the file foo.txt to kimoto.
 </p>
 <pre>
 chown kimoto foo.txt
 </pre>
 <p>
-  　また所有者グループもあわせて変更することができます。
+  You can also change the owner group as well.
 </p>
 <pre>
-chown ユーザー名:グループ名 ファイル名
+chown username: group name file name
 </pre>
 <p>
-  　以下のサンプルはfoo.txtというファイルの所有者ユーザーをkimotoに、所有者グループをsomeprojectに変更する例です。
+  The following sample is an example of changing the owner user of the file foo.txt to kimoto and the owner group to someproject.
 </p>
 <pre>
-chown kimoto:someproject foo.txt
+chown kimoto: someproject foo.txt
 </pre>
-<h3>パーミッションの設定方法 chmod</h3>
+<h3> How to set permissions chmod </h3>
 <p>
-  　パーミッションの設定方法は少しややこしいです。パーミッションの設定は8進数で行います。次の対応を覚えてしまいましょう。とりあえず以下の対応だけは覚えてしまいましょう。
+  The permission setting method is a little complicated. Permissions are set in octal. Let's remember the following correspondence. For the time being, let's remember only the following measures.
 </p>
 <pre>
-    2進数  8進数
-rwx 111    7
-rw- 110    6
-r-x 101    5
-r-- 100    4
---- 000    0
+    Binary octal
+rwx 111 7
+rw- 110 6
+r-x 101 5
+r-- 100 4
+--- 000 0
 </pre>
 <p>
-  　よーく眺めてみてください。2進数で書いたところのビットが立っている位置が、rwxの位置と対応していますね。これを8進数で表現したものでパーミッションを指定します。
+  Please take a closer look. The position where the bit is set in the binary number corresponds to the position of rwx. This is expressed in octal and the permissions are specified.
 </p>
 <p>
-  　たとえば以下のようにパーミッションを指定したいとします。
+  For example, suppose you want to specify permissions as follows.
 </p>
 <pre>
 rwxr-xr-x
 </pre>
 <p>
-  　このような場合は、chmodコマンドを使って次のようにします。
+  In such a case, use the chmod command as follows.
 </p>
 <pre>
 chmod 755 foo.txt
 </pre>
 <p>
-  　rwxというのは7、r-xというのは5、になるので「rwxr-xr-x」は755になりますね。
+  Rwx is 7, r-x is 5, so "rwxr-xr-x" is 755.
 </p>
 <p>
-  　もうひとつだけサンプルを。
+  Only one more sample.
 </p>
 <pre>
 rw-r--r--
 </pre>
 <p>
-  　この場合は次のようになります。
+  In this case, it will be as follows.
 </p>
 <pre>
 chmod 644 foo.txt
 </pre>
 <p>
-  　rw-というのは6、r--というのは4なので「rw-r--r--」は644になります。
+  Since rw- is 6 and r-- is 4, "rw-r--r--" is 644.
 </p>
 <p>
-  　まぁ感覚でだんだんとわかるようになってくると思います。慣れですね。
+  Well, I think you will gradually be able to understand it with a sense. You're used to it.
 </p>
 
   </div>

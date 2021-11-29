@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>パーミッションとは - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="パーミッションとは、ファイルへのアクセス権限のことです。">
+<title> du command-check directory capacity  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="You can check the directory capacity with the du command. If no directory name is specified, the current directory will be the target.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="パーミッションとは - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="パーミッションとは、ファイルへのアクセス権限のことです。" />
+<meta name="twitter:title" content=" du command-check directory capacity  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="You can check the directory capacity with the du command. If no directory name is specified, the current directory will be the target." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,9 +64,28 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20200526082545.html">パーミッションとは</a></h2>
+    <div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
+      <a itemprop="item" href="/">
+        <span itemprop = "name"> Linux </span>
+     </a>
+      <meta itemprop = "position" content = "1" />
+    </li>
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
+      <a itemprop="item" href="/blog/20200211081227.html">
+        <span itemprop = "name"> Linux command </span>
+     </a>
+      <meta itemprop = "position" content = "2" />
+    </li>
+    <li>
+      here
+    </li>
+  </ul>
+</div>
+<h2><a href="/blog/20200526082545.html"> du command-check directory capacity </a></h2>
 <p>
-  パーミッションとは、ファイルへのアクセス権限のことです。
+  You can check the directory capacity with the du command. If no directory name is specified, the current directory will be the target.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -84,127 +103,214 @@
 </div>
 
 
-<p>
-  オーナー、グループ、その他のユーザーが、ファイルに対して、読み込み許可、書き込み許可、実行許可を持つかという情報です。
-</p>
-<p>
-  ファイルという言葉には、ディレクトリも含まれます。Linuxにおいては、ディレクトリは、ファイルの一種類という考え方をするからです。
-</p>
-<h3>オーナ、グループ、その他のユーザー</h3>
-<p>
-  オーナ、グループ、その他のユーザーについての解説です。
-</p>
-<h4>パーミッションにおけるオーナーとは</h4>
-<p>
-  パーミッションにおけるオーナーとは、そのファイルの所有者ユーザーのことです。「<a href="http://59.106.185.196:3000/blog/20191126082723.html">ls -l</a>」で見れます。3列目に表示されています。
-</p>
-<h4>パーミッションにおけるグループとは</h4>
-<p>
-  パーミッションにおけるグループとは、そのファイルの所有者グループに所属するユーザーのことです。「<a href="http://59.106.185.196:3000/blog/20191126082723.html">ls -l</a>」で見れます。4列目に表示されています。
-</p>
-<h4>パーミッションにおけるその他のユーザーとは</h4>
-<p>
-  パーミッションにおける、その他のユーザーとは、オーナーとグループに所属するユーザー以外のユーザーのことです。
-</p>
-<h3>読み込み許可、書き込み許可、実行許可</h3>
-<p>
-  読み込み許可、書き込み許可、実行許可についての解説です。
-</p>
-<h4>読み込み許可とは</h4>
-<p>
-  読み込み許可とは、ファイルを読みこむことができるということを意味します。
-</p>
-<h4>書き込み許可とは</h4>
-<p>
-  読み込み許可とは、ファイルに書き込むことができるといういうことを意味します。
-</p>
-<h4>実行許可とは</h4>
-<p>
-  実行許可とは、そのファイルを実行ファイルとして実行できるということを意味します。
-</p>
-<p>
-  ディレクトリの場合は特別な意味があり、実行権限がなければ、ディレクトリにアクセスすることができません。
-</p>
-<p>
-  一般的には、すべてのディレクトリに実行権限をつけます。
-</p>
-<h3>パーミッションの表現</h3>
-<p>
-  パーミッションの表現について解説します。
-</p>
-<p>
-  まずパーミッションは次の9つの情報で表現されます。この順番を覚えましょう。
-</p>
-<ol>
-  <li>オーナーの読み込み許可</li>
-  <li>オーナーの書き込み許可</li>
-  <li>オーナーの実行許可</li>
-  <li>グループの読み込み許可</li>
-  <li>グループの書き込み許可</li>
-  <li>グループの実行許可</li>
-  <li>その他ユーザーの読み込み許可</li>
-  <li>その他ユーザーの書き込み許可</li>
-  <li>その他ユーザーの実行許可</li>
-</ol>
-<h4>パーミッションの文字列表現</h4>
-<p>
-  パーミッションが文字列で表現される場合です。lsコマンドで見ると、文字列で表現されています。
-</p>
 <pre>
-drwxr-xr-x 7 admins admins   68 Apr 20 13:13 dir1
--rwxrwxr-x 1 admins admins  724 May 21 13:56 file1
+du directory name
 </pre>
 <p>
-  一番左の「d」「-」となっている部分は、取り除いて考えます。
+  This is a sample to check the directory capacity with du.
+</p>
+<pre>
+
+</pre>
+<p>
+  This is a sample output result.
+</p>
+<pre>
+468 templates / blog
+8 templates / static / images
+12 templates / static / css
+4 templates / static / blog
+192 templates / static / js / google-code-prettify
+292 templates / static / js
+324 templates / static
+28 templates / common
+828 templates
+</pre>
+<p>
+  The capacity is displayed in kilobytes for each directory and subdirectory.
+</p>
+<h3> To display in an easy-to-understand manner with units </h3>
+<p>
+  Use the "-h" option to clearly display the units of the du command.
+</p>
+<pre>
+du -h
+</pre>
+<p>
+  The output result has a unit.
+</p>
+<pre>
+Filesystem Size Used Avail Use% Mounted on
+udev 3.9G 0 3.9G 0% / dev
+tmpfs 794M 736K 793M 1% / run
+/ dev / sda1 29G 4.1G 25G 15% /
+tmpfs 3.9G 8.0K 3.9G 1% / dev / shm
+tmpfs 5.0M 0 5.0M 0% / run / lock
+tmpfs 3.9G 0 3.9G 0% / sys / fs / cgroup
+/ dev / sda15 105M 3.6M 101M 4% / boot / efi
+/ dev / sdc1 1007G 77M 956G 1% / datadrive
+/ dev / sdb1 16G 45M 15G 1% / mnt
+tmpfs 794M 0 794M 0% / run / user / 1001
+</pre>
+<h3> Arrange directory usage from top to bottom </h3>
+<p>
+  To display the directory usage in order from the top, combine sort and head with the du command. Useful for discovering large directories.
+</p>
+<pre>
+du templates | sort -rn | head -20
+</pre>
+<p>
+  The output results are output in descending order of directory capacity.
+</p>
+<pre>
+824 templates
+464 templates / blog
+324 templates / static
+292 templates / static / js
+192 templates / static / js / google-code-prettify
+28 templates / common
+12 templates / static / css
+8 templates / static / images
+4 templates / static / blog
+</pre>
+<p>
+  Specifying "/" for du and waiting for a while is convenient because you can see which directories are consuming space on the entire system.
+</p>
+<h3> How to check the capacity of the disk? </H3>
+<p>
+  Use the df command to check the capacity of the disk.
+</p>
+<p>
+  Note that the du command is a command to check the directory capacity, and the df command is used to check the disk capacity.
+</p>
+<ul>
+  <li> <a href="/blog/20200601093211.html"> df command --check disk capacity</a> </li>
+</ul>
+<h2> What are permissions? </H2>
+<p>
+  Permissions are the permissions to access a file.
+</p>
+<p>
+  Information about whether the owner, group, or other user has read, write, or execute permissions on the file.
+</p>
+<p>
+  The word file also includes directories. This is because in Linux, a directory is considered to be a type of file.
+</p>
+<h3> Owners, groups, and other users </h3>
+<p>
+  A description of owners, groups, and other users.
+</p>
+<h4> What is the owner in permissions </h4>
+<p>
+  The owner in a permission is the owner user of the file. You can see it at "<a href="http://59.106.185.196:3000/blog/20191126082723.html"> ls -l</a>". It is displayed in the third column.
+</p>
+<h4> What is a group in permissions </h4>
+<p>
+  A group in permissions is a user who belongs to the owner group of the file. You can see it at "<a href="http://59.106.185.196:3000/blog/20191126082723.html"> ls -l</a>". It is displayed in the 4th column.
+</p>
+<h4> What are other users in permissions? </H4>
+<p>
+  Other users in permissions are users other than the owner and the users who belong to the group.
+</p>
+<h3> Read permission, write permission, execution permission </h3>
+<p>
+  This is an explanation of read permission, write permission, and execution permission.
+</p>
+<h4> What is read permission? </H4>
+<p>
+  Read permission means that the file can be read.
+</p>
+<h4> What is write permission? </H4>
+<p>
+  Read permission means that you can write to a file.
+</p>
+<h4> What is execution permission? </H4>
+<p>
+  Executable means that the file can be executed as an executable file.
+</p>
+<p>
+  The directory has a special meaning, and you cannot access the directory without execute permission.
+</p>
+<p>
+  In general, give execute permission to all directories.
+</p>
+<h3> Representation of permissions </h3>
+<p>
+  I will explain the expression of permissions.
+</p>
+<p>
+  First, permissions are represented by the following nine pieces of information. Remember this order.
+</p>
+<ol>
+  <li> Owner read permission </li>
+  <li> Owner write permission </li>
+  <li> Owner execution permission </li>
+  <li> Group read permission </li>
+  <li> Group write permission </li>
+  <li> Group execution permission </li>
+  <li> Allow other users to read </li>
+  <li> Other user write permission </li>
+  <li> Execution permission of other users </li>
+</ol>
+<h4> String representation of permissions </h4>
+<p>
+  When permissions are represented by a string. When viewed with the ls command, it is represented by a character string.
+</p>
+<pre>
+drwxr-xr-x 7 admins admins 68 Apr 20 13:13 dir1
+-rwxrwxr-x 1 admins admins 724 May 21 13:56 file1
+</pre>
+<p>
+  Remove the leftmost "d" and "-" parts.
 </p>
 <pre>
 rwxr-xr-x
 </pre>
 <p>
-  これは9文字ありますが、上で解説した9つの情報にそのまま対応しています。
+  It has 9 characters, but it corresponds to the 9 information explained above as it is.
 </p>
 <p>
-  rは読み込み許可、wは書き込み許可、xが実行許可です。
+  r is read permission, w is write permission, and x is execution permission.
 </p>
-<h4>パーミッションの8進数表現</h4>
+<h4> Octal representation of permissions </h4>
 <p>
-  パーミッションの8進数表現です。chmodコマンドでは、8進数を使ってパーミッションを設定するのに利用します。
+  An octal representation of permissions. The chmod command is used to set permissions using octal numbers.
 </p>
 <pre>
-# 8進数
+# Octal
 644
 755
 600
 </pre>
 <p>
-  これは、2進数に直して考えます。
+  Think of this in binary.
 </p>
 <p>
-  4は「4 + 0 + 0」です。ですので二進数なら「100」です。読み込み許可がありです。
+  4 is "4 + 0 + 0". Therefore, the binary number is "100". You have read permission.
 </p>
 <p>
-  5は「4 + 0 + 1」です。ですので二進数なら「101」です。読み込み許可と、実行許可がありです。
+  5 is "4 + 0 + 1". So if it's a binary number, it's "101". There are read permission and execution permission.
 </p>
 <p>
-  6は「4 + 2 + 0」です。ですので二進数なら「110」です。読み込み許可と、書き込み許可がありです。
+  6 is "4 + 2 + 0". Therefore, the binary number is "110". There are read permission and write permission.
 </p>
 <p>
-  7は「4 + 2 + 1」です。ですので二進数なら「111」です。読み込み許可と、書き込み許可と、実行許可がありです。
+  7 is "4 + 2 + 1". So if it's a binary number, it's "111". There are read permission, write permission, and execute permission.
 </p>
 <p>
-  0は「0 + 0 + 0」です。ですので二進数なら「000」です。権限はありません。
+  0 is "0 + 0 + 0". So the binary number is "000". You do not have permission.
 </p>
 <p>
-  これが9つの情報に対応します。1が立っている場所は、許可があります。
+  This corresponds to nine pieces of information. Where 1 stands, there is a permit.
 </p>
 <pre>
-# 2進数
+# Binary number
 110 100 100
 111 101 101
 110 000 000
 </pre>
 <p>
-  わかりやすいようにオーナーの権限、グループの権限、その他ユーザーの権限の区切りに空白を入れています。
+  For clarity, we've put a space between the owner's permissions, the group's permissions, and other user permissions.
 </p>
 
   </div>

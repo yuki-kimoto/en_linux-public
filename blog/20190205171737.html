@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20190205171737.html"> How to check the existence of a process kill -0 </a></ h2>
+    <h2><a href="/blog/20190205171737.html"> How to check the existence of a process kill -0 </a></h2>
 <p>
-  To confirm the existence of the process, use the <b> kill </ b> command and specify <b> 0 </ b> as an option. Rest assured that if you specify the <b> 0 </ b> option for kill, the process will not be terminated.
+  To confirm the existence of the process, use the <b> kill </b> command and specify <b> 0 </b> as an option. Rest assured that if you specify the <b> 0 </b> option for kill, the process will not be terminated.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -86,15 +86,17 @@
 
 <pre>
 kill -0 process number
-&lt;/ pre&gt;
-
-If the process exists, the command will succeed and nothing will be output. If the command fails, you will get a message that there is no such process.
-
-This can be confirmed by examining &lt;b&gt; $? &lt;/ B&gt;. If it succeeds, it will be &lt;b&gt; 0 &lt;/ b&gt;, and if it fails, it will be &lt;b&gt; 1 &lt;/ b&gt;.
-
-The following is a sample script.
-
-&lt;pre&gt;
+</pre>
+<p>
+  If the process exists, the command will succeed and nothing will be output. If the command fails, you will get a message that there is no such process.
+</p>
+<p>
+  This can be confirmed by examining <b> $? </B>. If it succeeds, it will be <b> 0 </b>, and if it fails, it will be <b> 1 </b>.
+</p>
+<p>
+  The following is a sample script.
+</p>
+<pre>
 kill -0 16033&gt; / dev / null 2&gt; &amp; 1
 
 if [$? = 0]; then
@@ -102,7 +104,7 @@ if [$? = 0]; then
 else else
    echo "not exists"
 fi
-&lt;/ pre&gt;
+</pre>
 
   </div>
   <div class="bottom">

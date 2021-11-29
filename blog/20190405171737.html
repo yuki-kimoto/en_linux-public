@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>Linux基礎知識1 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="ここまでコマンドを紹介してきましたけれど、少しLinux自体について説明しておきます。さくらのVPSでデフォルトで選択されているOSはCentOSといういうものです。CentOSというのはLinuxのディストリビューションのひとつです。">
+<title> Linux basic knowledge 1  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="Although I have introduced the commands so far, I will explain a little about Linux itself. The OS selected by default for Sakura's VPS is CentOS. CentOS is one of the Linux distributions.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="Linux基礎知識1 - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="ここまでコマンドを紹介してきましたけれど、少しLinux自体について説明しておきます。さくらのVPSでデフォルトで選択されているOSはCentOSといういうものです。CentOSというのはLinuxのディストリビューションのひとつです。" />
+<meta name="twitter:title" content=" Linux basic knowledge 1  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="Although I have introduced the commands so far, I will explain a little about Linux itself. The OS selected by default for Sakura's VPS is CentOS. CentOS is one of the Linux distributions." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20190405171737.html">Linux基礎知識1</a></h2>
+    <h2><a href="/blog/20190405171737.html"> Linux basic knowledge 1 </a></h2>
 <p>
-  　ここまでコマンドを紹介してきましたけれど、少しLinux自体について説明しておきます。さくらのVPSでデフォルトで選択されているOSはCentOSといういうものです。CentOSというのはLinuxのディストリビューションのひとつです。
+  Although I have introduced the commands so far, I will explain a little about Linux itself. The OS selected by default for Sakura's VPS is CentOS. CentOS is one of the Linux distributions.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -85,94 +85,94 @@
 
 
 <p>
-  　ディストリビューションというのは、ユーザーが使いやすいようにLinuxの上に機能を追加して配布できるようにしたものだと考えればよいです。
+  You can think of a distribution as something that can be distributed by adding functions on Linux so that users can use it easily.
 </p>
 <pre>
 CentOS | Ubuntu
 --------------------
-  Linuカーネル
+  Linu kernel
 </pre>
 <p>
-  　LinuxカーネルというのはLinuxのコアの部分のことで、その上に機能を追加したLinuxディストリビューションがあります。CentOSやUbuntuといったLinuxディストリビューションがあります。
+  The Linux kernel is the core part of Linux, and there are Linux distributions with additional functions on it. There are Linux distributions such as CentOS and Ubuntu.
 </p>
-<h3>ファイルの所有者</h3>
+<h3> File owner </h3>
 <p>
-  　次のようにlsでファイルを詳細表示してみましょう。
+  Let's display the file in detail with ls as follows.
 </p>
 <pre>
 ls -l
 </pre>
 <p>
-  　すると次のように表示されます。
+  Then, it will be displayed as follows.
 </p>
 <pre>
--rw-rw-r-- 1 kimoto project    588  6月 16 13:19 README
-drwxrwxr-x 3 kimoto project   4096  6月 16 16:39 lib
+-rw-rw-r-- 1 kimoto project 588 June 16 13:19 README
+drwxrwxr-x 3 kimoto project 4096 June 16 16:39 lib
 </pre>
 <p>
-  　<b>kimoto</b>というのはファイルの所有者を表しています。つまりREADMEというファイルは、ユーザーkimotoによって所有されていると考えます。
+  <B> kimoto </b> represents the owner of the file. In other words, the file called README is considered to be owned by user kimoto.
 </p>
 <p>
-  　<b>project</b>というのはファイルを所有しているグループを表しています。つまりREADMEというファイルは、グループprojectによって所有されていると考えます。特にグループに属していない場合は、グループ名はユーザー名と同じになります。次のような表示になります。
-</p>
-<pre>
--rw-rw-r-- 1 kimoto kimoto    588  6月 16 13:19 README
-</pre>
-<h3>ユーザーの追加</h3>
-<p>
-  　ここでもう一度ユーザーの追加の方法について解説しておきます。ユーザーを追加するにはroot権限を持っている必要があります。ですのでrootで作業しましょう。
+  <B> project </b> represents the group that owns the file. In other words, the file called README is considered to be owned by the group project. The group name will be the same as the user name, especially if it does not belong to a group. The display will be as follows.
 </p>
 <pre>
-su -
+-rw-rw-r-- 1 kimoto kimoto 588 June 16 13:19 README
+</pre>
+<h3> Add user </h3>
+<p>
+  Here, I will explain how to add a user again. You must have root privileges to add users. So let's work as root.
+</p>
+<pre>
+su ---
 </pre>
 <p>
-  　ユーザーを追加するには<b>useradd</b>コマンドを使用します。
+  Use the <b> useradd </b> command to add a user.
 </p>
 <pre>
 useradd ken
 </pre>
 <p>
-  　ユーザーを追加したらパスワードも設定します。<b>passwd</b>コマンドを使用します。
+  After adding a user, set a password as well. Use the <b> passwd </b> command.
 </p>
 <pre>
 passwd ken
 </pre>
 <p>
-  　パスワードの入力と確認のための再入力を求められるので設定します。
+  You will be asked to enter the password and re-enter it for confirmation, so set it.
 </p>
 <p>
-  　ユーザーの一覧は<b>/etc/passwd</b>ファイルを見ることで確認できます。
+  You can check the list of users by looking at the <b> / etc / passwd </b> file.
 </p>
 <pre>
-cat /etc/passwd
+cat / etc / passwd
 </pre>
-<h3>グループの作成</h3>
+<h3> Create group </h3>
 <p>
-  　グループも自由な名前で作成することができます。グループを作成するには<b>groupadd</b>を使用します。
+  You can also create a group with any name. Use <b> groupadd </b> to create a group.
 </p>
 <pre>
 groupadd someproject
 </pre>
 <p>
-  　ユーザーはグループに所属させることができます。kenをsomeprojectグループに追加するには次のようにします。
+  Users can belong to a group. To add a ken to the someproject group:
 </p>
 <p>
-  　作成されているグループは設定ファイル<b>/etc/group</b>で確認することができます。
+  You can check the created group in the configuration file <b> / etc / group </b>.
 </p>
 <pre>
-cat /etc/group
+cat / etc / group
 </pre>
 <p>
-  　ユーザーをグループに所有させて見ましょう。<b>usermod</b>を使います。<b>G</b>オプションでユーザーをグループに追加することができます。
+  Let's make the user owned by the group. Use <b> usermod </b>. You can add users to the group with the <b> G </b> option.
 </p>
 <pre>
 usermod -G someproject ken
 </pre>
 <p>
-  　これでユーザーkenがグループsomeprojectに所属します。
+  Now user ken belongs to the group someproject.
 </p>
 <p>
-  　ユーザーは複数のグループに所属できますし、グループには複数のユーザーを所属させることができます。
+  Users can belong to multiple groups, and multiple users can belong to a group.
 </p>
 
   </div>

@@ -36,12 +36,12 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>mvコマンド - ファイル名を変更する - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="mvコマンドを使用すると、ファイル名を変更することができます。元のファイル名が、新しいファイル名に変更されます。mvの名前はmoveに由来しています。">
+<title> mv command-rename file  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<meta name="description" content="You can change the file name using the mv command. The original file name is changed to the new file name. The name of mv comes from move.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="mvコマンド - ファイル名を変更する - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="mvコマンドを使用すると、ファイル名を変更することができます。元のファイル名が、新しいファイル名に変更されます。mvの名前はmoveに由来しています。" />
+<meta name="twitter:title" content=" mv command-rename file  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:description" content="You can change the file name using the mv command. The original file name is changed to the new file name. The name of mv comes from move." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
@@ -64,28 +64,28 @@
 
   </div>
   <div class="middle">
-    <div class="bread">
-  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <div class = "bread">
+  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop="name">Linux</span>
-      </a>
-      <meta itemprop="position" content="1" />
+        <span itemprop = "name"> Linux </span>
+     </a>
+      <meta itemprop = "position" content = "1" />
     </li>
-    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200211081227.html">
-        <span itemprop="name">Linuxコマンド</span>
-      </a>
-      <meta itemprop="position" content="2" />
+        <span itemprop = "name"> Linux command </span>
+     </a>
+      <meta itemprop = "position" content = "2" />
     </li>
     <li>
       here
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20191204081652.html">mvコマンド - ファイル名を変更する</a></h2>
+<h2><a href="/blog/20191204081652.html"> mv command-rename file </a></h2>
 <p>
-  mvコマンドを使用すると、ファイル名を変更することができます。元のファイル名が、新しいファイル名に変更されます。mvの名前はmoveに由来しています。
+  You can change the file name using the mv command. The original file name is changed to the new file name. The name of mv comes from move.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -104,92 +104,92 @@
 
 
 <pre>
-mv 元のファイル名 新しいファイル名
+mv original file name new file name
 </pre>
 <p>
-  mvコマンドでファイル名変更を行うサンプルです。foo.txtというファイル名が、bar.txtに変更されます。
+  This is a sample to change the file name with the mv command. The file name foo.txt is renamed to bar.txt.
 </p>
 <pre>
 mv foo.txt bar.txt
 </pre>
-<h3>ディレクトリ名を変更する</h3>
+<h3> Rename the directory </h3>
 <p>
-  mvコマンドは、ディレクトリ名の変更にも利用することができます。Linuxでは、ファイル名とディレクトリ名は、同じ扱いです。ディレクトリというのは、Windowsでいうフォルダのことです。
+  The mv command can also be used to rename a directory. On Linux, file names and directory names are treated the same. A directory is a folder in Windows.
 </p>
 <pre>
-mv 元のディレクトリ名 新しいディレクトリ名
+mv original directory name new directory name
 </pre>
 <p>
-  ディレクトリ名の変更行うサンプルです。dir1というディレクトリ名がdir2というディレクトリ名に変更されます。
+  This is a sample to change the directory name. The directory name dir1 is changed to the directory name dir2.
 </p>
 <pre>
 mv dir1 dir2
 </pre>
-<h3>ファイルの場所を移動する</h3>
+<h3> Move the file location </h3>
 <p>
-  mvコマンドは、ファイルの場所を移動するのにも利用することができます。
+  The mv command can also be used to move the location of a file.
 </p>
 <p>
-  ホームディレクトリのlaboというディレクトリの中にあるfoo.txtを、ホームディレクトリのtestというディレクトリに移動してみましょう。「~」はホームディレクトリのパスを表します。
-</p>
-<pre>
-mv ~/labo/foo.txt ~/test/foo.txt
-</pre>
-<p>
-  上記のように、ファイルを移動するときにもmvコマンドは使用します。
-</p>
-<p>
-  ファイルを移動したいときは、末尾のファイル名だけを省略することもできます。末尾にスラッシュが付いていることに注意してください。
+  Let's move foo.txt in the directory called labo in the home directory to the directory called test in the home directory. "~" Represents the path of your home directory.
 </p>
 <pre>
-# 上の操作のシンタックシュガー
-mv ~/labo/foo.txt ~/test/
+mv ~ / labo / foo.txt ~ /test/foo.txt
 </pre>
 <p>
-  ディレクトリの場所を移動したいときも同じように行うことができます。
+  As mentioned above, the mv command is also used when moving files.
+</p>
+<p>
+  If you want to move the file, you can omit only the last file name. Notice the trailing slash.
 </p>
 <pre>
-mv ~/labo/dir1 ~/test/dir1
+#Syntack sugar of the above operation
+mv ~ / labo / foo.txt ~ / test /
 </pre>
 <p>
-  または
+  You can do the same if you want to move the directory location.
 </p>
 <pre>
-# 上の操作のシンタックシュガー
-mv ~/labo/dir1 ~/test/
+mv ~ / labo / dir1 ~ / test / dir1
 </pre>
-<h3>ヘルプを表示する --helpオプション</h3>
 <p>
-  ヘルプを表示するには「--help」オプションを使用します。
+  or
+</p>
+<pre>
+#Syntack sugar of the above operation
+mv ~ / labo / dir1 ~ / test /
+</pre>
+<h3> Show help --help option </h3>
+<p>
+  Use the "--help" option to get help.
 </p>
 <pre>
 mv --help
 </pre>
 <p>
-  ヘルプが表示されます。
+  Help is displayed.
 </p>
 <pre>
-Usage: mv [OPTION]... [-T] SOURCE DEST
-  or:  mv [OPTION]... SOURCE... DIRECTORY
-  or:  mv [OPTION]... -t DIRECTORY SOURCE...
-Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.
+Usage: mv [OPTION] ... [-T] SOURCE DEST
+  or: mv [OPTION] ... SOURCE ... DIRECTORY
+  or: mv [OPTION] ... -t DIRECTORY SOURCE ...
+Rename SOURCE to DEST, or move SOURCE (s) to DIRECTORY.
 
 Mandatory arguments to long options are mandatory for short options too.
-      --backup[=CONTROL]       make a backup of each existing destination file
-  -b                           like --backup but does not accept an argument
-  -f, --force                  do not prompt before overwriting
-  -i, --interactive            prompt before overwrite
+      --backup [= CONTROL] make a backup of each existing destination file
+  -b like --backup but does not accept an argument
+  -f, --force do not prompt before overwriting
+  -i, --interactive prompt before overwrite
       --strip-trailing-slashes remove any trailing slashes from each SOURCE
-                                 argument
-  -S, --suffix=SUFFIX          override the usual backup suffix
-  -t, --target-directory=DIRECTORY  move all SOURCE arguments into DIRECTORY
-  -T, --no-target-directory    treat DEST as a normal file
-  -u, --update                 move only when the SOURCE file is newer
+                                 argument argument
+  -S, --suffix = SUFFIX override the usual backup suffix
+  -t, --target-directory = DIRECTORY move all SOURCE arguments into DIRECTORY
+  -T, --no-target-directory treat DEST as a normal file
+  -u, --update move only when the SOURCE file is newer
                                  than the destination file or when the
                                  destination file is missing
-  -v, --verbose                explain what is being done
-      --help     display this help and exit
-      --version  output version information and exit
+  -v, --verbose explain what is being done
+      --help display this help and exit
+      --version output version information and exit
 </pre>
 
   </div>

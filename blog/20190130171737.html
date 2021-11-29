@@ -68,22 +68,22 @@
   <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
     <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop = "name"> Linux </ span>
-      </a>
+        <span itemprop = "name"> Linux </span>
+     </a>
       <meta itemprop = "position" content = "1" />
-    </ li>
+    </li>
     <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200211081227.html">
-        <span itemprop = "name"> Linux command </ span>
-      </a>
+        <span itemprop = "name"> Linux command </span>
+     </a>
       <meta itemprop = "position" content = "2" />
-    </ li>
+    </li>
     <li>
       here
-    </ li>
-  </ ul>
-</ div>
-<h2><a href="/blog/20190130171737.html"> rsync command-sync directories </a></ h2>
+    </li>
+  </ul>
+</div>
+<h2><a href="/blog/20190130171737.html"> rsync command-sync directories </a></h2>
 <p>
   You can synchronize directories using the rsync command. Synchronization means putting two directories in the same state.
 </p>
@@ -109,66 +109,75 @@
 <p>
   rsync will only transfer the diffs. So even in a large directory, only the changes are transferred, which is good performance.
 </p>
-<h3> Synchronize directories using rsync </ h3>
+<h3> Synchronize directories using rsync </h3>
 <p>
   First, I'll show you how to sync directories using rsync. This is surprisingly a songwriter.
 </p>
 <pre>
 #Copy the directory. Synchronize the contents of src_dir into dist_dir
 rsync -av src_dir / dist_dir
-&lt;/ pre&gt;
-
-There are many command options in rsync, but first remember only "-a" and "-v".
-
-The "-a" option is a combination of other options that syncs nicely.
-
-The "-v" option prints which files were synced.
-
-This is the most important thing, but with rsync, the meaning depends on whether the directory name has a "/" after it or not.
-
-If you don't understand this well, you'll get "that" every time you run rsync.
-
-In rsync, a "/" at the end of the source directory means "the contents of the directory".
-
-For the synchronization destination, simply write the directory name.
-
-The above means syncing the contents of src_dir into dist_dir.
-
-If the destination directory does not exist, it will be created automatically.
-
-If there is no "/" at the end of the directory name of the synchronization source, it means to synchronize "src_dir" in "dist_dir". "Src_dir" will be created in "dist_dir".
-
-&lt;h3&gt; Synchronize directories between local and remote &lt;/ h3&gt;
-
-rsync supports local and remote synchronization using the SSH protocol, as well as local synchronization. This can be used for backup.
-
-Describe how to specify the user name, host name, and port number. Other than that, it is the same as local synchronization.
-
-&lt;pre&gt;
+</pre>
+<p>
+  There are many command options in rsync, but first remember only "-a" and "-v".
+</p>
+<p>
+  The "-a" option is a combination of other options that syncs nicely.
+</p>
+<p>
+  The "-v" option prints which files were synced.
+</p>
+<p>
+  This is the most important thing, but with rsync, the meaning depends on whether the directory name has a "/" after it or not.
+</p>
+<p>
+  If you don't understand this well, you'll get "that" every time you run rsync.
+</p>
+<p>
+  In rsync, a "/" at the end of the source directory means "the contents of the directory".
+</p>
+<p>
+  For the synchronization destination, simply write the directory name.
+</p>
+<p>
+  The above means syncing the contents of src_dir into dist_dir.
+</p>
+<p>
+  If the destination directory does not exist, it will be created automatically.
+</p>
+<p>
+  If there is no "/" at the end of the directory name of the synchronization source, it means to synchronize "src_dir" in "dist_dir". "Src_dir" will be created in "dist_dir".
+</p>
+<h3> Synchronize directories between local and remote </h3>
+<p>
+  rsync supports local and remote synchronization using the SSH protocol, as well as local synchronization. This can be used for backup.
+</p>
+<p>
+  Describe how to specify the user name, host name, and port number. Other than that, it is the same as local synchronization.
+</p>
+<pre>
 rsync -e "ssh -p 55555" -av / foo / src_dir / kimoto@192.168.1.1:/bar/dist_dir
-&lt;/ pre&gt;
-
-&lt;h4&gt; Username / hostname format &lt;/ h4&gt;
-
-Write the remote host in the following format.
-
-&lt;pre&gt;
+</pre>
+<h4> Username / hostname format </h4>
+<p>
+  Write the remote host in the following format.
+</p>
+<pre>
 Username @hostname: directory
-&lt;/ pre&gt;
-
-&lt;h4&gt; Specifying the port number &lt;/ h4&gt;
-
-Specifying the port number is not an ordinary option and should be included as an option for the ssh command with the &lt;b&gt; -e &lt;/ b&gt; option.
-
-&lt;pre&gt;
+</pre>
+<h4> Specifying the port number </h4>
+<p>
+  Specifying the port number is not an ordinary option and should be included as an option for the ssh command with the <b> -e </b> option.
+</p>
+<pre>
 -e "ssh -p port number"
-&lt;/ pre&gt;
-
-&lt;h3&gt; I want to automate backup operations &lt;/ h3&gt;
-
-If you want to automate the backup operation, create an SSH private key / public key pair on the backup server and use it to connect. With the key, the password is not required, so backup operations can be automated.
-
-I will explain how to create an SSH key pair elsewhere.
+</pre>
+<h3> I want to automate backup operations </h3>
+<p>
+  If you want to automate the backup operation, create an SSH private key / public key pair on the backup server and use it to connect. With the key, the password is not required, so backup operations can be automated.
+</p>
+<p>
+  I will explain how to create an SSH key pair elsewhere.
+</p>
 
   </div>
   <div class="bottom">

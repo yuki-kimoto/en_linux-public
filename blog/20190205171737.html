@@ -97,12 +97,12 @@ kill -0 process number
   The following is a sample script.
 </p>
 <pre>
-kill -0 16033&gt; / dev / null 2&gt; &amp; 1
+kill -0 16033 &gt; /dev/null 2&gt;&amp;1
 
-if [$? = 0]; then
-   echo "exists";
-else else
-   echo "not exists"
+if [ $? = 0 ]; then
+  echo "exists";
+else
+  echo "not exists"
 fi
 </pre>
 

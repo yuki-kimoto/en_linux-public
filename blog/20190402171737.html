@@ -95,20 +95,20 @@ pwd
   The path of the current directory is displayed as shown below.
 </p>
 <pre>
-/ home / kimoto
+/home/kimoto
 </pre>
 <h3> Change current directory </h3>
 <p>
   Use the <b> cd </b> command to move the current directory.
 </p>
 <pre>
-cd directory name
+cd DirectoryName
 </pre>
 <p>
   The directory name can be either a relative path relative to the current directory or an absolute path that describes the complete path.
 </p>
 <p>
-  For example, if you are working in the current directory "/ home / kimoto" and want to move to the directory "labo" directly under this, do as follows.
+  For example, if you are working in the current directory "/home/kimoto" and want to move to the directory "labo" directly under this, do as follows.
 </p>
 <pre>
 cd labo
@@ -117,7 +117,7 @@ cd labo
   You can also move by specifying the absolute path.
 </p>
 <pre>
-cd / home / kimoto / labo
+cd /home/kimoto/labo
 </pre>
 <h4> Abbreviated notation of home directory </h4>
 <p>
@@ -130,17 +130,17 @@ cd ~
   If the user is kimoto, it has the same meaning as the following specification.
 </p>
 <pre>
-cd / home / kimoto
+cd /home/kimoto
 </pre>
 <h4> Specify easily using wildcards </h4>
 <p>
   Actually, when moving with cd, if you use wildcards, you do not need to specify all the names of the directory name.
 </p>
 <pre>
-cd la *
+cd la*
 </pre>
 <p>
-  <B> * </b> is a wildcard, and if you specify "la *", you can move to the directory "labo" if it exists. Typing or copying and pasting all names is a useful technique when you're having trouble.
+  <B> * </b> is a wildcard, and if you specify "la*", you can move to the directory "labo" if it exists. Typing or copying and pasting all names is a useful technique when you're having trouble.
 </p>
 <h3> Display the list of files contained in the directory </h3>
 <p>
@@ -166,7 +166,7 @@ ls -l
   You can see the detailed information of the file as follows.
 </p>
 <pre>
--rw-rw-r-- 1 kimoto kimoto 588 June 16 13:19 README
+-rw-rw-r-- 1 kimoto kimoto 588  June 16 13:19 README
 drwxrwxr-x 3 kimoto kimoto 4096 June 16 16:39 lib
 drwxrwxr-x 2 kimoto kimoto 4096 June 25 19:21 script
 </pre>
@@ -194,7 +194,7 @@ ls -al
   You can narrow down the files to be displayed by using wildcards.
 </p>
 <pre>
-ls 2012 *
+ls 2012*
 </pre>
 <p>
   If you specify as above, you can display only the files starting with 2012.

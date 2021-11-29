@@ -89,7 +89,7 @@
   The grep command is one of the most frequently used commands. grep will display the line if the text file contains the specified string.
 </p>
 <pre>
-grep string text file
+grep String TextFile
 </pre>
 <p>
   For example, let's say the text file (foo.txt) looks like the following.
@@ -140,13 +140,13 @@ grep "cat is" foo.txt
   In grep, you can specify a regular expression as an extraction condition.
 </p>
 <pre>
-grep "^ cat" foo.txt
+grep "^cat" foo.txt
 </pre>
 <p>
   On the contrary, when searching by character string, the "-F" option can be used.
 </p>
 <pre>
-grep "cat" foo.txt
+grep -F "cat" foo.txt
 </pre>
 <h4> Search from all subdirectories </h4>
 <p>
@@ -175,17 +175,17 @@ env
   Environment variables are variables for storing settings used in applications.
 </p>
 <pre>
-HOSTNAME = www345u.sakura.ne.jp
-SHELL = / bin / bash
-OLDPWD = / home / kimoto / labo
-USER = kimoto
+HOSTNAME=www345u.sakura.ne.jp
+SHELL=/bin/bash
+OLDPWD=/home/kimoto/labo
+USER=kimoto
 </pre>
 <h4> Environment variable settings env </h4>
 <p>
   To set environment variables, do the following.
 </p>
 <pre>
-export APP_NAME = myapp
+export APP_NAME=myapp
 </pre>
 <p>
   Environment variables are generally uppercase. You can give it any name you like. The environment variables you set are valid only in the current shell. In other words, once you log out or quit the terminal, the settings will disappear.
@@ -194,7 +194,7 @@ export APP_NAME = myapp
   If you want to set environment variables as the default settings, you need to define them in the shell configuration file. The shell config file is <b> .bashrc </b> in your home directory.
 </p>
 <pre>
-vi ~ / .bashrc
+vi ~/.bashrc
 </pre>
 <p>
   Environment variable settings and commands can be described in this configuration file.
@@ -210,21 +210,21 @@ which perl
   Then, the path of the application that is actually running will be displayed as shown below.
 </p>
 <pre>
-~ / perl5 / perlbrew / perls / perl-5.14.2 / bin / perl
+~/perl5/perlbrew/perls/perl-5.14.2/bin/perl
 </pre>
 <h3> Output the contents of the file </h3>
 <p>
   Use <b> cat </b> to output the contents of the file.
 </p>
 <pre>
-cat file
+cat File
 </pre>
 <h3> View text file from the beginning more </h3>
 <p>
   Use <b> more </b> if you want to see only the beginning of the text file.
 </p>
 <pre>
-more text file
+more TextFile
 </pre>
 <p>
   Press Enter to advance the page. Press <b> q </b> when you want to finish.
@@ -234,13 +234,13 @@ more text file
   Use <b> tail </b> to see the end of the text file.
 </p>
 <pre>
-tail text file
+tail TextFile
 </pre>
 <p>
   There is a convenient option in tail, which has a <b> f </b> option that monitors the file and keeps displaying it if a string is added to the end of the file. Useful for monitoring logs.
 </p>
 <pre>
-tail -f developmen.log
+tail -f development.log
 </pre>
 
   </div>

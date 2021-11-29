@@ -36,11 +36,11 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title> vi --Text editor for command line  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<title> vi - Text editor for command line  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
 <meta name="description" content="vi is a text editor that comes with Linux by default and can be run from the command line.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content=" vi --Text editor for command line  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:title" content=" vi - Text editor for command line  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
 <meta name="twitter:description" content="vi is a text editor that comes with Linux by default and can be run from the command line." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
@@ -64,26 +64,26 @@
 
   </div>
   <div class="middle">
-    <div class = "bread">
-  <ul itemscope itemtype = "http://schema.org/BreadcrumbList">
-    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
+    <div class="bread">
+  <ul itemscope itemtype="http://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
       <a itemprop="item" href="/">
-        <span itemprop = "name"> Linux </span>
+        <span itemprop="name"> Linux </span>
      </a>
-      <meta itemprop = "position" content = "1" />
+      <meta itemprop="position" content="1" />
     </li>
-    <li itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
       <a itemprop="item" href="/blog/20200211081227.html">
-        <span itemprop = "name"> Linux command </span>
+        <span itemprop="name"> Linux command </span>
      </a>
-      <meta itemprop = "position" content = "2" />
+      <meta itemprop="position" content="2" />
     </li>
     <li>
       here
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20190401171737.html"> vi --Text editor for command line </a></h2>
+<h2><a href="/blog/20190401171737.html"> vi - Text editor for command line </a></h2>
 <p>
   vi is a text editor that comes with Linux by default and can be run from the command line.
 </p>
@@ -127,7 +127,7 @@
   To create a text file:
 </p>
 <pre>
-vi text file name
+vi TextFileName
 </pre>
 <p>
   If you pass the file name as an argument of vi, it will create a new one if the text does not exist. Let's create a file called foo.txt.
@@ -149,13 +149,13 @@ Press Esc
   Pressing Esc changes vi to a mode called <b> command mode </b>. vi has two modes, one for editing characters and one for executing commands. To exit the vi editor, first press <b> Esc </b> and then in command mode. Must be.
 </p>
 <p>
-  Then type ": q".
+  Then type ":q".
 </p>
 <pre>
-: q
+:q
 </pre>
 <p>
-  Type ": q" and press Enter. Exit the vi editor. I am running a command to exit the editor called q. The colon ":" is required before the command.
+  Type ":q" and press Enter. Exit the vi editor. I am running a command to exit the editor called q. The colon ":" is required before the command.
 </p>
 <h4> Kill without saving </h4>
 <p>
@@ -165,29 +165,29 @@ Press Esc
   Use the <b> q! </B> command to kill without saving. Press Esc to change to command mode, then type the following and press Enter.
 </p>
 <pre>
-: q!
+:q!
 </pre>
 <h4> Save edits </h4>
 <p>
-  Use the "w" command to save your edits. You can save it by pressing <b> Esc </b> to enter command mode, then typing ": w" and pressing Enter.
+  Use the "w" command to save your edits. You can save it by pressing <b> Esc </b> to enter command mode, then typing ":w" and pressing Enter.
 </p>
 <pre>
-: w
+:w
 </pre>
 <h4> Save your edits and exit </h4>
 <p>
-  Save another one and remember the end. Use the <b> wq </b> command. Press <b> Esc </b> to enter command mode, then type ": wq" and press Enter to save and exit.
+  Save another one and remember the end. Use the <b> wq </b> command. Press <b> Esc </b> to enter command mode, then type ":wq" and press Enter to save and exit.
 </p>
 <pre>
-: wq
+:wq
 </pre>
 <p>
   If you remember the three exit methods, you can manage to start vi by mistake.
 </p>
 <ul>
-  <li> q --End </li>
-  <li> q! --Exit without saving </li>
-  <li> wq --Save and exit </li>
+  <li> q - End </li>
+  <li> q! - Exit without saving </li>
+  <li> wq - Save and exit </li>
 </ul>
 <h3> Edit text with vi editor </h3>
 <p>
@@ -219,7 +219,7 @@ i
   If you want to save your edits, use the <b> w </b> command after entering command mode. To enter command mode, I first pressed the Esc key.
 </p>
 <pre>
-: w
+:w
 </pre>
 <p>
   You can save the text by typing as above and pressing Enter. To edit, press i again to switch to edit mode.
@@ -228,7 +228,7 @@ i
   If you want to save and exit, do the following.
 </p>
 <pre>
-: wq
+:wq
 </pre>
 <p>
   Now you can edit the configuration file somehow.
@@ -245,7 +245,7 @@ i
   First press the Esc key to enter command mode. Then type the following and press Enter.
 </p>
 <pre>
-: set number
+:set number
 </pre>
 <p>
   The line number will appear on the left.
@@ -258,26 +258,28 @@ i
   The vi configuration file is <b> .vimrc </b> in the user's home directory. Isn't there such a file? It doesn't exist by default, so you need to create it.
 </p>
 <pre>
-vi ~ / .vimrc
+vi ~/.vimrc
 </pre>
 <p>
   Let's write the command in this file.
 </p>
 <pre>
 set number
-&lt;pre&gt;
-
-The leading colon is not needed.
-
-You can move to your home directory by typing &lt;b&gt; cd ~ &lt;/b&gt;. Tilde is a special character that means the user's home directory.
-
-Let's use vi to create a &lt;b&gt; .vimrc &lt;/b&gt;. Then press &lt;b&gt; i &lt;/b&gt; and when you're in edit mode, type:
-
-&lt;pre&gt;
+</pre>
+<p>
+  The leading colon is not needed.
+</p>
+<p>
+  You can move to your home directory by typing <b> cd ~ </b>. Tilde is a special character that means the user's home directory.
+</p>
+<p>
+  Let's use vi to create a <b> .vimrc </b>. Then press <b> i </b> and when you're in edit mode, type:
+</p>
+<pre>
 set number
 </pre>
 <p>
-  When writing to a vi configuration file, the colon is not at the beginning. Write without a colon. Then press Esc to enter command mode, type <b>: wq </b> to save and exit. Then the file is created.
+  When writing to a vi configuration file, the colon is not at the beginning. Write without a colon. Then press Esc to enter command mode, type <b>:wq </b> to save and exit. Then the file is created.
 </p>
 <p>
   On Linux, files starting with <b>. </B> are hidden files. Configuration files are often hidden files. The regular <b> ls </b> command doesn't list it in the file, but you can use the <b> a </b> option to see it, including hidden files.
@@ -293,36 +295,36 @@ ls -a
   Many programmers want to type blank with the tab key instead of the tab.
 </p>
 <pre>
-: set expandtab
+:set expandtab
 </pre>
 <h4> I want to set the tab width </h4>
 <p>
   If you are a programmer, you also want to set the tab width.
 </p>
 <pre>
-: set tabstop = 2
+:set tabstop=2
 </pre>
 <h4> I want to indent when a line breaks </h4>
 <p>
   If you are a programmer, you want to indent instead of returning to the beginning when you start a new line.
 </p>
 <pre>
-: set autoindent
+:set autoindent
 </pre>
 <h4> The configuration file is large, so I want to move it to the end of the file </h4>
 <p>
   If you want to move to the end, type <b> G </b> in command mode.
 </p>
 <pre>
-: G
+:G
 </pre>
 <h4> I want to move to my favorite line number </h4>
 <p>
   If you want to move to your favorite line number, use <b> number G </b>.
 </p>
 <pre>
-1G
-: 25G
+:1G
+:25G
 </pre>
 <p>
   If it is 1G, you can move to the 1st line, and if it is 25G, you can move to the 25th line.
@@ -331,27 +333,27 @@ ls -a
   You can move by just typing the line number in command mode with the Esc key.
 </p>
 <pre>
-: 3
+:3
 </pre>
 <h4> I want to search for a character string </h4>
 <p>
   If you want to search, first type <b> / </b> in command mode. Hit the slash. Then it will be as follows.
 </p>
 <pre>
-/ /
+/
 </pre>
 <p>
   Then type in the characters you want to search for here.
 </p>
 <pre>
-/ foo
+/foo
 </pre>
 <p>
   Then press Enter. You can now search. Press <b> n </b> to move to the next matched position. Press <b> N </b> to return. You can now search.
 </p>
 <ul>
-  <li> n --Forward </li>
-  <li> N-Forward </li>
+  <li> n - Forward </li>
+  <li> N - Back </li>
 </pre>
 <h4> I want to copy </h4>
 <p>
@@ -379,10 +381,10 @@ dd
   You can also use the arrow keys to move up / down / left / right, but you can also use the Esc key to switch to command mode and then use the next key to move up / down / left / right.I can do it.
 </p>
 <ul>
-   <li> k --above </li>
-   <li> h --left </li>
-   <li> j --below </li>
-   <li> k --above </li>
+   <li> k - above </li>
+   <li> h - left </li>
+   <li> j - below </li>
+   <li> k - above </li>
 </ul>
 <h4> Advance one character to edit mode </h4>
 <p>
@@ -401,7 +403,7 @@ dd
   In command mode, you can execute any Linux command by prefixing it with "!". When running Perl, do the following:
 </p>
 <pre>
-! perl script name
+!perl ScriptName
 </pre>
 <p>
   If you remember this much, you will find it much easier to edit the configuration file.

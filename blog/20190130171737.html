@@ -36,11 +36,11 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title> rsync command-sync directories  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<title> rsync command - sync directories  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
 <meta name="description" content="You can synchronize directories using the rsync command. Synchronization means putting two directories in the same state.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content=" rsync command-sync directories  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:title" content=" rsync command - sync directories  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
 <meta name="twitter:description" content="You can synchronize directories using the rsync command. Synchronization means putting two directories in the same state." />
 <meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
@@ -83,7 +83,7 @@
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20190130171737.html"> rsync command-sync directories </a></h2>
+<h2><a href="/blog/20190130171737.html"> rsync command - sync directories </a></h2>
 <p>
   You can synchronize directories using the rsync command. Synchronization means putting two directories in the same state.
 </p>
@@ -114,8 +114,8 @@
   First, I'll show you how to sync directories using rsync. This is surprisingly a songwriter.
 </p>
 <pre>
-#Copy the directory. Synchronize the contents of src_dir into dist_dir
-rsync -av src_dir / dist_dir
+# Copy the directory. Synchronize the contents of src_dir into dist_dir
+rsync -av src_dir/ dist_dir
 </pre>
 <p>
   There are many command options in rsync, but first remember only "-a" and "-v".
@@ -155,14 +155,14 @@ rsync -av src_dir / dist_dir
   Describe how to specify the user name, host name, and port number. Other than that, it is the same as local synchronization.
 </p>
 <pre>
-rsync -e "ssh -p 55555" -av / foo / src_dir / kimoto@192.168.1.1:/bar/dist_dir
+rsync -e "ssh -p 55555" -av /foo/src_dir/ kimoto@192.168.1.1:/bar/dist_dir
 </pre>
 <h4> Username / hostname format </h4>
 <p>
   Write the remote host in the following format.
 </p>
 <pre>
-Username @hostname: directory
+UserName@HostName:Directory
 </pre>
 <h4> Specifying the port number </h4>
 <p>

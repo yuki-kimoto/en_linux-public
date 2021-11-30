@@ -89,13 +89,13 @@
   Use <b> rm </b> to delete the file.
 </p>
 <pre>
-rm file name
+rm FileName
 </pre>
 <p>
-  You can use the <b> f </b> option to delete a file without confirming the deletion. "
+  You can use the <b> -f </b> option to delete a file without confirming the deletion. "
 </p>
 <pre>
-rm -f filename
+rm -f FileName
 </pre>
 <p>
   Please use rm with caution. Be very nervous when deleting files with the rm command. Once you delete an important file, it cannot be restored. It is better not to hit it with an easy feeling, and I think it is better to check it about 3 times and do it with excitement.
@@ -109,10 +109,10 @@ mkdir dir1
 </pre>
 <h4> Creating a multi-level directory </h4>
 <p>
-  You can use the <b> p </b> option to create multiple levels of directories at once.
+  You can use the <b> -p </b> option to create multiple levels of directories at once.
 </p>
 <pre>
-mkdir -p dir1 / dir2
+mkdir -p dir1/dir2
 </pre>
 <h3> Delete directory rmdir </h3>
 <p>
@@ -125,16 +125,16 @@ rmdir directory name
   Rmdir will succeed only if the directory is empty.
 </p>
 <p>
-  Use the <b> r </b> option of the rm command to delete the contents of the directory as well.
+  Use the <b> -r </b> option of the rm command to delete the contents of the directory as well.
 </p>
 <pre>
-rm -r directory name
+rm -r DirectoryName
 </pre>
 <p>
-  To delete without inquiring whether to delete, use the <b> f </b> option in combination.
+  To delete without inquiring whether to delete, use the <b> -f </b> option in combination.
 </p>
 <pre>
-rm -rf directory name
+rm -rf DirectoryName
 </pre>
 <p>
   Please do this very carefully as well. It's a command that system administrators need to be prepared to type, as the contents of the directory will be messed up.
@@ -158,7 +158,7 @@ reboot
 </pre>
 <h3> Display the date </h3>
 <p>
-  Use the <b> data </​​b> command to display the date.
+  Use the <b> data </b> command to display the date.
 </p>
 <pre>
 date
@@ -168,10 +168,10 @@ date
 </p>
 <pre>
 while true
-do do
+do
 date
 sleep 1
-done done
+done
 </pre>
 <p>
   You can stop it with ctrl + c. sleep is a command that does nothing and waits for the specified number of seconds. while can be repeated in shell syntax.
@@ -181,7 +181,7 @@ done done
   Compression is an operation to reduce the size of the file. Use the gzip command for compression.
 </p>
 <pre>
-gzip file name
+gzip FileName
 </pre>
 <p>
   The compressed file has the extension <b> .gz </b> at the end.
@@ -194,14 +194,14 @@ gzip file name
   Use <b> gunzip </b> to restore the compressed file.
 </p>
 <pre>
-gunzip Ashed file
+gunzip CompressedFileName
 </pre>
 <h3> Archive the directory tar </h3>
 <p>
   Archiving is the consolidation of multiple files contained in a directory into a single file. Use the tar command.
 </p>
 <pre>
-tar fc archive name directory name
+tar fc ArchiveName DirectoryName
 </pre>
 <p>
   <B> f </b> should be used when the target is a directory. <b> c </b> must be specified when archiving. The archive name is usually "Direct name.tar".
@@ -223,7 +223,7 @@ tar cfz dir1.tar.gz dir1
   Use the <b> x </b> option to extract the archive.
 </p>
 <pre>
-tar xf archive name
+tar xf ArchiveName
 </pre>
 <p>
   The following is a sample.

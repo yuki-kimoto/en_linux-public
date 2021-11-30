@@ -106,8 +106,8 @@ ls -l
   Then, it will be displayed as follows.
 </p>
 <pre>
--rw-rw-r-- 1 kimoto project 588 June 16 13:19 README
-drwxrwxr-x 3 kimoto project 4096 June 16 16:39 lib
+-rw-rw-r-- 1 kimoto project 588  Jun 16 13:19 README
+drwxrwxr-x 3 kimoto project 4096 Jun 16 16:39 lib
 </pre>
 <p>
   <B> kimoto </b> represents the owner of the file. In other words, the file called README is considered to be owned by user kimoto.
@@ -116,14 +116,14 @@ drwxrwxr-x 3 kimoto project 4096 June 16 16:39 lib
   <B> project </b> represents the group that owns the file. In other words, the file called README is considered to be owned by the group project. The group name will be the same as the user name, especially if it does not belong to a group. The display will be as follows.
 </p>
 <pre>
--rw-rw-r-- 1 kimoto kimoto 588 June 16 13:19 README
+-rw-rw-r-- 1 kimoto kimoto 588 Jun 16 13:19 README
 </pre>
 <h3> Add user </h3>
 <p>
   Here, I will explain how to add a user again. You must have root privileges to add users. So let's work as root.
 </p>
 <pre>
-su ---
+su -
 </pre>
 <p>
   Use the <b> useradd </b> command to add a user.
@@ -141,10 +141,10 @@ passwd ken
   You will be asked to enter the password and re-enter it for confirmation, so set it.
 </p>
 <p>
-  You can check the list of users by looking at the <b> / etc / passwd </b> file.
+  You can check the list of users by looking at the <b>/etc/passwd</b> file.
 </p>
 <pre>
-cat / etc / passwd
+cat /etc/passwd
 </pre>
 <h3> Create group </h3>
 <p>
@@ -157,13 +157,13 @@ groupadd someproject
   Users can belong to a group. To add a ken to the someproject group:
 </p>
 <p>
-  You can check the created group in the configuration file <b> / etc / group </b>.
+  You can check the created group in the configuration file <b>/etc/group</b>.
 </p>
 <pre>
-cat / etc / group
+cat /etc/group
 </pre>
 <p>
-  Let's make the user owned by the group. Use <b> usermod </b>. You can add users to the group with the <b> G </b> option.
+  Let's make the user owned by the group. Use <b> usermod </b>. You can add users to the group with the <b> -G </b> option.
 </p>
 <pre>
 usermod -G someproject ken

@@ -98,13 +98,13 @@
 ls -l
 </pre>
 <pre>
--rw-rw-r-- 1 kimoto kimoto 588 June 16 13:19 README
-drwxrwxr-x 3 kimoto kimoto 4096 June 16 16:39 lib
+-rw-rw-r-- 1 kimoto kimoto 588  Jun 16 13:19 README
+drwxrwxr-x 3 kimoto kimoto 4096 Jun 16 16:39 lib
 </pre>
 <p>
   The permissions are "rw-rw-r--" and "rwxrwxr-x" excluding the leftmost character. By the way, the one character on the far left indicates the type of file. If you say d, you know that the file is a directory. (In Linux, it is considered as one file type in the directory.)
 </p>
-<h3> Owner user, owner group, non-owner user </h3>
+<h3> Owner user, owner group, guest user </h3>
 <p>
   Permission consists of three parts. Each set of 3 characters is one set.
 </p>
@@ -115,15 +115,15 @@ drwxrwxr-x 3 kimoto kimoto 4096 June 16 16:39 lib
 rw-rw-r--
 </pre>
 <pre>
-Owner user
+# User Permission
 rw-
 
 
-Owner group
+# Group Permission
 rw-
 
 
-Non-owner user
+# Guest Permission
 r--
 </pre>
 <p>
@@ -153,7 +153,7 @@ r-x read permission, execute permission
   Remember how to change the owner of a file. Use <b> chown </b>.
 </p>
 <pre>
-chwon username file name
+chwon UserName FileName
 </pre>
 <p>
   The following sample is an example of changing the owner user of the file foo.txt to kimoto.
@@ -165,25 +165,25 @@ chown kimoto foo.txt
   You can also change the owner group as well.
 </p>
 <pre>
-chown username: group name file name
+chown UserName:GroupName FileName
 </pre>
 <p>
   The following sample is an example of changing the owner user of the file foo.txt to kimoto and the owner group to someproject.
 </p>
 <pre>
-chown kimoto: someproject foo.txt
+chown kimoto:someproject foo.txt
 </pre>
 <h3> How to set permissions chmod </h3>
 <p>
   The permission setting method is a little complicated. Permissions are set in octal. Let's remember the following correspondence. For the time being, let's remember only the following measures.
 </p>
 <pre>
-    Binary octal
-rwx 111 7
-rw- 110 6
-r-x 101 5
-r-- 100 4
---- 000 0
+    Binary Octal
+rwx 111    7
+rw- 110    6
+r-x 101    5
+r-- 100    4
+--- 000    0
 </pre>
 <p>
   Please take a closer look. The position where the bit is set in the binary number corresponds to the position of rwx. This is expressed in octal and the permissions are specified.

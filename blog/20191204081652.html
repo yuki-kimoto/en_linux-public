@@ -36,13 +36,13 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title> mv command-rename file  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<title> mv Command - Rename Files  - Linux Server Management - Connect to Linux, Master the Basic of Linux</title>
 <meta name="description" content="You can change the file name using the mv command. The original file name is changed to the new file name. The name of mv comes from move.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content=" mv command-rename file  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:title" content=" mv Command - Rename Files  - Linux Server Management - Connect to Linux, Master the Basic of Linux" />
 <meta name="twitter:description" content="You can change the file name using the mv command. The original file name is changed to the new file name. The name of mv comes from move." />
-<meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
+<meta name="twitter:image" content="https://en.linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
   </head>
@@ -51,7 +51,7 @@
       <div class="header">
         <div class="header_main">
   <h1>
-    <a href="/"><img src="/images/logo.png">Introduction to Linux Server Management</a>
+    <a href="/"><img src="/images/logo.png">Linux Server Management</a>
   </h1>
 </div>
 
@@ -83,7 +83,7 @@
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20191204081652.html"> mv command-rename file </a></h2>
+<h2><a href="/blog/20191204081652.html"> mv Command - Rename Files </a></h2>
 <p>
   You can change the file name using the mv command. The original file name is changed to the new file name. The name of mv comes from move.
 </p>
@@ -104,7 +104,7 @@
 
 
 <pre>
-mv original file name new file name
+mv OriginalFileName NewFileName
 </pre>
 <p>
   This is a sample to change the file name with the mv command. The file name foo.txt is renamed to bar.txt.
@@ -117,7 +117,7 @@ mv foo.txt bar.txt
   The mv command can also be used to rename a directory. On Linux, file names and directory names are treated the same. A directory is a folder in Windows.
 </p>
 <pre>
-mv original directory name new directory name
+mv OriginalDirectoryName NewDirectoryName
 </pre>
 <p>
   This is a sample to change the directory name. The directory name dir1 is changed to the directory name dir2.
@@ -133,7 +133,7 @@ mv dir1 dir2
   Let's move foo.txt in the directory called labo in the home directory to the directory called test in the home directory. "~" Represents the path of your home directory.
 </p>
 <pre>
-mv ~ / labo / foo.txt ~ /test/foo.txt
+mv ~/labo/foo.txt ~/test/foo.txt
 </pre>
 <p>
   As mentioned above, the mv command is also used when moving files.
@@ -142,21 +142,21 @@ mv ~ / labo / foo.txt ~ /test/foo.txt
   If you want to move the file, you can omit only the last file name. Notice the trailing slash.
 </p>
 <pre>
-#Syntack sugar of the above operation
-mv ~ / labo / foo.txt ~ / test /
+# Syntack sugar of the above operation
+mv ~/labo/foo.txt ~/test/
 </pre>
 <p>
   You can do the same if you want to move the directory location.
 </p>
 <pre>
-mv ~ / labo / dir1 ~ / test / dir1
+mv ~/labo/dir1 ~/test/dir1
 </pre>
 <p>
   or
 </p>
 <pre>
-#Syntack sugar of the above operation
-mv ~ / labo / dir1 ~ / test /
+# Syntack sugar of the above operation
+mv ~/labo/dir1 ~/test/
 </pre>
 <h3> Show help --help option </h3>
 <p>

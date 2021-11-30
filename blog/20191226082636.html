@@ -36,13 +36,13 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title> What is the owner user?  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="The owner user is one of the attributes of a file stored in the inode and is information about which user owns the file.">
+<title>User permissions - Linux Server Management - Connect to Linux, Master the Basic of Linux</title>
+<meta name="description" content="The user permission is one of the attributes of a file stored in the inode and is information about which user owns the file.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content=" What is the owner user?  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="The owner user is one of the attributes of a file stored in the inode and is information about which user owns the file." />
-<meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
+<meta name="twitter:title" content="User permissions - Linux Server Management - Connect to Linux, Master the Basic of Linux" />
+<meta name="twitter:description" content="The user permission is one of the attributes of a file stored in the inode and is information about which user owns the file." />
+<meta name="twitter:image" content="https://en.linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
   </head>
@@ -51,7 +51,7 @@
       <div class="header">
         <div class="header_main">
   <h1>
-    <a href="/"><img src="/images/logo.png">Introduction to Linux Server Management</a>
+    <a href="/"><img src="/images/logo.png">Linux Server Management</a>
   </h1>
 </div>
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20191226082636.html"> What is the owner user? </a></H2>
+    <h2><a href="/blog/20191226082636.html">User permissions</a></H2>
 <p>
-  The owner user is one of the attributes of a file stored in the inode and is information about which user owns the file.
+  The user permission is one of the attributes of a file stored in the inode and is information about which user owns the file.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -87,25 +87,25 @@
 <p>
   The user who owns the file can perform read, write, and execute operations on the file as specified by the user's permissions.
 </p>
-<h3> Confirm the owner user </h3>
+<h3> Confirm the user permission </h3>
 <p>
   The "-l" option of the ls command shows the owner when you view the directory details.
 </p>
 <pre>
-             #Owner user
+             # UserPermission
 -rw-r--r-- 1 kimoto kimoto 227 Aug 10 15:01 README
 -rw-r--r-- 1 kimoto kimoto 219 Aug 10 15:01 serve.pl
 drwxrwxr-x 5 kimoto kimoto 4096 Aug 10 15:01 templates
 -rwxrwxr-x 1 kimoto kimoto 219 Aug 10 15:01 mycmd
 </pre>
 <p>
-  In this example, the owner user is on the left side of the two "kimoto". On the right is the owner group.
+  In this example, the user permission is on the left side of the two "kimoto". On the right is the owner group.
 </p>
 <p>
-  Let's take a look at the permissions of the README. It is "-rw-r--r--". On the far left is a flag that indicates whether it is a directory. The next three "rw-" are the permissions of the owner user. The r and w flags allow the README owner user "kimoto" to "read" and "write" to the README.
+  Let's take a look at the permissions of the README. It is "-rw-r--r--". On the far left is a flag that indicates whether it is a directory. The next three "rw-" are the permissions of the user permission. The r and w flags allow the README user permission "kimoto" to "read" and "write" to the README.
 </p>
 <p>
-  The point is that the owner user is related to files and permissions.
+  The point is that the user permission is related to files and permissions.
 </p>
 
   </div>

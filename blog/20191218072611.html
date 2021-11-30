@@ -36,13 +36,13 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title> What is the current directory?  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<title>Current Directories - Linux Server Management - Connect to Linux, Master the Basic of Linux</title>
 <meta name="description" content="The current directory is the directory you are currently working on. Current means "current" in English. A directory in Linux corresponds to a folder in Windows.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content=" What is the current directory?  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:title" content="Current Directories - Linux Server Management - Connect to Linux, Master the Basic of Linux" />
 <meta name="twitter:description" content="The current directory is the directory you are currently working on. Current means "current" in English. A directory in Linux corresponds to a folder in Windows." />
-<meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
+<meta name="twitter:image" content="https://en.linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
   </head>
@@ -51,7 +51,7 @@
       <div class="header">
         <div class="header_main">
   <h1>
-    <a href="/"><img src="/images/logo.png">Introduction to Linux Server Management</a>
+    <a href="/"><img src="/images/logo.png">Linux Server Management</a>
   </h1>
 </div>
 
@@ -64,7 +64,7 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20191218072611.html"> What is the current directory? </a></H2>
+    <h2><a href="/blog/20191218072611.html">Current Directories</a></H2>
 <p>
   The current directory is the directory you are currently working on. Current means "current" in English. A directory in Linux corresponds to a folder in Windows.
 </p>
@@ -89,10 +89,10 @@
   Use the <a href="/blog/20191012191854.html"> cd command</a> to change the current directory.
 </p>
 <pre>
-cd / home / kimoto / labo
+cd /home/kimoto/labo
 </pre>
 <p>
-  The directory "/ home / kimoto / labo" will be the current directory.
+  The directory "/home/kimoto/labo" will be the current directory.
 </p>
 <h3> Specify a relative path from the current directory </h3>
 <p>
@@ -108,7 +108,7 @@ ls foo
   This actually has the same meaning as specified by <a href="/blog/20191217081903.html"> absolute path</a> as shown below.
 </p>
 <pre>
-ls / home / kimoto / labo / foo
+ls /home/kimoto/labo/foo
 </pre>
 <h3> File name of the current directory </h3>
 <p>
@@ -122,7 +122,7 @@ ls / home / kimoto / labo / foo
   If you give "." To ls and execute it as shown below, a list of files in the current directory will be displayed.
 </p>
 <pre>
-ls.
+ls .
 </pre>
 <h3> Check the existence of the current directory </h3>
 <p>
@@ -132,17 +132,17 @@ ls.
   Let's check using the "-a" option of the <a href="/blog/20191126082723.html"> ls command</a>. This is a sample output result.
 </p>
 <pre>
-drwxrwxr-x 6 kimoto kimoto 4096 Aug 14 17:51.
-drwxrwxr-x 40 kimoto kimoto 4096 Nov 9 10:08 ..
--rw-r--r-- 1 kimoto kimoto 1116 Aug 15 08:28 convert_markdown.pl
--rw-r--r-- 1 kimoto kimoto 162 Sep 11 08:42 giblog.conf
-drwxrwxr-x 8 kimoto kimoto 4096 Oct 12 19:52 .git
--rw-r--r-- 1 kimoto kimoto 8 Aug 10 15:01 .gitignore
-drwxrwxr-x 3 kimoto kimoto 4096 Aug 10 15:01 lib
-drwxrwxr-x 7 kimoto kimoto 4096 Aug 10 15:04 public
--rw-r--r-- 1 kimoto kimoto 227 Aug 10 15:01 README
--rw-r--r-- 1 kimoto kimoto 219 Aug 10 15:01 serve.pl
-drwxrwxr-x 5 kimoto kimoto 4096 Aug 10 15:01 templates
+drwxrwxr-x 6  kimoto kimoto 4096 Aug 14 17:51.
+drwxrwxr-x 40 kimoto kimoto 4096 Nov 9  10:08 ..
+-rw-r--r-- 1  kimoto kimoto 1116 Aug 15 08:28 convert_markdown.pl
+-rw-r--r-- 1  kimoto kimoto 162  Sep 11 08:42 giblog.conf
+drwxrwxr-x 8  kimoto kimoto 4096 Oct 12 19:52 .git
+-rw-r--r-- 1  kimoto kimoto 8    Aug 10 15:01 .gitignore
+drwxrwxr-x 3  kimoto kimoto 4096 Aug 10 15:01 lib
+drwxrwxr-x 7  kimoto kimoto 4096 Aug 10 15:04 public
+-rw-r--r-- 1  kimoto kimoto 227  Aug 10 15:01 README
+-rw-r--r-- 1  kimoto kimoto 219  Aug 10 15:01 serve.pl
+drwxrwxr-x 5  kimoto kimoto 4096 Aug 10 15:01 templates
 </pre>
 <p>
   "." Is displayed.

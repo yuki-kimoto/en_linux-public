@@ -36,13 +36,13 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title> cp command-copy files  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
+<title> cp command - Copy Files  - Linux Server Management - Connect to Linux, Master the Basic of Linux</title>
 <meta name="description" content="You can copy the file using the cp command. The file contents of the original file name are copied with the new file name. The name of cp comes from copy.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content=" cp command-copy files  - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
+<meta name="twitter:title" content=" cp command - Copy Files  - Linux Server Management - Connect to Linux, Master the Basic of Linux" />
 <meta name="twitter:description" content="You can copy the file using the cp command. The file contents of the original file name are copied with the new file name. The name of cp comes from copy." />
-<meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
+<meta name="twitter:image" content="https://en.linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
   </head>
@@ -51,7 +51,7 @@
       <div class="header">
         <div class="header_main">
   <h1>
-    <a href="/"><img src="/images/logo.png">Introduction to Linux Server Management</a>
+    <a href="/"><img src="/images/logo.png">Linux Server Management</a>
   </h1>
 </div>
 
@@ -83,7 +83,7 @@
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20191203081250.html"> cp command-copy files </a></h2>
+<h2><a href="/blog/20191203081250.html"> cp command - Copy Files </a></h2>
 <p>
   You can copy the file using the cp command. The file contents of the original file name are copied with the new file name. The name of cp comes from copy.
 </p>
@@ -104,7 +104,7 @@
 
 
 <pre>
-cp original file name new file name
+cp OriginalFileName NewFileName
 </pre>
 <p>
   This is a sample to copy a file with the cp command. The contents of foo.txt will be copied to bar.txt.
@@ -112,12 +112,12 @@ cp original file name new file name
 <pre>
 cp foo.txt bar.txt
 </pre>
-<h3> Copy directory --- "-r" option of cp command </h3>
+<h3> Copy directory - "-r" option of cp command </h3>
 <p>
   Use the "-r" option to copy the directory. r comes from recursive.
 </p>
 <pre>
-cp -r original directory name new directory name
+cp -r OriginalDirectoryName NewDirectoryName
 </pre>
 <p>
   The process of copying a directory is actually the process of recursively copying files.
@@ -133,13 +133,13 @@ cp -r dir1 dir2
   Use <a href="/blog/20200609092705.html"> wildcards</a> to copy all the files contained in the directory.
 </p>
 <p>
-  The following example means move all the files in the foo directory into the bar. Notice the "bar /" part.
+  The following example means move all the files in the foo directory into the bar. Notice the "bar/" part.
 </p>
 <p>
   Also note that hidden files are not included.
 </p>
 <pre>
-cp foo / * bar /
+cp foo/* bar/
 </pre>
 <h3> Show help --help option </h3>
 <p>

@@ -36,13 +36,13 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title>ペアレントディレクトリ - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター</title>
-<meta name="description" content="ペアレントディレクトリとは、現在のディレクトリから見て、ひとつ上の階層のディレクトリのことです。親ディレクトリとも呼ばれます。">
+<title> Parent Directories  - Linux Server Management - Connect to Linux, Master the Basic of Linux</title>
+<meta name="description" content="A parent directory is a directory one level higher than the current directory. Also known as the parent directory.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content="ペアレントディレクトリ - Linuxサーバ管理入門 - Linuxへの接続からはじめてLinuxの基本をマスター" />
-<meta name="twitter:description" content="ペアレントディレクトリとは、現在のディレクトリから見て、ひとつ上の階層のディレクトリのことです。親ディレクトリとも呼ばれます。" />
-<meta name="twitter:image" content="https://linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
+<meta name="twitter:title" content=" Parent Directories  - Linux Server Management - Connect to Linux, Master the Basic of Linux" />
+<meta name="twitter:description" content="A parent directory is a directory one level higher than the current directory. Also known as the parent directory." />
+<meta name="twitter:image" content="https://en.linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
 
   </head>
@@ -51,7 +51,7 @@
       <div class="header">
         <div class="header_main">
   <h1>
-    <a href="/"><img src="/images/logo.png">Introduction to Linux Server Management</a>
+    <a href="/"><img src="/images/logo.png">Linux Server Management</a>
   </h1>
 </div>
 
@@ -64,9 +64,9 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20191219082642.html">ペアレントディレクトリ</a></h2>
+    <h2><a href="/blog/20191219082642.html"> Parent Directories </a></h2>
 <p>
-  ペアレントディレクトリとは、現在のディレクトリから見て、ひとつ上の階層のディレクトリのことです。親ディレクトリとも呼ばれます。
+  A parent directory is a directory one level higher than the current directory. Also known as the parent directory.
 </p>
 <div style="width:calc(100% - 30px);margin:10px auto;">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4525414114581084"
@@ -85,58 +85,58 @@
 
 
 <p>
-  たとえば以下のディレクトリがあったとします。
+  For example, if you have the following directories:
 </p>
 <pre>
 /home/kimoto/labo
 </pre>
 <p>
-  このディレクトリのペアレントディレクトリは、以下になります。
+  The parent directory for this directory is:
 </p>
 <pre>
-# ペアレントディレクトリ
+# Parent directory
 /home/kimoto
 </pre>
-<h3>ペアレントディレクトリのファイル名</h3>
+<h3> Parent directory file name </h3>
 <p>
-  カレントディレクトリから見た、ペアレントディレクトリは「..」という特別なファイル名で表現されます。
+  The parent directory as seen from the current directory is represented by the special file name "..".
 </p>
 <pre>
-# ペアレントディレクトリのファイル名
+# Parent directory file name
 ..
 </pre>
-<h3>ペアレントディレクトリをカレントディレクトリを変更する</h3>
+<h3> Change the parent directory to the current directory </h3>
 <p>
-  ペアレントディレクトリにカレントディレクトリを変更するには、<a href="/blog/20191012191854.html">cdコマンド</a>の引数に「..」を与えます。
+  To change the current directory to the parent directory, give ".." to the argument of <a href="/blog/20191012191854.html"> cd command</a>.
 </p>
 <pre>
 cd ..
 </pre>
 <p>
-  カレントディレクトリが「/home/kimoto/labo」だった場合は、カレントディレクトリが「/home/kimoto」に変更されます。
+  If the current directory is "/home/kimoto/labo", the current directory will be changed to "/home/kimoto".
 </p>
-<h3>ペアレントディレクトリの存在を確認する</h3>
+<h3> Check for the existence of the parent directory </h3>
 <p>
-  ペアレントディレクトリは、実際に<a href="/blog/20191220091958.html">隠しファイル</a>として、カレントディレクトリの内容として存在しています。
+  The parent directory actually exists as <a href="/blog/20191220091958.html"> hidden files</a> as the contents of the current directory.
 </p>
 <p>
-  <a href="/blog/20191126082723.html">lsコマンド</a>の「-a」オプションを使用して確認してみましょう。出力結果のサンプルです。
+  Let's check using the "-a" option of the <a href="/blog/20191126082723.html"> ls command</a>. This is a sample output result.
 </p>
 <pre>
-drwxrwxr-x  6 kimoto kimoto 4096 Aug 14 17:51 .
-drwxrwxr-x 40 kimoto kimoto 4096 Nov  9 10:08 ..
--rw-r--r--  1 kimoto kimoto 1116 Aug 15 08:28 convert_markdown.pl
--rw-r--r--  1 kimoto kimoto  162 Sep 11 08:42 giblog.conf
-drwxrwxr-x  8 kimoto kimoto 4096 Oct 12 19:52 .git
--rw-r--r--  1 kimoto kimoto    8 Aug 10 15:01 .gitignore
-drwxrwxr-x  3 kimoto kimoto 4096 Aug 10 15:01 lib
-drwxrwxr-x  7 kimoto kimoto 4096 Aug 10 15:04 public
--rw-r--r--  1 kimoto kimoto  227 Aug 10 15:01 README
--rw-r--r--  1 kimoto kimoto  219 Aug 10 15:01 serve.pl
-drwxrwxr-x  5 kimoto kimoto 4096 Aug 10 15:01 templates
+drwxrwxr-x 6  kimoto kimoto 4096 Aug 14 17:51.
+drwxrwxr-x 40 kimoto kimoto 4096 Nov 9  10:08 ..
+-rw-r--r-- 1  kimoto kimoto 1116 Aug 15 08:28 convert_markdown.pl
+-rw-r--r-- 1  kimoto kimoto 162  Sep 11 08:42 giblog.conf
+drwxrwxr-x 8  kimoto kimoto 4096 Oct 12 19:52 .git
+-rw-r--r-- 1  kimoto kimoto 8    Aug 10 15:01 .gitignore
+drwxrwxr-x 3  kimoto kimoto 4096 Aug 10 15:01 lib
+drwxrwxr-x 7  kimoto kimoto 4096 Aug 10 15:04 public
+-rw-r--r-- 1  kimoto kimoto 227  Aug 10 15:01 README
+-rw-r--r-- 1  kimoto kimoto 219  Aug 10 15:01 serve.pl
+drwxrwxr-x 5  kimoto kimoto 4096 Aug 10 15:01 templates
 </pre>
 <p>
-  「..」が表示されていますね。
+  ".." is displayed.
 </p>
 
   </div>

@@ -36,11 +36,11 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title> du command-check directory capacity  - Linux Server Management - Connect to Linux, Master the Basic of Linux</title>
+<title> du Command - Check Directory Capacity  - Linux Server Management - Connect to Linux, Master the Basic of Linux</title>
 <meta name="description" content="You can check the directory capacity with the du command. If no directory name is specified, the current directory will be the target.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content=" du command-check directory capacity  - Linux Server Management - Connect to Linux, Master the Basic of Linux" />
+<meta name="twitter:title" content=" du Command - Check Directory Capacity  - Linux Server Management - Connect to Linux, Master the Basic of Linux" />
 <meta name="twitter:description" content="You can check the directory capacity with the du command. If no directory name is specified, the current directory will be the target." />
 <meta name="twitter:image" content="https://en.linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
@@ -83,7 +83,7 @@
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20200531082545.html"> du command-check directory capacity </a></h2>
+<h2><a href="/blog/20200531082545.html"> du Command - Check Directory Capacity </a></h2>
 <p>
   You can check the directory capacity with the du command. If no directory name is specified, the current directory will be the target.
 </p>
@@ -104,27 +104,27 @@
 
 
 <pre>
-du directory name
+du DirectoryName
 </pre>
 <p>
   This is a sample to check the directory capacity with du.
 </p>
 <pre>
-
+du templates
 </pre>
 <p>
   This is a sample output result.
 </p>
 <pre>
-468 templates / blog
-8 templates / static / images
-12 templates / static / css
-4 templates / static / blog
-192 templates / static / js / google-code-prettify
-292 templates / static / js
-324 templates / static
-28 templates / common
-828 templates
+468     templates/blog
+8       templates/static/images
+12      templates/static/css
+4       templates/static/blog
+192     templates/static/js/google-code-prettify
+292     templates/static/js
+324     templates/static
+28      templates/common
+828     templates
 </pre>
 <p>
   The capacity is displayed in kilobytes for each directory and subdirectory.
@@ -140,17 +140,17 @@ du -h
   The output result has a unit.
 </p>
 <pre>
-Filesystem Size Used Avail Use% Mounted on
-udev 3.9G 0 3.9G 0% / dev
-tmpfs 794M 736K 793M 1% / run
-/ dev / sda1 29G 4.1G 25G 15% /
-tmpfs 3.9G 8.0K 3.9G 1% / dev / shm
-tmpfs 5.0M 0 5.0M 0% / run / lock
-tmpfs 3.9G 0 3.9G 0% / sys / fs / cgroup
-/ dev / sda15 105M 3.6M 101M 4% / boot / efi
-/ dev / sdc1 1007G 77M 956G 1% / datadrive
-/ dev / sdb1 16G 45M 15G 1% / mnt
-tmpfs 794M 0 794M 0% / run / user / 1001
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.9G     0  3.9G   0% /dev
+tmpfs           794M  736K  793M   1% /run
+/dev/sda1        29G  4.1G   25G  15% /
+tmpfs           3.9G  8.0K  3.9G   1% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/sdc1      1007G   77M  956G   1% /datadrive
+/dev/sdb1        16G   45M   15G   1% /mnt
+tmpfs           794M     0  794M   0% /run/user/1001
 </pre>
 <h3> Arrange directory usage from top to bottom </h3>
 <p>
@@ -163,15 +163,15 @@ du templates | sort -rn | head -20
   The output results are output in descending order of directory capacity.
 </p>
 <pre>
-824 templates
-464 templates / blog
-324 templates / static
-292 templates / static / js
-192 templates / static / js / google-code-prettify
-28 templates / common
-12 templates / static / css
-8 templates / static / images
-4 templates / static / blog
+824     templates
+464     templates/blog
+324     templates/static
+292     templates/static/js
+192     templates/static/js/google-code-prettify
+28      templates/common
+12      templates/static/css
+8       templates/static/images
+4       templates/static/blog
 </pre>
 <p>
   Specifying "/" for du and waiting for a while is convenient because you can see which directories are consuming space on the entire system.
@@ -184,7 +184,7 @@ du templates | sort -rn | head -20
   Note that the du command is a command to check the directory capacity, and the df command is used to check the disk capacity.
 </p>
 <ul>
-  <li> <a href="/blog/20200601093211.html"> df command --check disk capacity</a> </li>
+  <li> <a href="/blog/20200601093211.html"> df Command - check disk capacity</a> </li>
 </ul>
 
   </div>
@@ -240,8 +240,15 @@ du templates | sort -rn | head -20
         </div>
       </div>
       <div class="footer">
-        <div class="perlri_link">
-  <a rel="nofollow" href="https://perlclub.net/en">Perl Club</a>
+        <div style="font-size:16px;padding:30px 0;background:#fcfcfc;">
+  This site is originally Japanese.<br>
+  Perl Club starts to translate it to English.<br>
+  If you find wrong expressions, you can report them using <a rel="nofollow" href="https://github.com/yuki-kimoto/en_linux/issues">Github Issue</a>. 
+</div>
+<div class="perlri_link">
+  <div>
+    <a rel="nofollow" href="https://perlclub.net/en">Perl Club</a>
+  </div>
 </div>
 
       </div>

@@ -36,11 +36,11 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title> xargs command --Converts standard input line output to command line arguments and runs the program  - Linux Server Management - Connect to Linux, Master the Basic of Linux</title>
+<title> xargs Command - Converts Standard Input Line Output to Command Line Arguments and Runs the Program  - Linux Server Management - Connect to Linux, Master the Basic of Linux</title>
 <meta name="description" content="The xargs command translates the line output of standard input into command line arguments and runs the program.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content=" xargs command --Converts standard input line output to command line arguments and runs the program  - Linux Server Management - Connect to Linux, Master the Basic of Linux" />
+<meta name="twitter:title" content=" xargs Command - Converts Standard Input Line Output to Command Line Arguments and Runs the Program  - Linux Server Management - Connect to Linux, Master the Basic of Linux" />
 <meta name="twitter:description" content="The xargs command translates the line output of standard input into command line arguments and runs the program." />
 <meta name="twitter:image" content="https://en.linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
@@ -64,7 +64,7 @@
 
   </div>
   <div class="middle">
-    <h2><a href="/blog/20200614103220.html"> xargs command --Converts standard input line output to command line arguments and runs the program </a></h2>
+    <h2><a href="/blog/20200614103220.html"> xargs Command - Converts Standard Input Line Output to Command Line Arguments and Runs the Program </a></h2>
 <p>
   The xargs command translates the line output of standard input into command line arguments and runs the program.
 </p>
@@ -85,45 +85,45 @@
 
 
 <pre>
-Command to output line | xargs program
+CommandThatOutputLines | xargs Program
 </pre>
 <p>
-  The command to output the line can be anything, but the <a href="/blog/20200317121556.html"> find</a> command and the <a href="/blog/20200602093211.html"> grep</a> > It is assumed that "-rl" is specified in the command.
+  The command to output the line can be anything, but the <a href="/blog/20200317121556.html"> find</a> command and the <a href="/blog/20200602093211.html"> grep</a>. It is assumed that "-rl" is specified in the command.
 </p>
 <pre>
-find * | xargs program
-grep -rl'Hello' dir | xargs program
+find * | xargs Program
+grep -rl 'Hello' dir | xargs Program
 </pre>
 <p>
-  As an example, let's take a look at the output of the find command. Get the file name in templates / blog.
+  As an example, let's take a look at the output of the find command. Get the file name in templates/blog.
 </p>
 <pre>
-find templates / blog
+find templates/blog
 </pre>
 <p>
   This is the output result.
 </p>
 <pre>
-templates / blog / 20190421171737.html
-templates / blog / 20190103171737.html
-templates / blog / 20190127171737.html
-templates / blog / 20190212171737.html
-templates / blog / 20200520082545.html
-templates / blog / 20190309171737.html
-templates / blog / 20191205081119.html
-templates / blog / 20191218072611.html
+templates/blog/20190421171737.html
+templates/blog/20190103171737.html
+templates/blog/20190127171737.html
+templates/blog/20190212171737.html
+templates/blog/20200520082545.html
+templates/blog/20190309171737.html
+templates/blog/20191205081119.html
+templates/blog/20191218072611.html
 </pre>
 <p>
   When you want to pass this list of filenames to the command line arguments of another program, you need to use xargs.
 </p>
 <p>
-  For example, consider using <a href="https://perlzemi.com/"> Perl</a> to make a replacement.
+  For example, consider using <a href="https://en.perlzemi.com/"> Perl</a> to make a replacement.
 </p>
 <p>
   For the above file, replace "Hello" with "Good evening". Write the following using the xargs command:
 </p>
 <pre>
-find templates / blog | xargs perl -pi -e's / hello / good evening / g'
+find templates/blog | xargs perl -pi -e 's/hello/good evening/g'
 </pre>
 
   </div>
@@ -179,8 +179,15 @@ find templates / blog | xargs perl -pi -e's / hello / good evening / g'
         </div>
       </div>
       <div class="footer">
-        <div class="perlri_link">
-  <a rel="nofollow" href="https://perlclub.net/en">Perl Club</a>
+        <div style="font-size:16px;padding:30px 0;background:#fcfcfc;">
+  This site is originally Japanese.<br>
+  Perl Club starts to translate it to English.<br>
+  If you find wrong expressions, you can report them using <a rel="nofollow" href="https://github.com/yuki-kimoto/en_linux/issues">Github Issue</a>. 
+</div>
+<div class="perlri_link">
+  <div>
+    <a rel="nofollow" href="https://perlclub.net/en">Perl Club</a>
+  </div>
 </div>
 
       </div>

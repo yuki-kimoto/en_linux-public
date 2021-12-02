@@ -36,11 +36,11 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title> find command-recursive search of directories  - Linux Server Management - Connect to Linux, Master the Basic of Linux</title>
+<title> find Cmmand - Recursive Search of Directories  - Linux Server Management - Connect to Linux, Master the Basic of Linux</title>
 <meta name="description" content="You can use the find command to perform a recursive search for a directory.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content=" find command-recursive search of directories  - Linux Server Management - Connect to Linux, Master the Basic of Linux" />
+<meta name="twitter:title" content=" find Cmmand - Recursive Search of Directories  - Linux Server Management - Connect to Linux, Master the Basic of Linux" />
 <meta name="twitter:description" content="You can use the find command to perform a recursive search for a directory." />
 <meta name="twitter:image" content="https://en.linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
@@ -83,7 +83,7 @@
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20200317121556.html"> find command-recursive search of directories </a></h2>
+<h2><a href="/blog/20200317121556.html"> find Cmmand - Recursive Search of Directories </a></h2>
 <p>
   You can use the find command to perform a recursive search for a directory.
 </p>
@@ -104,19 +104,19 @@
 
 
 <pre>
-find directory name
+find DirectoryName
 </pre>
 <p>
-  This is a sample to search under "/ usr / local / lib".
+  This is a sample to search under "/usr/local/lib".
 </p>
 <pre>
-find / usr / local / lib
+find /usr/local/lib
 </pre>
 <p>
   This is a sample output result.
 </p>
 <pre>
-/ usr / local / lib
+/usr/local/lib
 /usr/local/lib/liblept.so.3.0.0
 /usr/local/lib/liblept.so.3
 /usr/local/lib/liblept.so
@@ -127,7 +127,7 @@ find / usr / local / lib
 /usr/local/lib/libtesseract.so
 /usr/local/lib/libtesseract.la
 /usr/local/lib/libtesseract.a
-/ usr / local / lib / pkgconfig
+/usr/local/lib/pkgconfig
 /usr/local/lib/pkgconfig/tesseract.pc
 </pre>
 <h3> Narrow down the contents of the find command </h3>
@@ -135,18 +135,18 @@ find / usr / local / lib
   When combined with the <a href="/blog/20200602093211.html"> grep</a> command, you can narrow down the content of the find command.
 </p>
 <pre>
-find / usr / local / lib | grep pkg
+find /usr/local/lib | grep pkg
 </pre>
 <p>
   This is a sample output result.
 </p>
 <pre>
-/ usr / local / lib / pkgconfig
+/usr/local/lib/pkgconfig
 /usr/local/lib/pkgconfig/tesseract.pc
 </pre>
 <h3> Specify the current directory that does not contain hidden files </h3>
 <p>
-  If you currently have a hidden directory such as ".git" used by <a href="https://git.perlclub.net/"> Git</a> in your directory and you don't want to include it, you can use the wildcard "*". Is convenient to use. This applies to files other than hidden files in the current directory.
+  If you currently have a hidden directory such as ".git" used by <a href="https://en.git.perlzemi.com/"> Git</a> in your directory and you don't want to include it, you can use the wildcard "*". Is convenient to use. This applies to files other than hidden files in the current directory.
 </p>
 <pre>
 find *
@@ -246,8 +246,15 @@ find -executable -type f filename
         </div>
       </div>
       <div class="footer">
-        <div class="perlri_link">
-  <a rel="nofollow" href="https://perlclub.net/en">Perl Club</a>
+        <div style="font-size:16px;padding:30px 0;background:#fcfcfc;">
+  This site is originally Japanese.<br>
+  Perl Club starts to translate it to English.<br>
+  If you find wrong expressions, you can report them using <a rel="nofollow" href="https://github.com/yuki-kimoto/en_linux/issues">Github Issue</a>. 
+</div>
+<div class="perlri_link">
+  <div>
+    <a rel="nofollow" href="https://perlclub.net/en">Perl Club</a>
+  </div>
 </div>
 
       </div>

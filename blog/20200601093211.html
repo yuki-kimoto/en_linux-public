@@ -36,11 +36,11 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title> df command --check disk capacity  - Linux Server Management - Connect to Linux, Master the Basic of Linux</title>
+<title> df Command - Check Disk Capacity  - Linux Server Management - Connect to Linux, Master the Basic of Linux</title>
 <meta name="description" content="You can check the disk capacity with the df command.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content=" df command --check disk capacity  - Linux Server Management - Connect to Linux, Master the Basic of Linux" />
+<meta name="twitter:title" content=" df Command - Check Disk Capacity  - Linux Server Management - Connect to Linux, Master the Basic of Linux" />
 <meta name="twitter:description" content="You can check the disk capacity with the df command." />
 <meta name="twitter:image" content="https://en.linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
@@ -83,7 +83,7 @@
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20200601093211.html"> df command --check disk capacity </a></h2>
+<h2><a href="/blog/20200601093211.html"> df Command - Check Disk Capacity </a></h2>
 <p>
   You can check the disk capacity with the df command.
 </p>
@@ -110,17 +110,17 @@ df
   This is a sample output result. The capacity is displayed in 1 Kbyte units for each disk.
 </p>
 <pre>
-Filesystem 1K-blocks Used Available Use% Mounted on
-udev 4044556 0 4044556 0% / dev
-tmpfs 812572 736 811836 1% / run
-/ dev / sda1 30309264 4263080 26029800 15% /
-tmpfs 4062840 8 4062832 1% / dev / shm
-tmpfs 5120 0 5120 0% / run / lock
-tmpfs 4062840 0 4062840 0% / sys / fs / cgroup
-/ dev / sda15 106858 3668 103190 4% / boot / efi
-/ dev / sdc1 1055838644 77852 1002057420 1% / datadrive
-/ dev / sdb1 16447292 45084 15547020 1% / mnt
-tmpfs 812568 0 812568 0% / run / user / 1001
+Filesystem      1K-blocks    Used  Available Use% Mounted on
+udev              4044556       0    4044556   0% /dev
+tmpfs              812572     736     811836   1% /run
+/dev/sda1        30309264 4263080   26029800  15% /
+tmpfs             4062840       8    4062832   1% /dev/shm
+tmpfs                5120       0       5120   0% /run/lock
+tmpfs             4062840       0    4062840   0% /sys/fs/cgroup
+/dev/sda15         106858    3668     103190   4% /boot/efi
+/dev/sdc1      1055838644   77852 1002057420   1% /datadrive
+/dev/sdb1        16447292   45084   15547020   1% /mnt
+tmpfs              812568       0     812568   0% /run/user/1001
 </pre>
 <p>
   "/ Dev / sda1", "/ dev / sda15", "/ dev / sdc1", and "/ dev / sdb1" are logical disks separated by partitions. The file system is mounted on this.
@@ -139,17 +139,17 @@ df -h
   The output result has a unit.
 </p>
 <pre>
-Filesystem Size Used Avail Use% Mounted on
-udev 3.9G 0 3.9G 0% / dev
-tmpfs 794M 736K 793M 1% / run
-/ dev / sda1 29G 4.1G 25G 15% /
-tmpfs 3.9G 8.0K 3.9G 1% / dev / shm
-tmpfs 5.0M 0 5.0M 0% / run / lock
-tmpfs 3.9G 0 3.9G 0% / sys / fs / cgroup
-/ dev / sda15 105M 3.6M 101M 4% / boot / efi
-/ dev / sdc1 1007G 77M 956G 1% / datadrive
-/ dev / sdb1 16G 45M 15G 1% / mnt
-tmpfs 794M 0 794M 0% / run / user / 1001
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.9G     0  3.9G   0% /dev
+tmpfs           794M  736K  793M   1% /run
+/dev/sda1        29G  4.1G   25G  15% /
+tmpfs           3.9G  8.0K  3.9G   1% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/sdc1      1007G   77M  956G   1% /datadrive
+/dev/sdb1        16G   45M   15G   1% /mnt
+tmpfs           794M     0  794M   0% /run/user/1001
 </pre>
 <h3> How to check the capacity of the directory? </H3>
 <p>
@@ -159,7 +159,7 @@ tmpfs 794M 0 794M 0% / run / user / 1001
   Note that the df command is a command to check the disk capacity, and the du command is used to check the directory capacity.
 </p>
 <ul>
-  <li> <a href="/blog/20200531082545.html"> du command --check directory capacity</a> </li>
+  <li> <a href="/blog/20200531082545.html"> du command - check directory capacity</a> </li>
 </ul>
 
   </div>
@@ -215,8 +215,15 @@ tmpfs 794M 0 794M 0% / run / user / 1001
         </div>
       </div>
       <div class="footer">
-        <div class="perlri_link">
-  <a rel="nofollow" href="https://perlclub.net/en">Perl Club</a>
+        <div style="font-size:16px;padding:30px 0;background:#fcfcfc;">
+  This site is originally Japanese.<br>
+  Perl Club starts to translate it to English.<br>
+  If you find wrong expressions, you can report them using <a rel="nofollow" href="https://github.com/yuki-kimoto/en_linux/issues">Github Issue</a>. 
+</div>
+<div class="perlri_link">
+  <div>
+    <a rel="nofollow" href="https://perlclub.net/en">Perl Club</a>
+  </div>
 </div>
 
       </div>

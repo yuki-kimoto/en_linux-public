@@ -85,7 +85,7 @@
 
 
 <pre>
-Execute Linux command with # bash
+# Execute Linux command with bash
 ls
 </pre>
 <h3> Check environment variables </h3>
@@ -99,28 +99,28 @@ env
   When combined with grep, you can retrieve only the environment variables you need.
 </p>
 <pre>
-Get only those that contain #MOJO
-env | grep MOJO
+# Get only those that contain PATH
+env | grep PATH
 </pre>
 <h3> Set environment variables </h3>
 <p>
   Use the export command to set environment variables.
 </p>
 <pre>
-export environment variable name = value of environment variable
+export EnvironmentVariableName=EnvironmentVariableValue
 </pre>
 <p>
-  Below is the <a href="https://en.webapp.perlzemi.com/"> Mojolicious</a> development server <a href="https://perlzemi.com/blog/20120406133367.html"> This is a sample to change the port number with morbo</a>.
+  Examples:
 </p>
 <pre>
-export MOJO_LISTEN = http: // *: 3050
+export LANG=en_US.utf8
 </pre>
 <h3> bash configuration file </h3>
 <p>
   The bash configuration file is ".bashrc" in your home directory.
 </p>
 <pre>
-~ / .bashrc
+~/.bashrc
 </pre>
 <p>
   There is also a special config file called ".bash_profile", but use ".bashrc" for normal configs.
@@ -133,28 +133,28 @@ export MOJO_LISTEN = http: // *: 3050
   Let's create a bash shell script. This is useful when executing frequently used Linux commands.
 </p>
 <p>
-  Suppose you save the following script as "setup.sh". This is also a sample to install all dependent modules with <a href="https://perlzemi.com/blog/20101027127859.html"> cpanm and cpanfile</a>.
+  Suppose you save the following script as "myecho".
 </p>
 <pre>
-#! / bin / sh
+#!/bin/bash
 
-cpanm --installdeps.
+echo 'Hello'
 </pre>
 <p>
   Save this script and change the permissions to 755 with the chmod command so you can run it
 </p>
 <pre>
-chmod 755 setup.sh
+chmod 755 myecho
 </pre>
 <p>
   execution
 </p>
 <pre>
-./setup.sh
+./myecho
 </pre>
 <h4> Shebang </h4>
 <p>
-  Shebang is "#! / Bin / sh". On Linux sh is aliased to bash.
+  Shebang is "#!/bin/bash".
 </p>
 <h3> What kind of shell scripts are there? </H3>
 <p>
@@ -163,29 +163,6 @@ chmod 755 setup.sh
 <p>
   Shell scripts are like dialects, and each Linux OS has a different standard shell.
 </p>
-<h3> How should I use shell scripts and Perl properly? </H3>
-<p>
-  A shell script is a mechanism that automates the shell, and Linux commands can be used as they are.
-</p>
-<p>
-  It's easy because you can write the familiar Linux commands as they are.
-</p>
-<p>
-  On the other hand, when using it as a general-purpose programming language, the larger the program, the more difficult it becomes.
-</p>
-<p>
-  Isn't this program better maintainable and faster to write in Perl !?
-</p>
-<p>
-  If you feel that way, it's time to give Perl a try.
-</p>
-<p>
-  For those who maintain it later, don't forget the following description.
-</p>
-<pre>
-use strict;
-use warnings;
-</pre>
 
   </div>
   <div class="bottom">
@@ -240,8 +217,15 @@ use warnings;
         </div>
       </div>
       <div class="footer">
-        <div class="perlri_link">
-  <a rel="nofollow" href="https://perlclub.net/en">Perl Club</a>
+        <div style="font-size:16px;padding:30px 0;background:#fcfcfc;">
+  This site is originally Japanese.<br>
+  Perl Club starts to translate it to English.<br>
+  If you find wrong expressions, you can report them using <a rel="nofollow" href="https://github.com/yuki-kimoto/en_linux/issues">Github Issue</a>. 
+</div>
+<div class="perlri_link">
+  <div>
+    <a rel="nofollow" href="https://perlclub.net/en">Perl Club</a>
+  </div>
 </div>
 
       </div>

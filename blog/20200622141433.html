@@ -36,11 +36,11 @@
 
   gtag('config', 'G-MJQCJJV40N');
 </script>
-<title> dig command-find the IP address from the domain d name. DNS server information inquiry.  - Linux Server Management - Connect to Linux, Master the Basic of Linux</title>
+<title> dig Command - Find the IP Address from the Domain Name. DNS Server Information Inquiry.  - Linux Server Management - Connect to Linux, Master the Basic of Linux</title>
 <meta name="description" content="You can use the dig command to query DNS server information. Most often, you want to get IP address information from a domain name.">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@perlzemi" />
-<meta name="twitter:title" content=" dig command-find the IP address from the domain d name. DNS server information inquiry.  - Linux Server Management - Connect to Linux, Master the Basic of Linux" />
+<meta name="twitter:title" content=" dig Command - Find the IP Address from the Domain Name. DNS Server Information Inquiry.  - Linux Server Management - Connect to Linux, Master the Basic of Linux" />
 <meta name="twitter:description" content="You can use the dig command to query DNS server information. Most often, you want to get IP address information from a domain name." />
 <meta name="twitter:image" content="https://en.linux.perlzemi.com/images/twitter_card_large_kaeru.png" />
 
@@ -83,7 +83,7 @@
     </li>
   </ul>
 </div>
-<h2><a href="/blog/20200622141433.html"> dig command-find the IP address from the domain d name. DNS server information inquiry. </a></h2>
+<h2><a href="/blog/20200622141433.html"> dig Command - Find the IP Address from the Domain Name. DNS Server Information Inquiry. </a></h2>
 <p>
   You can use the dig command to query DNS server information. Most often, you want to get IP address information from a domain name.
 </p>
@@ -104,35 +104,37 @@
 
 
 <pre>
-dig domain name
+dig DomainName
 </pre>
 <p>
   This is a sample to get the IP address information by specifying the domain name using dig.
 </p>
 <pre>
-dig linux.perlclub.net
+dig en.linux.perlzemi.com
 </pre>
 <p>
   This is the output result of dig. You can see the IP address.
 </p>
 <pre>
-; &lt;&lt;&gt;&gt; DiG 9.3.6-P1-RedHat-9.3.6-25.P1.el5_11.12 &lt;&lt;&gt;&gt; linux.perlclub.net
-;; global options: printcmd
+; &lt;&lt;&gt;&gt; DiG 9.11.3-1ubuntu1.8-Ubuntu &lt;&lt;&gt;&gt; en.linux.perlzemi.com
+;; global options: +cmd
 ;; Got answer:
-;;-&gt;&gt; HEADER &lt;&lt;- opcode: QUERY, status: NOERROR, id: 50874
-;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 38193
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
 
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
 ;; QUESTION SECTION:
-linux.perlclub.net. IN A
+;en.linux.perlzemi.com.         IN      A
 
 ;; ANSWER SECTION:
-linux.perlclub.net. 3600 IN CNAME en.sakurastd.perlzemi.com.
-en.sakurastd.perlzemi.com. 3600 IN A 210.224.185.82
+en.linux.perlzemi.com.  3600    IN      CNAME   sakurastd.perlzemi.com.
+sakurastd.perlzemi.com. 3599    IN      A       210.224.185.82
 
-;; Query time: 5 msec
-;; SERVER: 210.188.224.10 # 53 (210.188.224.10)
-;; WHEN: Mon Jun 22 14:17:22 2020
-;; MSG SIZE rcvd: 76
+;; Query time: 103 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53)
+;; WHEN: Thu Dec 02 13:43:51 JST 2021
+;; MSG SIZE  rcvd: 90
 </pre>
 
   </div>
